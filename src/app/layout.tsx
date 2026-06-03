@@ -1,0 +1,46 @@
+import type { Metadata } from 'next'
+import './globals.css'
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Off Broadway Nashville | Find Live Music Beyond Broadway',
+    template: '%s | Off Broadway Nashville',
+  },
+  description: 'Discover the best live music venues in Nashville beyond Broadway. Listening rooms, honky tonks, jazz clubs, songwriter rounds, and more — neighborhood by neighborhood.',
+  keywords: ['Nashville live music', 'Nashville venues', 'beyond Broadway Nashville', 'Nashville listening rooms', 'Nashville honky tonks'],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://offbroadwaynashville.co',
+    siteName: 'Off Broadway Nashville',
+    title: 'Off Broadway Nashville | Find Live Music Beyond Broadway',
+    description: 'Discover the best live music venues in Nashville beyond Broadway.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Off Broadway Nashville | Find Live Music Beyond Broadway',
+    description: 'Discover the best live music venues in Nashville beyond Broadway.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  )
+}

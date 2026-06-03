@@ -1,0 +1,1264 @@
+{
+  "meta": {
+    "city": "Nashville",
+    "version": "1.0",
+    "venueCount": 60,
+    "lastUpdated": "2026-05-31"
+  },
+  "venues": [
+    {
+      "id": 1,
+      "name": "The Local",
+      "slug": "the-local",
+      "neighborhood": "West End",
+      "venueTypeTags": [
+        "Writer's Round Venue",
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Songwriter / Acoustic"
+      ],
+      "bestForTags": [
+        "Songwriter rounds",
+        "Local artists",
+        "Laid-back nights"
+      ],
+      "shortDescription": "Neighborhood bar and restaurant known for showcasing some of Nashville's best local artists. With live music every night, it's a go-to spot for writer's rounds, artist showcases, and discovering new talent.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "The Station Inn",
+      "slug": "the-station-inn",
+      "neighborhood": "The Gulch",
+      "venueTypeTags": [
+        "Listening Room",
+        "Historic Venue"
+      ],
+      "genreTags": [
+        "Bluegrass / Roots"
+      ],
+      "bestForTags": [
+        "Bluegrass fans",
+        "Music history",
+        "Intimate shows"
+      ],
+      "shortDescription": "Legendary listening room known for hosting some of the best bluegrass and roots music in the world. An intimate venue where you can experience Nashville's best showcase of bluegrass up close.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "Live Oak",
+      "slug": "live-oak",
+      "neighborhood": "Midtown",
+      "venueTypeTags": [
+        "Writer's Round Venue",
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Songwriter / Acoustic"
+      ],
+      "bestForTags": [
+        "Songwriter rounds",
+        "Game day",
+        "Late night",
+        "Drinks with music"
+      ],
+      "shortDescription": "Local bar and restaurant featuring live music from emerging and established Nashville artists. A laid-back spot for catching songwriter rounds and casual country performances throughout the week.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "name": "The Listening Room Cafe",
+      "slug": "the-listening-room-cafe",
+      "neighborhood": "SoBro",
+      "venueTypeTags": [
+        "Listening Room",
+        "Writer's Round Venue"
+      ],
+      "genreTags": [
+        "Songwriter / Acoustic"
+      ],
+      "bestForTags": [
+        "Songwriter rounds",
+        "Intimate shows",
+        "Dinner and a show"
+      ],
+      "shortDescription": "A premier listening room known for hosting songwriter rounds with some of Nashville's top writers. A seated, intimate setting focused on storytelling and acoustic performances.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "name": "The Bluebird Cafe",
+      "slug": "the-bluebird-cafe",
+      "neighborhood": "Green Hills",
+      "venueTypeTags": [
+        "Listening Room",
+        "Writer's Round Venue",
+        "Historic Venue"
+      ],
+      "genreTags": [
+        "Songwriter / Acoustic"
+      ],
+      "bestForTags": [
+        "Songwriter rounds",
+        "Music history",
+        "Bucket-list venues",
+        "Intimate shows"
+      ],
+      "shortDescription": "World-famous Nashville listening room known for its intimate songwriter rounds featuring some of the industry's top writers. A bucket-list experience where the focus stays on the music and the stories behind it.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 6,
+      "name": "Bourbon Street Blues and Boogie Bar",
+      "slug": "bourbon-street-blues-and-boogie-bar",
+      "neighborhood": "Printer's Alley",
+      "venueTypeTags": [
+        "Blues Venue",
+        "Jazz Club"
+      ],
+      "genreTags": [
+        "Blues",
+        "Jazz"
+      ],
+      "bestForTags": [
+        "Blues fans",
+        "Jazz fans",
+        "Late night"
+      ],
+      "shortDescription": "Lively Printer's Alley venue known for live blues and jazz music in a classic New Orleans-style setting. A go-to spot for late-night live bands, dancing, and a Mardi Gras-style atmosphere.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 7,
+      "name": "The Nashville Palace",
+      "slug": "the-nashville-palace",
+      "neighborhood": "Music Valley",
+      "venueTypeTags": [
+        "Dance Hall",
+        "Honky Tonk",
+        "Writer's Round Venue"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Line dancing",
+        "Country music",
+        "Local feel",
+        "Near the Opry"
+      ],
+      "shortDescription": "Classic country honky tonk near the Grand Ole Opry featuring live bands and a traditional Nashville music atmosphere. Known for line dancing, local performers, and an authentic country music vibe.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 8,
+      "name": "Anzie Blue",
+      "slug": "anzie-blue",
+      "neighborhood": "Hillsboro Village",
+      "venueTypeTags": [
+        "Concert Venue",
+        "Writer's Round Venue"
+      ],
+      "genreTags": [
+        "Songwriter / Acoustic"
+      ],
+      "bestForTags": [
+        "Songwriter rounds",
+        "Intimate shows",
+        "Date night"
+      ],
+      "shortDescription": "Intimate venue in Hillsboro Village known for hosting live shows and songwriter rounds. A smaller, seated space where you can catch local artists and emerging talent in a relaxed setting.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 9,
+      "name": "The Basement East",
+      "slug": "the-basement-east",
+      "neighborhood": "East Nashville",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Rock / Indie"
+      ],
+      "bestForTags": [
+        "Rock shows",
+        "Touring acts",
+        "Ticketed shows"
+      ],
+      "shortDescription": "Popular East Nashville concert venue known for hosting touring indie and rock acts. A go-to spot for catching live music outside the Broadway scene.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 10,
+      "name": "6th & Peabody",
+      "slug": "6th-and-peabody",
+      "neighborhood": "SoBro",
+      "venueTypeTags": [
+        "Live Music Venue",
+        "Writer's Round Venue",
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Game day",
+        "Groups",
+        "Patio drinks"
+      ],
+      "shortDescription": "Outdoor beer garden and distillery featuring live music, food, and a high-energy atmosphere in the heart of downtown. A go-to spot for live country music, drinks, and a little bit of everything Nashville has to offer.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 11,
+      "name": "Exit/In",
+      "slug": "exit-in",
+      "neighborhood": "West End",
+      "venueTypeTags": [
+        "Concert Venue",
+        "Historic Venue"
+      ],
+      "genreTags": [
+        "Rock / Indie"
+      ],
+      "bestForTags": [
+        "Rock shows",
+        "Music history",
+        "Ticketed shows"
+      ],
+      "shortDescription": "Historic Nashville concert venue known for hosting touring rock and indie acts. A staple of the local music scene with a long legacy of artists passing through its stage.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 12,
+      "name": "The Basement",
+      "slug": "the-basement",
+      "neighborhood": "8th Ave S",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Rock / Indie"
+      ],
+      "bestForTags": [
+        "Intimate shows",
+        "Local artists",
+        "Ticketed shows"
+      ],
+      "shortDescription": "Small, intimate concert venue known for showcasing emerging artists and up-and-coming touring acts. A go-to spot for discovering new music in a close, high-energy setting.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 13,
+      "name": "The End",
+      "slug": "the-end",
+      "neighborhood": "West End",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Rock / Indie"
+      ],
+      "bestForTags": [
+        "Rock shows",
+        "Local artists",
+        "Divey bars"
+      ],
+      "shortDescription": "Small, divey rock venue known for hosting local bands and touring indie and punk acts. A longtime staple of Nashville's rock scene with a raw, high-energy atmosphere.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 14,
+      "name": "Marathon Music Works",
+      "slug": "marathon-music-works",
+      "neighborhood": "Marathon Village",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Touring acts",
+        "Ticketed shows",
+        "Rock shows"
+      ],
+      "shortDescription": "Mid-size concert venue known for hosting touring artists in a spacious, industrial-style setting. A go-to spot for live shows that feel bigger than a club but still up close.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 15,
+      "name": "3rd & Lindsley",
+      "slug": "3rd-and-lindsley",
+      "neighborhood": "SoBro",
+      "venueTypeTags": [
+        "Concert Venue",
+        "Writer's Round Venue"
+      ],
+      "genreTags": [
+        "Americana / Folk",
+        "Songwriter / Acoustic"
+      ],
+      "bestForTags": [
+        "Songwriter rounds",
+        "Intimate shows",
+        "Dinner and a show"
+      ],
+      "shortDescription": "Established live music venue known for hosting songwriter rounds and Americana-focused performances. A seated, music-first setting built for hearing the stories behind the songs.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 16,
+      "name": "Santa's Pub",
+      "slug": "santas-pub",
+      "neighborhood": "Wedgewood-Houston",
+      "venueTypeTags": [
+        "Karaoke Bar",
+        "Honky Tonk"
+      ],
+      "genreTags": [
+        "Karaoke"
+      ],
+      "bestForTags": [
+        "Karaoke",
+        "Divey bars",
+        "Late night",
+        "Local feel"
+      ],
+      "shortDescription": "Christmas-themed double-wide dive bar known for some of the rowdiest karaoke in Nashville. A cash-only local favorite where you can sing your heart out and experience a piece of old Nashville.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 17,
+      "name": "Losers Bar & Grill",
+      "slug": "losers-bar-and-grill",
+      "neighborhood": "Midtown",
+      "venueTypeTags": [
+        "Honky Tonk",
+        "Writer's Round Venue"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Country music",
+        "Late night",
+        "Local feel",
+        "Drinks with music"
+      ],
+      "shortDescription": "Divey Midtown honky tonk known for live country music and a mix of locals, industry regulars, and late-night crowds. A go-to spot for drinks, live bands, and never quite knowing who you'll run into.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 18,
+      "name": "Riley Green's Duck Blind",
+      "slug": "riley-greens-duck-blind",
+      "neighborhood": "Midtown",
+      "venueTypeTags": [
+        "Honky Tonk",
+        "Writer's Round Venue"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Game day",
+        "Country music",
+        "Drinks with music"
+      ],
+      "shortDescription": "Casual Midtown bar known for live country music and plenty of TVs. A go-to spot for catching the game, live bands, and the occasional country artist drop-in.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 19,
+      "name": "Commodore Grill",
+      "slug": "commodore-grill",
+      "neighborhood": "West End",
+      "venueTypeTags": [
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Songwriter rounds",
+        "Dinner and a show",
+        "Local artists"
+      ],
+      "shortDescription": "Casual restaurant and bar known for hosting live country music and songwriter rounds. A laid-back spot where you can grab a meal and catch local artists throughout the week.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 20,
+      "name": "Nashville Municipal Auditorium",
+      "slug": "nashville-municipal-auditorium",
+      "neighborhood": "Downtown",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Touring acts",
+        "Ticketed shows",
+        "Larger events"
+      ],
+      "shortDescription": "Large indoor venue known for hosting concerts, events, and touring acts across a variety of genres. A flexible space that regularly brings bigger performances to downtown Nashville.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 21,
+      "name": "Ascend Amphitheater",
+      "slug": "ascend-amphitheater",
+      "neighborhood": "SoBro",
+      "venueTypeTags": [
+        "Amphitheater",
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Outdoor concerts",
+        "Touring acts",
+        "Larger events"
+      ],
+      "shortDescription": "Outdoor amphitheater located along the river, known for hosting touring artists and larger live shows. A go-to spot for concerts with city skyline views and a more open, scenic setting.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 22,
+      "name": "Scoreboard Bar & Grill",
+      "slug": "scoreboard-bar-and-grill",
+      "neighborhood": "Music Valley",
+      "venueTypeTags": [
+        "Honky Tonk",
+        "Writer's Round Venue",
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Country music",
+        "Near the Opry",
+        "Game day",
+        "Food and drinks"
+      ],
+      "shortDescription": "Music Valley bar and restaurant known for live country music and a steady mix of locals and visitors. A casual spot for drinks, live bands, and a classic Nashville bar experience near the Opry.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 23,
+      "name": "Tennessee Brew Works",
+      "slug": "tennessee-brew-works",
+      "neighborhood": "SoBro",
+      "venueTypeTags": [
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Songwriter / Acoustic"
+      ],
+      "bestForTags": [
+        "Patio drinks",
+        "Acoustic sets",
+        "Food and drinks"
+      ],
+      "shortDescription": "Local brewery and restaurant known for hosting live acoustic sets and songwriter-style performances. A laid-back spot to grab a beer, enjoy the food, and catch live music throughout the week.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 24,
+      "name": "The Pinnacle",
+      "slug": "the-pinnacle",
+      "neighborhood": "Downtown",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Touring acts",
+        "Ticketed shows",
+        "Larger events"
+      ],
+      "shortDescription": "Downtown concert venue at Nashville Yards known for touring artists, comedy, and larger live events. A state-of-the-art space built for big shows with strong sound, lighting, and production.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 25,
+      "name": "Brooklyn Bowl",
+      "slug": "brooklyn-bowl",
+      "neighborhood": "Germantown",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Touring acts",
+        "Ticketed shows",
+        "Bowling and music",
+        "Groups"
+      ],
+      "shortDescription": "Multi-purpose venue known for hosting touring artists across a range of genres alongside bowling, food, and drinks. A go-to spot for live shows in a lively, all-in-one setting.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 26,
+      "name": "Star Rover Sound",
+      "slug": "star-rover-sound",
+      "neighborhood": "Germantown",
+      "venueTypeTags": [
+        "Restaurant w/ Live Music",
+        "Honky Tonk"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Dinner and a show",
+        "Country music",
+        "Date night"
+      ],
+      "shortDescription": "Restaurant and live music venue known for country and roots-focused performances in a unique, retro-inspired setting. A sit-down experience that blends dinner and live music in a more intimate space.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 27,
+      "name": "Rudy's Jazz Room",
+      "slug": "rudys-jazz-room",
+      "neighborhood": "The Gulch",
+      "venueTypeTags": [
+        "Jazz Club"
+      ],
+      "genreTags": [
+        "Jazz"
+      ],
+      "bestForTags": [
+        "Jazz fans",
+        "Date night",
+        "Intimate shows"
+      ],
+      "shortDescription": "Dedicated jazz club known for hosting live performances from local and touring musicians. An intimate, seated setting focused on high-quality jazz in the Gulch.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 28,
+      "name": "Analog",
+      "slug": "analog",
+      "neighborhood": "West End",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Intimate shows",
+        "Date night",
+        "Touring acts"
+      ],
+      "shortDescription": "Intimate live music venue known for hosting a mix of genres including songwriter rounds, jazz, and touring acts. A seated setting focused on the music in a more refined, lounge-style environment.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 29,
+      "name": "Big Machine Distillery & Tavern",
+      "slug": "big-machine-distillery-and-tavern",
+      "neighborhood": "Berry Hill",
+      "venueTypeTags": [
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Brunch",
+        "Patio drinks",
+        "Acoustic sets"
+      ],
+      "shortDescription": "Berry Hill distillery and tavern known for Southern food, handcrafted cocktails, and weekend live music. A casual spot for brunch, drinks, and catching acoustic sets just outside the downtown core.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 30,
+      "name": "City Winery",
+      "slug": "city-winery",
+      "neighborhood": "SoBro",
+      "venueTypeTags": [
+        "Concert Venue",
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Dinner and a show",
+        "Date night",
+        "Seated concerts"
+      ],
+      "shortDescription": "Concert venue, restaurant, and winery known for intimate shows, comedy, food, and wine. A seated experience where live music feels more like dinner and a show than a typical night out.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 31,
+      "name": "The East Room",
+      "slug": "the-east-room",
+      "neighborhood": "East Nashville",
+      "venueTypeTags": [
+        "Concert Venue",
+        "Live Music Venue"
+      ],
+      "genreTags": [
+        "Rock / Indie",
+        "Variety"
+      ],
+      "bestForTags": [
+        "Local artists",
+        "Ticketed shows",
+        "Comedy"
+      ],
+      "shortDescription": "East Nashville music and comedy venue known for up-and-coming local and touring talent. A casual spot for catching live shows, comedy nights, and a more independent side of the Nashville scene.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 32,
+      "name": "The Blue Room at Third Man Records",
+      "slug": "the-blue-room-at-third-man-records",
+      "neighborhood": "The Gulch",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Rock / Indie"
+      ],
+      "bestForTags": [
+        "Ticketed shows",
+        "Record lovers",
+        "Intimate shows"
+      ],
+      "shortDescription": "Intimate venue at Third Man Records known for live music, cocktails, DJs, film screenings, and special events. A one-of-a-kind Nashville spot where the experience feels tied to the city's record-making culture.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 33,
+      "name": "Springwater Supper Club & Lounge",
+      "slug": "springwater-supper-club-and-lounge",
+      "neighborhood": "West End",
+      "venueTypeTags": [
+        "Live Music Venue"
+      ],
+      "genreTags": [
+        "Rock / Indie"
+      ],
+      "bestForTags": [
+        "Divey bars",
+        "Local artists",
+        "Rock shows"
+      ],
+      "shortDescription": "Long-running West End bar known for live music, local bands, and a gritty Nashville feel. A classic neighborhood spot for catching shows in a casual, divey setting.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 34,
+      "name": "The 5 Spot",
+      "slug": "the-5-spot",
+      "neighborhood": "East Nashville",
+      "venueTypeTags": [
+        "Live Music Venue"
+      ],
+      "genreTags": [
+        "Rock / Indie"
+      ],
+      "bestForTags": [
+        "Local artists",
+        "Dancing",
+        "Late night"
+      ],
+      "shortDescription": "East Nashville music venue and hangout known for local bands, themed dance nights, and a steady neighborhood crowd. A go-to spot for catching the local scene in a casual, divey room away from downtown.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 35,
+      "name": "Love & Exile",
+      "slug": "love-and-exile",
+      "neighborhood": "East Nashville",
+      "venueTypeTags": [
+        "Live Music Venue"
+      ],
+      "genreTags": [
+        "Rock / Indie"
+      ],
+      "bestForTags": [
+        "Wine",
+        "Patio drinks",
+        "Laid-back nights"
+      ],
+      "shortDescription": "East Nashville winery, cocktail bar, and patio spot known for drinks, local eats, and live events. A casual neighborhood hang where wine, cocktails, and a social East Side atmosphere are as much the draw as the music.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 36,
+      "name": "The Grand Ole Opry",
+      "slug": "the-grand-ole-opry",
+      "neighborhood": "Music Valley",
+      "venueTypeTags": [
+        "Concert Venue",
+        "Historic Venue"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Bucket-list venues",
+        "Country music",
+        "Music history"
+      ],
+      "shortDescription": "World-famous country music venue near Opryland known for showcasing legends, rising artists, and weekly live performances. A bucket-list Nashville experience built around the history and future of country music.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 37,
+      "name": "The Ryman Auditorium",
+      "slug": "the-ryman-auditorium",
+      "neighborhood": "Downtown",
+      "venueTypeTags": [
+        "Concert Venue",
+        "Historic Venue"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Bucket-list venues",
+        "Music history",
+        "Touring acts",
+        "Ticketed shows"
+      ],
+      "shortDescription": "Historic downtown concert hall known as the Mother Church of Country Music and the Grand Ole Opry's most famous former home. A bucket-list Nashville venue for world-class shows, incredible acoustics, and serious music history.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 38,
+      "name": "Bobby's Idle Hour Tavern",
+      "slug": "bobbys-idle-hour-tavern",
+      "neighborhood": "Midtown",
+      "venueTypeTags": [
+        "Honky Tonk",
+        "Writer's Round Venue"
+      ],
+      "genreTags": [
+        "Songwriter / Acoustic"
+      ],
+      "bestForTags": [
+        "Songwriter rounds",
+        "Divey bars",
+        "Local feel"
+      ],
+      "shortDescription": "Legendary Music Row watering hole known for local songwriters, musicians, and a divey Nashville tavern feel. A laid-back spot for drinks and original songs in one of the city's most historic music neighborhoods.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 39,
+      "name": "Doc Holliday's Saloon",
+      "slug": "doc-hollidays-saloon",
+      "neighborhood": "Downtown",
+      "venueTypeTags": [
+        "Honky Tonk"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Country music",
+        "Drinks with music",
+        "Local feel"
+      ],
+      "shortDescription": "Downtown honky tonk known for live country music, cold drinks, and a fun bar atmosphere. A lively spot for catching live bands without stepping directly onto Broadway.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 40,
+      "name": "Skull's Rainbow Room",
+      "slug": "skulls-rainbow-room",
+      "neighborhood": "Printer's Alley",
+      "venueTypeTags": [
+        "Jazz Club",
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Jazz"
+      ],
+      "bestForTags": [
+        "Jazz fans",
+        "Date night",
+        "Dinner and a show"
+      ],
+      "shortDescription": "Historic Printer's Alley lounge known for live jazz, dinner, cocktails, and a throwback Nashville atmosphere. A seated, intimate spot for music, burlesque, and a classic night out downtown.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 41,
+      "name": "The Underdog",
+      "slug": "the-underdog",
+      "neighborhood": "East Nashville",
+      "venueTypeTags": [
+        "Live Music Venue"
+      ],
+      "genreTags": [
+        "Rock / Indie"
+      ],
+      "bestForTags": [
+        "Local artists",
+        "Intimate shows",
+        "Laid-back nights"
+      ],
+      "shortDescription": "East Nashville neighborhood bar known for affordable drinks, a laid-back atmosphere, and live music throughout the week. A low-key spot for catching local artists in an intimate room on Gallatin Pike.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 42,
+      "name": "Skinny Dennis",
+      "slug": "skinny-dennis",
+      "neighborhood": "East Nashville",
+      "venueTypeTags": [
+        "Honky Tonk",
+        "Dance Hall"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Country music",
+        "Line dancing",
+        "Divey bars",
+        "Local feel"
+      ],
+      "shortDescription": "East Nashville honky tonk known for country, Americana, roots music, and regular two-step nights. A casual spot for live music, line dancing, cold drinks, and a down-home feel on Gallatin Pike.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 43,
+      "name": "Sid Gold's Request Room",
+      "slug": "sid-golds-request-room",
+      "neighborhood": "East Nashville",
+      "venueTypeTags": [
+        "Karaoke Bar"
+      ],
+      "genreTags": [
+        "Karaoke"
+      ],
+      "bestForTags": [
+        "Karaoke",
+        "Piano bar",
+        "Groups",
+        "Late night"
+      ],
+      "shortDescription": "East Nashville piano karaoke bar known for live accompaniment and an electric sing-along atmosphere. A fun spot for stepping up to the mic or just watching the room turn into a show.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 44,
+      "name": "Wild Beaver Saloon",
+      "slug": "wild-beaver-saloon",
+      "neighborhood": "Downtown",
+      "venueTypeTags": [
+        "Karaoke Bar",
+        "Honky Tonk"
+      ],
+      "genreTags": [
+        "Karaoke"
+      ],
+      "bestForTags": [
+        "Karaoke",
+        "Late night",
+        "Rowdy bars"
+      ],
+      "shortDescription": "Downtown karaoke bar known for late-night singing, drinks, and a rowdy party atmosphere. A casual spot for grabbing the mic and leaning into the full Nashville karaoke experience.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 45,
+      "name": "Ms. Kelli's Karaoke Bar",
+      "slug": "ms-kellis-karaoke-bar",
+      "neighborhood": "Printer's Alley",
+      "venueTypeTags": [
+        "Karaoke Bar"
+      ],
+      "genreTags": [
+        "Karaoke"
+      ],
+      "bestForTags": [
+        "Karaoke",
+        "Late night",
+        "Rowdy bars"
+      ],
+      "shortDescription": "Printer's Alley karaoke bar known for a huge song list, no-cover entry, and a rowdy late-night crowd. A casual spot for singing, drinking, Jell-O shots, and keeping the night going downtown.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 46,
+      "name": "The Green Light Bar",
+      "slug": "the-green-light-bar",
+      "neighborhood": "8th Ave S",
+      "venueTypeTags": [
+        "Writer's Round Venue",
+        "Live Music Venue"
+      ],
+      "genreTags": [
+        "Songwriter / Acoustic"
+      ],
+      "bestForTags": [
+        "Songwriter rounds",
+        "Open mics",
+        "Local artists",
+        "Laid-back nights"
+      ],
+      "shortDescription": "8th Avenue bar known for songwriter rounds, open mics, and live music from local Nashville artists. A low-key spot for hearing original songs in a chill, neighborhood setting.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 47,
+      "name": "The Nations Bar & Grill",
+      "slug": "the-nations-bar-and-grill",
+      "neighborhood": "The Nations",
+      "venueTypeTags": [
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Food and drinks",
+        "Country music",
+        "Bluegrass fans",
+        "Laid-back nights"
+      ],
+      "shortDescription": "Neighborhood bar and restaurant in The Nations known for food, drinks, and live music throughout the week. A casual spot for catching country, Americana, and bluegrass-leaning performances without leaving West Nashville.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 48,
+      "name": "The Eighth Room",
+      "slug": "the-eighth-room",
+      "neighborhood": "8th Ave S",
+      "venueTypeTags": [
+        "Live Music Venue"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Cocktails",
+        "Date night",
+        "Intimate shows"
+      ],
+      "shortDescription": "Elevated 8th Avenue lounge and live music venue known for premium cocktails, a dress-to-impress vibe, and a historic stage tied to the old Douglas Corner space. A smaller room for catching live shows in a more refined Nashville setting.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 49,
+      "name": "Tin Roof (Demonbreun)",
+      "slug": "tin-roof-demonbreun",
+      "neighborhood": "Midtown",
+      "venueTypeTags": [
+        "Live Music Venue"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Country music",
+        "Game day",
+        "Late night",
+        "DJs"
+      ],
+      "shortDescription": "Demonbreun live music joint known for bands, DJs, food, and late-night crowds near Midtown and Music Row. A casual spot for catching live music, watching the game, and staying out late.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 50,
+      "name": "Odie's",
+      "slug": "odies",
+      "neighborhood": "Midtown",
+      "venueTypeTags": [
+        "Live Music Venue"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Drinks with music",
+        "DJs",
+        "Game day",
+        "Late night"
+      ],
+      "shortDescription": "Midtown neighborhood bar and entertainment venue known for live music, DJs, sports, and the feel-good spirit of Old Dominion. A casual spot for drinks, games, and catching Nashville artists in a lively setting.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 51,
+      "name": "Cannery Hall",
+      "slug": "cannery-hall",
+      "neighborhood": "The Gulch",
+      "venueTypeTags": [
+        "Concert Venue",
+        "Historic Venue"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Touring acts",
+        "Ticketed shows",
+        "Multi-stage venue"
+      ],
+      "shortDescription": "Historic Cannery Row venue complex known for touring artists, multiple stages, and shows across a wide range of genres. A go-to spot for concerts that can range from intimate songwriter sets to bigger live events.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 52,
+      "name": "Cross-Eyed Critters Watering Hole",
+      "slug": "cross-eyed-critters-watering-hole",
+      "neighborhood": "West End",
+      "venueTypeTags": [
+        "Karaoke Bar",
+        "Honky Tonk"
+      ],
+      "genreTags": [
+        "Karaoke"
+      ],
+      "bestForTags": [
+        "Karaoke",
+        "Groups",
+        "Unique experience"
+      ],
+      "shortDescription": "Animatronic karaoke bar inside Graduate Nashville known for sing-alongs with a robotic backup band and a bit of Dolly-inspired flair. A quirky West End spot for karaoke, drinks, and a one-of-a-kind Nashville night out.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 53,
+      "name": "Lonnie's Western Room",
+      "slug": "lonnies-western-room",
+      "neighborhood": "Printer's Alley",
+      "venueTypeTags": [
+        "Karaoke Bar"
+      ],
+      "genreTags": [
+        "Karaoke"
+      ],
+      "bestForTags": [
+        "Karaoke",
+        "Late night",
+        "Local feel"
+      ],
+      "shortDescription": "Long-running Printer's Alley karaoke bar known for its classic downtown feel and late-night sing-alongs. A casual spot for grabbing drinks, getting on stage, and experiencing one of Nashville's original karaoke rooms.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 54,
+      "name": "Dee's Country Cocktail Lounge",
+      "slug": "dees-country-cocktail-lounge",
+      "neighborhood": "Madison",
+      "venueTypeTags": [
+        "Honky Tonk"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Country music",
+        "Local feel",
+        "Divey bars"
+      ],
+      "shortDescription": "Madison neighborhood bar known for live country, roots music, classic cocktails, and a strong local following. A divey, music-first spot for catching bands outside the downtown scene.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 55,
+      "name": "The Cobra",
+      "slug": "the-cobra",
+      "neighborhood": "East Nashville",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Rock / Indie"
+      ],
+      "bestForTags": [
+        "Rock shows",
+        "Local artists",
+        "Late night"
+      ],
+      "shortDescription": "East Nashville bar and venue known for punk, metal, indie, and late-night live shows. A raw, high-energy spot for catching heavier bands and underground music.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 56,
+      "name": "Eastside Bowl",
+      "slug": "eastside-bowl",
+      "neighborhood": "East Nashville",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Bowling and music",
+        "Groups",
+        "Local feel",
+        "Ticketed shows"
+      ],
+      "shortDescription": "East Nashville entertainment complex known for bowling, food, drinks, and touring shows at The '58. A go-to spot for concerts that pairs live music with a full night out.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 57,
+      "name": "Riverside Revival",
+      "slug": "riverside-revival",
+      "neighborhood": "East Nashville",
+      "venueTypeTags": [
+        "Concert Venue"
+      ],
+      "genreTags": [
+        "Variety"
+      ],
+      "bestForTags": [
+        "Ticketed shows",
+        "Intimate shows",
+        "Unique experience"
+      ],
+      "shortDescription": "East Nashville concert and event venue set inside a restored former church. An intimate space for live shows, special events, and performances with a more polished neighborhood feel.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 58,
+      "name": "Music City Bar & Grill",
+      "slug": "music-city-bar-and-grill",
+      "neighborhood": "Music Valley",
+      "venueTypeTags": [
+        "Honky Tonk",
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Country music",
+        "Late night",
+        "Near the Opry"
+      ],
+      "shortDescription": "Music Valley country bar known for live music, late nights, and a mix of locals and visitors near Opryland. A casual spot for real country music without the Broadway crowds.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 59,
+      "name": "Ray Stevens CabaRay Showroom",
+      "slug": "ray-stevens-cabaray-showroom",
+      "neighborhood": "West Nashville",
+      "venueTypeTags": [
+        "Concert Venue",
+        "Restaurant w/ Live Music"
+      ],
+      "genreTags": [
+        "Country"
+      ],
+      "bestForTags": [
+        "Dinner and a show",
+        "Country music",
+        "Comedy"
+      ],
+      "shortDescription": "West Nashville dinner theatre known for live music, comedy, and a classic showroom experience. Built around country entertainment, dinner, and old-school Nashville charm.",
+      "officialWebsite": null,
+      "status": "active"
+    },
+    {
+      "id": 60,
+      "name": "Night We Met",
+      "slug": "night-we-met",
+      "neighborhood": "The Gulch",
+      "venueTypeTags": [
+        "Live Music Venue",
+        "Dance Hall"
+      ],
+      "genreTags": [
+        "Electronic / DJ"
+      ],
+      "bestForTags": [
+        "Dancing",
+        "DJs",
+        "Cocktails",
+        "Late night"
+      ],
+      "shortDescription": "Gulch nightclub and cocktail lounge centered around dance music, DJs, and late-night energy. A more elevated spot for electronic music and a different kind of Nashville nightlife.",
+      "officialWebsite": null,
+      "status": "active"
+    }
+  ]
+}

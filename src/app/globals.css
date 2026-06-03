@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --cream: #FAF8F4;
+  --ink: #1A1612;
+  --muted: #6B6560;
+  --border: #E8E4DE;
+  --accent: #C8521A;
+  --accent-light: #F5EDE6;
+}
+
+html {
+  background-color: var(--cream);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--cream);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+@layer components {
+  .tag-pill {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-stone-100 text-stone-600 border border-stone-200;
+  }
+
+  .tag-pill-accent {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-50 text-accent border border-orange-200;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center px-4 py-2 bg-accent text-white text-sm font-medium rounded hover:bg-orange-700 transition-colors;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center px-4 py-2 border border-border text-ink text-sm font-medium rounded hover:bg-stone-50 transition-colors;
+  }
+
+  .venue-card {
+    @apply bg-white border border-border rounded-lg p-5 hover:shadow-md transition-shadow;
+  }
+
+  .section-label {
+    @apply text-xs font-medium tracking-widest uppercase text-muted;
+  }
+}
