@@ -29,7 +29,7 @@ export function getVenuesByBestFor(tag: string): Venue[] {
 
 export function getAllNeighborhoods(): string[] {
   const all = getAllVenues().map(v => v.neighborhood)
-  return [...new Set(all)].sort()
+  return Array.from(new Set(all)).sort()
 }
 
 export function getAllVenueTypes(): string[] {
