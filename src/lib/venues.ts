@@ -34,17 +34,17 @@ export function getAllNeighborhoods(): string[] {
 
 export function getAllVenueTypes(): string[] {
   const all = getAllVenues().flatMap(v => v.venueTypeTags)
-  return [...new Set(all)].sort()
+  return Array.from(new Set(all)).sort()
 }
 
 export function getAllGenres(): string[] {
   const all = getAllVenues().flatMap(v => v.genreTags)
-  return [...new Set(all)].sort()
+  return Array.from(new Set(all)).sort()
 }
 
 export function getAllBestForTags(): string[] {
   const all = getAllVenues().flatMap(v => v.bestForTags)
-  return [...new Set(all)].sort()
+  return Array.from(new Set(all)).sort()
 }
 
 export function getSimilarVenues(venue: Venue, limit = 3): Venue[] {
