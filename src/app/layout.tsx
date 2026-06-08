@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     url: 'https://offbroadwaynashville.co',
     siteName: 'Off Broadway Nashville',
     title: 'Off Broadway Nashville | Find Live Music Beyond Broadway',
-    description: 'Discover the best live music venues in Nashville beyond Broadway.',
+    description: 'Find live music in Nashville beyond Broadway. Listening rooms, honky tonks, songwriter rounds, and more.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Off Broadway Nashville | Find Live Music Beyond Broadway',
-    description: 'Discover the best live music venues in Nashville beyond Broadway.',
+    description: 'Find live music in Nashville beyond Broadway. Listening rooms, honky tonks, songwriter rounds, and more.',
   },
   robots: {
     index: true,

@@ -53,7 +53,6 @@ export default async function CategoryPage({ params }: Props) {
 
       <div className="bg-white border-b border-border py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-3xl mb-3">{category.emoji}</div>
           <h1 className="font-display text-4xl font-bold text-ink mb-4">{category.title}</h1>
           <p className="text-muted max-w-2xl leading-relaxed mb-3">{category.description}</p>
           <div className="text-sm text-muted">{venues.length} venues</div>
@@ -80,7 +79,6 @@ export default async function CategoryPage({ params }: Props) {
                 href={`/categories/${cat.slug}`}
                 className="bg-white border border-border rounded-lg p-4 hover:border-accent transition-all group text-center"
               >
-                <div className="text-2xl mb-1">{cat.emoji}</div>
                 <div className="text-xs font-medium text-ink group-hover:text-accent transition-colors">
                   {cat.shortTitle}
                 </div>

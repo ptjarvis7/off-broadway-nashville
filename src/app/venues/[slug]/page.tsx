@@ -74,7 +74,7 @@ export default async function VenuePage({ params }: Props) {
                 {venue.whatToExpect ? (
                   <p className="text-muted leading-relaxed">{venue.whatToExpect}</p>
                 ) : (
-                  <p className="text-stone-400 text-sm italic">Deeper venue notes coming soon. For now, the description above gives you a solid read on what this place is about.</p>
+                  <p className="text-stone-400 text-sm italic">More details on this venue coming soon.</p>
                 )}
               </div>
               <div className="mb-8">

@@ -25,7 +25,7 @@ export default function Footer() {
               <div className="text-[10px] tracking-[0.2em] uppercase text-stone-400 mt-0.5">Nashville</div>
             </div>
             <p className="text-stone-400 text-sm leading-relaxed">
-              Nashville live music beyond the Broadway strip. Real venues, real music, real Nashville.
+              Nashville live music beyond the Broadway strip. A local's take on the venues worth exploring.
             </p>
           </div>
           <div>
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-stone-800 pt-6 text-stone-600 text-xs">
-          © {new Date().getFullYear()} Off Broadway Nashville. Built for music lovers.
+          © {new Date().getFullYear()} Off Broadway Nashville. Built for live music lovers.
         </div>
       </div>
     </footer>
