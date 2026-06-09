@@ -20,14 +20,102 @@ const featuredNeighborhoods = [
 ]
 
 const experiences = [
-  { label: 'Songwriter Rounds', href: '/categories/songwriter-rounds' },
-  { label: 'Listening Rooms', href: '/categories/listening-rooms' },
-  { label: 'Honky Tonks', href: '/categories/honky-tonks' },
-  { label: 'Jazz Clubs', href: '/categories/jazz-clubs' },
-  { label: 'Karaoke Bars', href: '/categories/karaoke-bars' },
-  { label: 'Concert Venues', href: '/categories/concert-venues' },
-  { label: 'Dinner & a Show', href: '/categories/dinner-and-a-show' },
-  { label: 'Bluegrass', href: '/categories/bluegrass' },
+  {
+    label: 'Songwriter Rounds',
+    href: '/categories/songwriter-rounds',
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <ellipse cx="12" cy="17.5" rx="4.5" ry="3.5"/>
+        <circle cx="12" cy="17.5" r="1.3"/>
+        <line x1="12" y1="14" x2="12" y2="6"/>
+        <line x1="10" y1="5.5" x2="14" y2="5.5"/>
+        <line x1="10.5" y1="7.5" x2="13.5" y2="7.5"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Listening Rooms',
+    href: '/categories/listening-rooms',
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 14a9 9 0 0 1 18 0"/>
+        <path d="M3 14v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1z"/>
+        <path d="M21 14v4a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1z"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Honky Tonks',
+    href: '/categories/honky-tonks',
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M8 13Q9 8.5 12 8.5Q15 8.5 16 13"/>
+        <path d="M4 15.5Q4 17.5 7 17.5h10Q20 17.5 20 15.5"/>
+        <line x1="5.5" y1="13" x2="18.5" y2="13"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Jazz Clubs',
+    href: '/categories/jazz-clubs',
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="6" cy="18" r="2"/>
+        <circle cx="15" cy="16" r="2"/>
+        <line x1="8" y1="18" x2="8" y2="8"/>
+        <line x1="17" y1="16" x2="17" y2="6"/>
+        <line x1="8" y1="8" x2="17" y2="6"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Karaoke Bars',
+    href: '/categories/karaoke-bars',
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="9" y="2" width="6" height="11" rx="3"/>
+        <path d="M5 11a7 7 0 0 0 14 0"/>
+        <line x1="12" y1="18" x2="12" y2="21"/>
+        <line x1="9" y1="21" x2="15" y2="21"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Concert Venues',
+    href: '/categories/concert-venues',
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="6" width="20" height="12" rx="1"/>
+        <line x1="15" y1="6" x2="15" y2="18"/>
+        <path d="M2 10.5a2 2 0 0 0 0 3"/>
+        <path d="M22 10.5a2 2 0 0 1 0 3"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Dinner & A Show',
+    href: '/categories/dinner-and-a-show',
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 2v6a3 3 0 0 0 3 3v11"/>
+        <path d="M5 2v5M7 2v5"/>
+        <line x1="17" y1="2" x2="17" y2="22"/>
+        <path d="M14 2v7a2 2 0 0 0 2 2h2"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Bluegrass',
+    href: '/categories/bluegrass',
+    icon: (
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="10" cy="15" r="5.5"/>
+        <circle cx="10" cy="15" r="2"/>
+        <path d="M14.5 10.5L19.5 5"/>
+        <line x1="18" y1="3.5" x2="21" y2="6.5"/>
+      </svg>
+    ),
+  },
 ]
 
 export default function HomePage() {
@@ -74,6 +162,9 @@ export default function HomePage() {
                 href={exp.href}
                 className="bg-white border border-border rounded-lg p-4 hover:border-accent hover:shadow-sm transition-all group"
               >
+                <div className="mb-2.5 text-muted group-hover:text-accent transition-colors">
+                  {exp.icon}
+                </div>
                 <div className="text-sm font-medium text-ink group-hover:text-accent transition-colors">
                   {exp.label}
                 </div>
