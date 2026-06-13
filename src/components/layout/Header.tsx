@@ -9,9 +9,6 @@ export default function Header() {
           <span className="text-[10px] tracking-[0.2em] uppercase text-muted font-body">Nashville</span>
         </Link>
         <nav className="flex items-center gap-5">
-          <Link href="/venues" className="text-sm text-muted hover:text-ink transition-colors font-body">
-            All Venues
-          </Link>
           <Link href="/neighborhoods" className="text-sm text-muted hover:text-ink transition-colors font-body hidden sm:block">
             Neighborhoods
           </Link>
