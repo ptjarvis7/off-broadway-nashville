@@ -47,10 +47,9 @@ const experiences = [
     href: '/categories/honky-tonks',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M5 9h11a3 3 0 0 1 0 6h-1"/>
-        <path d="M5 9v9a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9"/>
-        <line x1="4" y1="9" x2="17" y2="9"/>
-        <path d="M8 5.5c0-1 1-2 2-1.5s1 2 2 1.5"/>
+        <path d="M9 2h6v3l1.5 2v13a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1V7L9 5V2Z"/>
+        <line x1="9" y1="2" x2="15" y2="2"/>
+        <line x1="8" y1="13" x2="16" y2="13"/>
       </svg>
     ),
   },
@@ -84,10 +83,8 @@ const experiences = [
     href: '/categories/concert-venues',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2L4 9h16L12 2Z"/>
-        <path d="M4 9l4 13"/>
-        <path d="M20 9l-4 13"/>
-        <path d="M9 22h6"/>
+        <path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4V8Z"/>
+        <line x1="12" y1="6" x2="12" y2="18" strokeDasharray="2 2"/>
       </svg>
     ),
   },
@@ -108,10 +105,11 @@ const experiences = [
     href: '/categories/bluegrass',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M9 13a4 4 0 1 0 5 3.8"/>
-        <path d="M14 16.8L19 6"/>
-        <path d="M18 4.5l2.5 2"/>
-        <line x1="9" y1="9" x2="11" y2="13"/>
+        <circle cx="8" cy="16" r="5"/>
+        <line x1="8" y1="11" x2="8" y2="3"/>
+        <line x1="6.5" y1="4" x2="9.5" y2="4"/>
+        <line x1="5" y1="14" x2="11" y2="18"/>
+        <line x1="5" y1="18" x2="11" y2="14"/>
       </svg>
     ),
   },
