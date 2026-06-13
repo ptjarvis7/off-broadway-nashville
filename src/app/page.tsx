@@ -47,8 +47,8 @@ const experiences = [
     href: '/categories/honky-tonks',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M9 2h6v3l1.5 2v13a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1V7L9 5V2Z"/>
-        <line x1="9" y1="2" x2="15" y2="2"/>
+        <path d="M10.5 1.5h3v5l2.5 2.5v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-11l2.5-2.5v-5Z"/>
+        <line x1="10.5" y1="3" x2="13.5" y2="3"/>
         <line x1="8" y1="13" x2="16" y2="13"/>
       </svg>
     ),
@@ -105,11 +105,12 @@ const experiences = [
     href: '/categories/bluegrass',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="8" cy="16" r="5"/>
-        <line x1="8" y1="11" x2="8" y2="3"/>
-        <line x1="6.5" y1="4" x2="9.5" y2="4"/>
-        <line x1="5" y1="14" x2="11" y2="18"/>
-        <line x1="5" y1="18" x2="11" y2="14"/>
+        <circle cx="11" cy="15" r="5.5"/>
+        <line x1="11" y1="9.5" x2="11" y2="2"/>
+        <rect x="9.5" y="1.5" width="3" height="2" rx="0.5"/>
+        <line x1="8" y1="12" x2="14" y2="18"/>
+        <line x1="8" y1="18" x2="14" y2="12"/>
+        <line x1="11" y1="9.5" x2="11" y2="20.5"/>
       </svg>
     ),
   },
