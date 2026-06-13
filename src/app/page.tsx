@@ -24,12 +24,10 @@ const experiences = [
     label: 'Songwriter Rounds',
     href: '/categories/songwriter-rounds',
     icon: (
-      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <ellipse cx="12" cy="17.5" rx="4.5" ry="3.5"/>
-        <circle cx="12" cy="17.5" r="1.3"/>
-        <line x1="12" y1="14" x2="12" y2="6"/>
-        <line x1="10" y1="5.5" x2="14" y2="5.5"/>
-        <line x1="10.5" y1="7.5" x2="13.5" y2="7.5"/>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <circle cx="7" cy="18" r="3"/>
+        <rect x="9" y="3" width="1.8" height="15"/>
+        <path d="M10.8 3L18 5.5V8L10.8 6.5V3Z"/>
       </svg>
     ),
   },
@@ -49,9 +47,10 @@ const experiences = [
     href: '/categories/honky-tonks',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M8 13Q9 8.5 12 8.5Q15 8.5 16 13"/>
-        <path d="M4 15.5Q4 17.5 7 17.5h10Q20 17.5 20 15.5"/>
-        <line x1="5.5" y1="13" x2="18.5" y2="13"/>
+        <path d="M5 9h11a3 3 0 0 1 0 6h-1"/>
+        <path d="M5 9v9a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9"/>
+        <line x1="4" y1="9" x2="17" y2="9"/>
+        <path d="M8 5.5c0-1 1-2 2-1.5s1 2 2 1.5"/>
       </svg>
     ),
   },
@@ -85,10 +84,10 @@ const experiences = [
     href: '/categories/concert-venues',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="6" width="20" height="12" rx="1"/>
-        <line x1="15" y1="6" x2="15" y2="18"/>
-        <path d="M2 10.5a2 2 0 0 0 0 3"/>
-        <path d="M22 10.5a2 2 0 0 1 0 3"/>
+        <path d="M12 2L4 9h16L12 2Z"/>
+        <path d="M4 9l4 13"/>
+        <path d="M20 9l-4 13"/>
+        <path d="M9 22h6"/>
       </svg>
     ),
   },
@@ -109,10 +108,10 @@ const experiences = [
     href: '/categories/bluegrass',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="10" cy="15" r="5.5"/>
-        <circle cx="10" cy="15" r="2"/>
-        <path d="M14.5 10.5L19.5 5"/>
-        <line x1="18" y1="3.5" x2="21" y2="6.5"/>
+        <path d="M9 13a4 4 0 1 0 5 3.8"/>
+        <path d="M14 16.8L19 6"/>
+        <path d="M18 4.5l2.5 2"/>
+        <line x1="9" y1="9" x2="11" y2="13"/>
       </svg>
     ),
   },
@@ -162,7 +161,7 @@ export default function HomePage() {
                 href={exp.href}
                 className="bg-white border border-border rounded-lg p-4 hover:border-accent hover:shadow-sm transition-all group"
               >
-                <div className="mb-2.5 text-muted group-hover:text-accent transition-colors">
+                <div className="mb-2.5 w-10 h-10 rounded-full bg-accent-light flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
                   {exp.icon}
                 </div>
                 <div className="text-sm font-medium text-ink group-hover:text-accent transition-colors">
