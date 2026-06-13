@@ -17,7 +17,7 @@ const categories = [
 export default function Footer() {
   return (
     <footer className="bg-ink text-white mt-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-10">
           <div>
             <div className="mb-4">
