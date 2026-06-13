@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const neighborhoodDescriptions: Record<string, string> = {
   'East Nashville': 'The indie heart of the city. Local bands, divey rooms, and a scene that feels like Nashville before the boom.',
-  'The Gulch': 'Bluegrass legends, jazz clubs, and record store venues. More depth than the neighborhood gets credit for.',
+  'The Gulch': 'Bluegrass legends, jazz clubs, and one of the city\'s best independent venue complexes. More depth than the neighborhood gets credit for.',
   'Midtown': 'Music Row is right here. Songwriter bars, honky tonks, and spots where industry people actually drink.',
   'SoBro': 'Downtown-adjacent without being Broadway. Listening rooms, outdoor stages, and river views.',
   'Music Valley': 'Near the Opry. Classic country, line dancing, and venues that feel like Nashville used to.',
