@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const neighborhoodDescriptions: Record<string, string> = {
   'East Nashville': 'The indie heart of the city. Local bands, divey rooms, and a scene that feels like Nashville before the boom.',
   'The Gulch': 'Bluegrass legends, jazz clubs, and one of the city\'s best independent venue complexes. More depth than the neighborhood gets credit for.',
-  'Midtown': 'Music Row is right here. Songwriter bars, honky tonks, and spots where industry people actually drink.',
+  'Midtown': 'Music Row is right here. Songwriter bars, honky tonks, and spots where industry people drink.',
   'SoBro': 'Downtown-adjacent without being Broadway. Listening rooms, outdoor stages, and river views.',
   'Music Valley': 'Near the Opry. Classic country, line dancing, and venues that feel like Nashville used to.',
   "Printer's Alley": 'The old late-night strip. Blues, jazz, karaoke, and a few spots that have been here for decades.',
@@ -38,7 +38,7 @@ export default function NeighborhoodsPage() {
           <div className="section-label mb-2">Explore the city</div>
           <h1 className="font-display text-4xl font-bold text-ink mb-3">Nashville by Neighborhood</h1>
           <p className="text-muted max-w-xl">
-            Nashville's live music scene spreads across the city. Each neighborhood has its own character — here's where to start.
+            Nashville's live music scene spreads across the city. Each neighborhood has its own character. Here's where to start.
           </p>
         </div>
       </div>

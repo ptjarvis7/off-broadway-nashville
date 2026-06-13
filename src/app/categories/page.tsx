@@ -27,7 +27,7 @@ export const categories = [
     slug: 'honky-tonks',
     shortTitle: 'Honky Tonks',
     title: 'Best Honky Tonks in Nashville Not on Broadway',
-    description: 'Classic country bars with live bands, cold beer, and a crowd that actually lives here. Beyond the Broadway tourist strip.',
+    description: 'Classic country bars with live bands, cold beer, and a crowd that lives here. Beyond the Broadway tourist strip.',
     filterType: 'venueType',
     filterValue: 'Honky Tonk',
   },
@@ -35,7 +35,7 @@ export const categories = [
     slug: 'concert-venues',
     shortTitle: 'Concert Venues',
     title: 'Best Nashville Concert Venues Beyond Broadway',
-    description: 'From intimate clubs to mid-size rooms to historic halls. Where the touring artists actually play.',
+    description: 'From intimate clubs to mid-size rooms to historic halls. This is where touring artists play when they\'re not at the arena downtown.',
     filterType: 'venueType',
     filterValue: 'Concert Venue',
   },
@@ -75,7 +75,7 @@ export const categories = [
     slug: 'country-music',
     shortTitle: 'Country Music Bars',
     title: 'Best Nashville Bars with Live Country Music Off Broadway',
-    description: 'Real country music in real Nashville bars. Not cover bands for bachelorette parties — the actual thing.',
+    description: 'Not cover bands for bachelor parties. Bars where country music is the real draw.',
     filterType: 'genre',
     filterValue: 'Country',
   },
@@ -113,7 +113,7 @@ export default function CategoriesPage() {
           <div className="section-label mb-2">Browse by experience</div>
           <h1 className="font-display text-4xl font-bold text-ink mb-3">Nashville Live Music Categories</h1>
           <p className="text-muted max-w-xl">
-            Find exactly what you're looking for — whether that's a songwriter round, a jazz club, a honky tonk, or a late-night karaoke bar.
+            Find exactly what you're looking for, whether that's a songwriter round, a jazz club, a honky tonk, or a late-night karaoke bar.
           </p>
         </div>
       </div>

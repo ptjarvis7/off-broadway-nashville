@@ -5,7 +5,7 @@ import VenueCard from '@/components/venue/VenueCard'
 
 export const metadata: Metadata = {
   title: 'Off Broadway Nashville | Find Live Music Beyond Broadway',
-  description: 'Find the best live music in Nashville beyond Broadway. Listening rooms, honky tonks, songwriter rounds, jazz clubs, and more — neighborhood by neighborhood.',
+  description: 'Find live music in Nashville beyond Broadway. Listening rooms, honky tonks, songwriter rounds, jazz clubs, and more, organized by neighborhood.',
 }
 
 const featuredNeighborhoods = [
@@ -136,7 +136,7 @@ export default function HomePage() {
             <span className="text-accent">Beyond Broadway</span>
           </h1>
           <p className="text-stone-400 text-lg max-w-xl leading-relaxed mb-8">
-            Nashville's music scene goes way beyond the honky-tonk strip. This is your guide to the listening rooms, songwriter rounds, jazz clubs, and neighborhood venues that locals actually go to.
+            Nashville's music scene goes way beyond the honky-tonk strip. This is your guide to the listening rooms, songwriter rounds, jazz clubs, and neighborhood venues locals go to regularly.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/venues" className="btn-primary px-6 py-3 text-base">

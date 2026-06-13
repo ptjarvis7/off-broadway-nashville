@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: 'Off Broadway Nashville | Find Live Music Beyond Broadway',
     template: '%s | Off Broadway Nashville',
   },
-  description: 'Discover the best live music venues in Nashville beyond Broadway. Listening rooms, honky tonks, jazz clubs, songwriter rounds, and more — neighborhood by neighborhood.',
+  description: 'Find live music in Nashville beyond Broadway. Listening rooms, honky tonks, jazz clubs, songwriter rounds, and more.',
   keywords: ['Nashville live music', 'Nashville venues', 'beyond Broadway Nashville', 'Nashville listening rooms', 'Nashville honky tonks'],
   openGraph: {
     type: 'website',
