@@ -128,8 +128,54 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-ink text-white py-20 px-4">
-        <div className="max-w-6xl mx-auto">
+      <section className="bg-ink text-white py-20 px-4 relative overflow-hidden">
+        <svg className="absolute bottom-0 left-0 w-full pointer-events-none" viewBox="0 0 680 200" preserveAspectRatio="xMidYMax slice" style={{ height: '140px' }} aria-hidden="true">
+          <polygon points="0,185 70,185 62,40 0,40" fill="#3A2F23"/>
+          <rect x="70" y="110" width="38" height="75" fill="#33291F"/>
+          <rect x="108" y="85" width="44" height="100" fill="#33291F"/>
+          <rect x="152" y="120" width="48" height="65" fill="#2C2419"/>
+          <rect x="200" y="95" width="42" height="90" fill="#33291F"/>
+          <rect x="242" y="130" width="36" height="55" fill="#2C2419"/>
+          <rect x="281" y="20" width="66" height="165" fill="#3A2F23"/>
+          <rect x="291" y="2" width="6" height="18" fill="#3A2F23"/>
+          <rect x="336" y="2" width="6" height="18" fill="#3A2F23"/>
+          <rect x="350" y="58" width="52" height="127" fill="#3A2F23"/>
+          <rect x="394" y="22" width="4" height="36" fill="#3A2F23"/>
+          <rect x="405" y="72" width="48" height="113" fill="#33291F"/>
+          <rect x="426" y="55" width="3" height="17" fill="#33291F"/>
+          <circle cx="427" cy="53" r="2.5" fill="#C8521A" opacity="0.6"/>
+          <rect x="453" y="100" width="42" height="85" fill="#2C2419"/>
+          <rect x="495" y="120" width="40" height="65" fill="#2C2419"/>
+          <rect x="535" y="135" width="46" height="50" fill="#2C2419"/>
+          <rect x="581" y="148" width="46" height="37" fill="#2C2419"/>
+          <rect x="627" y="158" width="53" height="27" fill="#2C2419"/>
+          <path d="M90,183 Q140,120 180,150 Q220,120 270,183" fill="none" stroke="#3A2F23" strokeWidth="3"/>
+          <rect x="176" y="148" width="8" height="37" fill="#3A2F23"/>
+          <line x1="120" y1="128" x2="120" y2="180" stroke="#3A2F23" strokeWidth="1.5"/>
+          <line x1="160" y1="118" x2="160" y2="180" stroke="#3A2F23" strokeWidth="1.5"/>
+          <line x1="200" y1="118" x2="200" y2="180" stroke="#3A2F23" strokeWidth="1.5"/>
+          <line x1="240" y1="128" x2="240" y2="180" stroke="#3A2F23" strokeWidth="1.5"/>
+          <rect x="0" y="185" width="680" height="15" fill="#15110D"/>
+          <line x1="0" y1="190" x2="680" y2="190" stroke="#33291F" strokeWidth="0.5" opacity="0.5"/>
+          <line x1="0" y1="195" x2="680" y2="195" stroke="#33291F" strokeWidth="0.5" opacity="0.3"/>
+          <rect x="15" y="70" width="3" height="4" fill="#C8521A" opacity="0.4"/>
+          <rect x="30" y="95" width="3" height="4" fill="#C8521A" opacity="0.45"/>
+          <rect x="50" y="60" width="3" height="4" fill="#C8521A" opacity="0.35"/>
+          <rect x="20" y="130" width="3" height="4" fill="#C8521A" opacity="0.3"/>
+          <rect x="85" y="140" width="3" height="4" fill="#C8521A" opacity="0.35"/>
+          <rect x="120" y="110" width="3" height="4" fill="#C8521A" opacity="0.4"/>
+          <rect x="165" y="150" width="3" height="4" fill="#C8521A" opacity="0.3"/>
+          <rect x="215" y="125" width="3" height="4" fill="#C8521A" opacity="0.35"/>
+          <rect x="295" y="50" width="3" height="4" fill="#C8521A" opacity="0.5"/>
+          <rect x="315" y="90" width="3" height="4" fill="#C8521A" opacity="0.45"/>
+          <rect x="330" y="140" width="3" height="4" fill="#C8521A" opacity="0.4"/>
+          <rect x="365" y="90" width="3" height="4" fill="#C8521A" opacity="0.4"/>
+          <rect x="385" y="130" width="3" height="4" fill="#C8521A" opacity="0.35"/>
+          <rect x="120" y="178" width="3" height="3" fill="#C8521A" opacity="0.5"/>
+          <rect x="195" y="178" width="3" height="3" fill="#C8521A" opacity="0.5"/>
+          <rect x="245" y="178" width="3" height="3" fill="#C8521A" opacity="0.5"/>
+        </svg>
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="section-label text-stone-500 mb-4">Nashville Live Music Guide</div>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-3xl">
             Find Live Music in Nashville{' '}
