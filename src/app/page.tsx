@@ -129,7 +129,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="bg-ink text-white py-20 px-4 relative overflow-hidden">
-        <svg className="absolute bottom-0 left-0 w-full pointer-events-none" viewBox="0 0 680 200" preserveAspectRatio="xMidYMax slice" style={{ height: '140px' }} aria-hidden="true">
+        <svg className="absolute bottom-0 left-0 w-full pointer-events-none" viewBox="0 0 680 200" preserveAspectRatio="none" style={{ height: '110px' }} aria-hidden="true">
           <polygon points="0,185 70,185 62,40 0,40" fill="#3A2F23"/>
           <rect x="70" y="110" width="38" height="75" fill="#33291F"/>
           <rect x="108" y="85" width="44" height="100" fill="#33291F"/>
