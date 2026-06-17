@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.offbroadwaynashville.co'),
   title: {
     default: 'Off Broadway Nashville | Find Live Music Beyond Broadway',
     template: '%s | Off Broadway Nashville',
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://offbroadwaynashville.co',
+    url: 'https://www.offbroadwaynashville.co',
     siteName: 'Off Broadway Nashville',
     title: 'Off Broadway Nashville | Find Live Music Beyond Broadway',
     description: 'Find live music in Nashville beyond Broadway. Listening rooms, honky tonks, songwriter rounds, and more.',
