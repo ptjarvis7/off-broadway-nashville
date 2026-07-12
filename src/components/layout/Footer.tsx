@@ -56,8 +56,13 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-stone-800 pt-6 text-stone-600 text-xs">
-          © {new Date().getFullYear()} Off Broadway Nashville. Built for live music lovers.
+        <div className="border-t border-stone-800 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-stone-600 text-xs">
+          <span>© {new Date().getFullYear()} Off Broadway Nashville. Built for live music lovers.</span>
+          <div className="flex gap-4">
+            <Link href="/about" className="hover:text-stone-400 transition-colors">About</Link>
+            <Link href="/contact" className="hover:text-stone-400 transition-colors">Contact</Link>
+            <Link href="/privacy" className="hover:text-stone-400 transition-colors">Privacy</Link>
+          </div>
         </div>
       </div>
     </footer>
