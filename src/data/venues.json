@@ -25,7 +25,8 @@
       ],
       "shortDescription": "Neighborhood bar and restaurant known for showcasing some of Nashville's best local artists. With live music every night, it's a go-to spot for writer's rounds, artist showcases, and discovering new talent.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Dining tables wrap around a small center stage in a dimly lit room that feels more like a neighborhood restaurant than bar. It's a casual, no dress code, come as you are type of vibe. You can grab a beer on tap, can, or a stiffly poured mixed drink. The food is way better than any bar menu has a right to be. The wraps and club sandwich are solid, but make sure you grab the thick-cut fries. The stage is small but it stays busy, with live music running every night of the week. On any weeknight, a country star like Riley Green, Jamey Johnson, or Zac Brown might drop in for a few songs. When they're not on stage, you might just catch some local legends enjoying a beer and taking in the music themselves."
     },
     {
       "id": 2,
@@ -46,7 +47,8 @@
       ],
       "shortDescription": "Legendary listening room known for hosting some of the best bluegrass and roots music in the world. An intimate venue where you can experience Nashville's best showcase of bluegrass up close.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "If you blink, you might miss this legendary venue that's almost hidden between high-end dining options and boujee rooftop hotel bars. For roughly 50 years, The Station Inn has been keeping bluegrass, classic country, and roots music alive in Nashville. Walking through the front door feels like stepping back in time as you'll be greeted at the door by a sweet southern staff collecting the cash-only cover. From there, you'll grab your seat on a first come first serve basis at a chair, table, or a salvaged seat from a tour bus along the back wall. You can grab a beer or soft drink from the bar and order some ballpark style food like pizza, nachos, or popcorn. This single story room puts you nearly eye-level with the stage with no bad angles in sight. You'll feel like you're part of the performance in this intimate honky-tonk dive. Country and bluegrass icons like Bill Monroe, John Prine, Ricky Skaggs, Dolly Parton, Vince Gill, and rising stars alike have taken the stage or watched from the crowd."
     },
     {
       "id": 3,
@@ -89,7 +91,8 @@
       ],
       "shortDescription": "A premier listening room known for hosting songwriter rounds with some of Nashville's top writers. A seated, intimate setting focused on storytelling and acoustic performances.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "The Listening Room operates out of a historic International Harvester building on 4th Ave South, where Johnny Cash once built his infamous tractor. The main room holds 255 seated guests and runs two shows every night, built around songwriter rounds where artists perform their own original material and share the stories behind the songs. The writers behind some of the biggest names in modern country music play this stage regularly, with Morgan Wallen, Luke Combs, and Lainey Wilson all represented. Chris Stapleton, Carly Pearce, and HARDY have all made appearances of their own. The food leans Southern bar with a few standouts worth ordering: the smoked wings are finished with a flash fry and come in a healthy range of sauces, and the Yazoo Taco Chili is made with locally brewed Yazoo beer. Craft cocktails, beer, and wine round out the bar. Most shows carry a cover charge between $5 and $15, plus a $15 per person food and drink minimum at a main room table. The venue claims the best sound system in Nashville and the layout gives every seat a clear view of the stage. If you're not ready to commit to a full show, the front bar runs free live music daily during happy hour from 4 to 5:30pm. Valet parking is $15, paid nightly."
     },
     {
       "id": 5,
@@ -112,7 +115,8 @@
       ],
       "shortDescription": "World-famous Nashville listening room known for its intimate songwriter rounds featuring some of the industry's top writers. A bucket-list experience where the focus stays on the music and the stories behind it.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "The Bluebird Cafe sits in a small Green Hills strip mall about 20 minutes from downtown, with almost no signage from the street. The room holds around 90 people at small candlelit tables. It doesn't look like much from the outside, and that's part of what makes it one of the most storied rooms in country music. The signature format is \"in the round,\" four songwriters seated in the center of the room, taking turns playing their own songs and telling the stories behind them. You might not recognize the names on any given night, but the writers in that room are behind some of the biggest songs in country music. Garth Brooks played an open mic here in 1987 and walked out with a Capitol Records deal. Scott Borchetta saw a 15-year-old Taylor Swift perform here in 2004 and signed her to what became Big Machine. The quiet policy is real; conversation during performances is discouraged and the crowd self-polices. Tickets go on sale Monday mornings and sell out in minutes, sometimes seconds, so have the website open before they drop. There's a $15 food and drink minimum per person at most shows. Parking is limited: the small lot out front fills fast, and parking in the wrong strip mall spot will get you towed. The gravel lot behind the building, accessed via the alley on Hillsboro Pike, is the better option."
     },
     {
       "id": 6,
@@ -134,7 +138,8 @@
       ],
       "shortDescription": "Lively Printer's Alley venue known for live blues and jazz music in a classic New Orleans-style setting. A go-to spot for late-night live bands, dancing, and a Mardi Gras-style atmosphere.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "You'll hear it before you see it. The Bourbon Street Blues and Boogie Bar announces itself with a low growl of brass and guitar echoing down Printer's Alley. Once inside, the low ceilings keep the sound thick and close, you feel the music more than at most venues. The room is tight, but there's a second level with balcony seating and better sightlines. Reservations are worth making, especially on weekends, since the place fills fast. On the food and drink side, the Cajun menu is genuine: gumbo, voodoo wings, alligator bites, and the Big Easy Hurricane are the way to go. Rooted in Printer's Alley for over 25 years, thousands of musicians have played this stage, including legends like James Brown and B.B. King. In a city built on country music, there's no other room in Nashville that sounds like this."
     },
     {
       "id": 7,
@@ -157,7 +162,8 @@
       ],
       "shortDescription": "Classic country honky tonk near the Grand Ole Opry featuring live bands and a traditional Nashville music atmosphere. Known for line dancing, local performers, and an authentic country music vibe.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Nashville Palace opened in 1977 as a place for Opry performers to unwind after their sets, and that DNA still shapes what the room feels like today. It's unpretentious in every way: walls lined with memorabilia, four bars spread throughout, two rooms: one holding the ballroom with the main wooden dance floor, and the other with the live music stage that stays busy with traditional country music. Line dancing is as much a part of the experience as the music, with free lessons Tuesday through Sunday nights starting around 7pm. After you've worked up an appetite dancing, grab some Southern comfort food like the artist favorite Smoked Bologna Sandwich, a BBQ plate, or the fried catfish sandwich along with another round. Parking is free and easy, which is rare for a Nashville music venue. Randy Travis was discovered here while working as a cook and dishwasher. George Jones was a regular. The Palace sits directly across from the Grand Ole Opry, so pairing the two makes for the perfect night out."
     },
     {
       "id": 8,
@@ -198,7 +204,8 @@
       ],
       "shortDescription": "Popular East Nashville concert venue known for hosting touring indie and rock acts. A go-to spot for catching live music outside the Broadway scene.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "The Basement East, locally known as The Beast, is a dark, warehouse-style room with a raised stage and mostly standing room up front. Limited tables and chairs are available but go fast on a first-come-first-served basis, so arriving early is the move. There's a small mezzanine above the main floor for better sightlines if you want to hang back, and a spacious outdoor deck where you can step out between sets for a view of downtown Nashville across the river. Parking is easy: Fireman's Credit Union directly across the street opens its lot to concertgoers from 6PM to 3AM. Opened in 2015, The Beast built its reputation fast by consistently booking touring acts you'd never expect in a room this size. Beck, Cage the Elephant, Brandi Carlile, Luke Combs, and John Prine have all played here. The venue rebuilt after a tornado tore through East Nashville in 2020 and hasn't slowed down since."
     },
     {
       "id": 10,
@@ -220,7 +227,8 @@
       ],
       "shortDescription": "Outdoor beer garden and distillery featuring live music, food, and a high-energy atmosphere in the heart of downtown. A go-to spot for live country music, drinks, and a little bit of everything Nashville has to offer.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Moonshine distillery meets outdoor beer garden meets sports bar with live music. Ole Smoky Moonshine & Whiskey tastings run daily with no need for reservations. YeeHaw Brewing offers flights as well as a palate cleanser of your choosing between moonshine samples. You can catch live music and weekly writers rounds both outside and in. If you need a bite to eat, grab some tacos or a Daddy's Dog, a late-night staple locals have been grabbing on the way home from Broadway for years. Come football season, this is the place to be especially if you're a Vols fan. Locals will be cheering on Rocky Top on the big screen."
     },
     {
       "id": 11,
@@ -241,7 +249,8 @@
       ],
       "shortDescription": "Historic Nashville concert venue known for hosting touring rock and indie acts. A staple of the local music scene with a long legacy of artists passing through its stage.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Exit/In has been at the same address on Elliston Place since 1971, which puts it among the oldest continuously operating rock clubs in the country. The room is mostly standing, dark, and intimate at around 500 capacity, with a small first-come-first-served mezzanine upstairs for better sightlines. The Wall of Fame above the bar is worth the read: over 250 hand-painted name plates of artists who've sold out the room, from The Ramones and The Police to Johnny Cash and Muddy Waters. Jimmy Buffett played his first Nashville show here. Steve Martin once took the entire audience out for burgers mid-show. The venue appeared in Robert Altman's 1975 film Nashville. Exit/In is now an official Nashville Historical Landmark, and the booking still reflects it. The venue is card-only, no cash. Parking on Elliston Place is tight; the pay lot on Louise Avenue behind the venue is the most reliable option."
     },
     {
       "id": 12,
@@ -345,7 +354,8 @@
       ],
       "shortDescription": "Christmas-themed double-wide dive bar known for some of the rowdiest karaoke in Nashville. A cash-only local favorite where you can sing your heart out and experience a piece of old Nashville.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Picture a Christmas-themed double-wide trailer where rowdy karaoke makes locals and tourists alike the stars of the show; that's Santa's Pub. This legendary, cash-only dive bar is the ultimate Off Broadway spot to grab the mic while enjoying cheap, cold beer or seltzers (no liquor in sight). A night out at Santa's is like experiencing a slice of old Nashville before the artist-backed honky-tonks drew all the tourist attention. The late owner Edwin Denzel \"Santa\" Irwin established an \"all are welcome,\" family-like atmosphere that continues to live on today. And yes, he looked exactly like Santa Claus. The environment he created has brought music superstars from Ed Sheeran to Kelsea Ballerini to Kid Rock through the door to sing a late-night set with locals. You never know when one might show up next."
     },
     {
       "id": 17,
@@ -367,7 +377,8 @@
       ],
       "shortDescription": "Divey Midtown honky tonk known for live country music and a mix of locals, industry regulars, and late-night crowds. A go-to spot for drinks, live bands, and never quite knowing who you'll run into.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Losers opened in 2005 as a hangout for Nashville's music industry crowd, a place for songwriters and industry folks to talk shop and hear live music off Broadway. The vibe is dive bar all the way: neon signs, two stages (one inside and a small one on the enclosed first-floor deck with garage doors), respectably priced drinks and bar food, and a crowd that mixes industry regulars, locals, and tourists. Head upstairs to an open-air rooftop deck with big screens and a full view of the Midtown skyline. Live music runs seven nights a week, with Losers Live full band showcase running Monday nights at 8pm, featuring live original music. During the summer, Losers Live takes it outdoors for their parking lot concert series. It's basically a free first-come, first-served block party with a multi-artist showcase of rising songwriters and major hitmakers. Recent outdoor acts include Jon Pardi, Chase Rice, and Riley Green with past acts as big as Morgan Wallen. The venue connects directly to Riley Green's Duck Blind next door, so you can check it out without ever actually leaving. Some free parking is available in the area, which is rare for Midtown Nashville. Celebrity bartender nights bring country artists behind the bar a few times a year. On any given night, the person next to you at the bar might be someone you've heard on the radio."
     },
     {
       "id": 18,
@@ -388,7 +399,8 @@
       ],
       "shortDescription": "Casual Midtown bar known for live country music and plenty of TVs. A go-to spot for catching the game, live bands, and the occasional country artist drop-in.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Duck Blind took over the old Winners Bar and Grill spot on Division Street, and Riley Green's connection to the place goes back long before his name was on the sign. He played some of his earliest Nashville shows here, made key industry connections within its walls, and when the space became available, he jumped at it. They kept the original stage and preserved the bar top that still reads \"WINNERS\" underneath the new branding. TVs are everywhere and easy to see from most seats, making it a natural game day spot. The drink list runs bottles and cans with a full bar, no draft beer. The menu has a few Riley's Choice items worth ordering: the Duck Fries and BBQ Chicken Wrap are the go-tos. Wednesday nights are for the Cold Beer Country Showcase, a weekly live music event featuring rising and local artists performing original sets starting at 8:30PM. Show up on any given night and there's a real chance Riley Green walks in, jumps behind the bar to mix drinks, or ends up on stage with whoever's playing. Post Malone has been caught doing the same."
     },
     {
       "id": 19,
@@ -449,7 +461,8 @@
       ],
       "shortDescription": "Outdoor amphitheater located along the river, known for hosting touring artists and larger live shows. A go-to spot for concerts with city skyline views and a more open, scenic setting.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Ascend sits along the Cumberland River at the edge of downtown Nashville. The Broadway corridor and city skyline rise directly behind the stage, and on a clear evening with the sun going down, that backdrop is hard to find anywhere else in the city. Outside of the views, it's a solid outdoor amphitheater with reserved seating up front and a large sloped GA lawn behind it. A blanket or chair is an option for the lawn but not a requirement. Sound carries well across the entire space and the video screens keep you locked in no matter where you land. Rideshare is the move on show nights since downtown parking is expensive and unpredictable. Ascend has won Pollstar's outdoor venue award more than once since opening in 2015 and books big touring acts across a range of genres. Broadway is steps away when the show ends, SoBro venues are close, and East Nashville is a short rideshare if you want to keep the night going somewhere with a little more local feel."
     },
     {
       "id": 22,
@@ -533,7 +546,8 @@
       ],
       "shortDescription": "Multi-purpose venue known for hosting touring artists across a range of genres alongside bowling, food, and drinks. A go-to spot for live shows in a lively, all-in-one setting.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Brooklyn Bowl is built to be your entire night out. The space combines a full concert venue, 19 bowling lanes, a full-service restaurant, four bars, and a rooftop patio with views of the Nashville Sounds stadium, First Horizon Park. You never need to leave for food or drinks, and you never miss a second of the show. Bowl a frame, turn around, and the stage is right there. If bowling isn't your thing, the venue holds up to 1,200 across a standing room GA floor and a balcony above. The food comes from Blue Ribbon, their award-winning restaurant group out of New York. Skip the basics and go for the French bread pizzas or the Rock. And. Roll. Fries, which are essentially cajun poutine. The venue is cashless and most shows run 18+ or 21+, with all-ages nights listed on the calendar. There's no dedicated parking lot. A few free street spots in Germantown are worth hunting for, but paid lots within walking distance are the more reliable option. Brooklyn Bowl has won Billboard's top Central U.S. club or theater award and books across rock, indie, soul, and beyond."
     },
     {
       "id": 26,
@@ -574,7 +588,8 @@
       ],
       "shortDescription": "Dedicated jazz club known for hosting live performances from local and touring musicians. An intimate, seated setting focused on high-quality jazz in the Gulch.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Rudy's is down a side street in The Gulch at 809 Gleaves Street. Step inside and you'll see Persian rugs on the floor, armchairs and low tables, Moroccan lights overhead, photos of jazz greats on the walls, and a Steinway Model B grand piano up front. The 50-seat room was acoustically designed so there are no dead spots and no obstructed sightlines, meaning there's not a bad seat in the house. Multiple shows run on most nights: solo piano earlier in the evening, a full combo later. Cover charges typically run $12-$24 depending on the show. Every Thursday, the room shifts into Hot Club Gypsy Jazz, a weekly night dedicated to the swing style of Django Reinhardt and Stephane Grappelli. The menu is New Orleans-inspired: gumbo, crawfish grilled cheese, and beignets are the standouts. Cocktails lean toward prohibition era classics, with local brews rounding out the bar. Rudy's is named for Rudy Wooten of the legendary Wooten Brothers family, and the Wootens perform here regularly. Tuesday is the one night they're dark. The rest of the week, this is the most serious jazz room Nashville has. Downbeat Magazine agreed, naming it among the best in the country in 2020."
     },
     {
       "id": 28,
@@ -635,7 +650,8 @@
       ],
       "shortDescription": "Concert venue, restaurant, and winery known for intimate shows, comedy, food, and wine. A seated experience where live music feels more like dinner and a show than a typical night out.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "At City Winery, dinner and a show are one and the same. The main concert room holds around 300 people, all seated, with table service running through the performance. The wine program is central: they make wine on site, which makes City Winery Nashville's only downtown winery. The food is elevated enough to be the main event on its own, Southern-inspired with Mediterranean leanings, and the kitchen handles a sold-out show night without the quality slipping. The crowd leans toward the older and quieter side than most Nashville venues, attentive but not Bluebird-level silent. Shows start on time. The calendar runs a mix of singer-songwriter nights, comedy, and touring artists across a range of genres, so there's usually something worth checking regardless of when you're in town. An upstairs lounge with two patios has views of the downtown skyline and works well for drinks before the show. Valet parking runs $6, and there's a $5 self-park lot out front, which makes City Winery more accessible than most SoBro venues."
     },
     {
       "id": 31,
@@ -758,7 +774,8 @@
       ],
       "shortDescription": "World-famous country music venue near Opryland known for showcasing legends, rising artists, and weekly live performances. A bucket-list Nashville experience built around the history and future of country music.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "The Grand Ole Opry is the mecca of country music and home of the longest continuously running radio broadcast in U.S. history. A night at The Opry is a multi-artist show that features 6-8 performers ranging from legends of the genre to today's biggest stars and rising talent. Each artist plays a few songs and shares a story or two before rotating to the next performer. No two lineups are ever the same. Whether you're a diehard country music fan or just there to see what made the genre famous, the Opry has a way of winning everyone over. The Opry House is a welcoming and comfortable environment with food and drinks for purchase (yes they have booze too), cushioned pew-style seating with great views from every section, and a room that makes you feel like part of the show. There's a reason artists still consider an Opry induction one of the highest honors in country music. You'll feel it the second you walk in the room."
     },
     {
       "id": 37,
@@ -780,7 +797,8 @@
       ],
       "shortDescription": "Historic downtown concert hall known as the Mother Church of Country Music and the Grand Ole Opry's most famous former home. A bucket-list Nashville venue for world-class shows, incredible acoustics, and serious music history.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Built in 1892 as the Union Gospel Tabernacle, the Ryman was a church before it was a music hall, and you feel that when you walk in. The stained glass windows are intact, the original wooden pews are still in place, and the sound carries in a way most modern venues can't replicate. Some seats have partial obstructed views from support columns, which the ticketing system flags upfront. The Ryman was the Grand Ole Opry's home from 1943 to 1974. It's where bluegrass was born, where Johnny Cash met June Carter, and where careers were made on napkin deals backstage. Today the calendar runs well beyond country: Bob Dylan, Harry Styles, the Wu-Tang Clan, and Lizzo have all sold it out in recent years. It's been a National Historic Landmark since 2001 and a Rock and Roll Landmark since 2022. The calendar earns both. If you're not coming for a show, the self-guided tour runs daily from 9am to 4pm. You get access to the floor, the balcony, exhibits, and a recording booth where you can lay down a track on the actual Ryman stage. Parking downtown is expensive and scarce; plan on a rideshare or budget extra time for a garage."
     },
     {
       "id": 38,
@@ -842,7 +860,8 @@
       ],
       "shortDescription": "Historic Printer's Alley lounge known for live jazz, dinner, cocktails, and a throwback Nashville atmosphere. A seated, intimate spot for music, burlesque, and a classic night out downtown.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Skull's is in the basement of the Southern Turf Building at 222 Printer's Alley, which means you're heading underground into a room with two-foot-thick stone walls, low lighting, live jazz, and a speakeasy feel. The original Skull's Rainbow Room opened in 1948 under David \"Skull\" Schulman, who ran it until his murder onsite in 1998, and the room sat empty for nearly two decades before reopening in 2014. Elvis Presley, Johnny Cash, Patsy Cline, Etta James, Bob Dylan, and Paul McCartney all performed or spent time here. The menu has earned recognition from Condé Nast. The prime rib, rack of lamb, and pork chop are the standout entrees, portions run large, and the lobster bisque and truffle mashed potatoes are worth ordering alongside. Craft cocktails run $15 and up. The burlesque show runs Thursday through Sunday starting at 11pm, with a $25 cover kicking in at 9pm on those nights. Reservations are strongly recommended; Saturday nights book out months in advance. Walk-ins are possible at the bar earlier in the evening but a real gamble after 8pm."
     },
     {
       "id": 41,
@@ -884,7 +903,8 @@
       ],
       "shortDescription": "East Nashville honky tonk known for country, Americana, roots music, and regular two-step nights. A casual spot for live music, line dancing, cold drinks, and a down-home feel on Gallatin Pike.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Skinny Dennis is named for Outlaw Country bassist Skinny Dennis Sanchez, the 6'11\" upright bass player immortalized in Guy Clark's \"LA Freeway.\" The Nashville location opened on Gallatin Pike in early 2024 as a second outpost of the original Brooklyn bar that's been running since 2013, and Nashville Scene named it the best new honky-tonk in the city almost immediately. The room is a big horseshoe bar with booths along the walls, a proper dance floor, a game room, and a backyard with an outdoor stage. Hot peanuts hit the bar the second you sit down. The dance floor is the main event on most nights, with two-step lessons every Wednesday at 7:30pm and Sunday at 7pm, both free. Live music is nightly and the booking is serious about traditional country and Americana: Chris Scruggs, Emily Nenni, Jesse Daniel, Joshua Hedley, and Kristina Murray are all regulars. Order the old fashioned on draft or the Original Willie's Frozen Coffee, served in a blue bodega cup and named after co-owner Zephaniah OHora's dog. Sully's Smoke Shack handles food on the patio. Rideshare is strongly encouraged; on-site parking is minimal."
     },
     {
       "id": 43,

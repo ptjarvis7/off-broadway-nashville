@@ -69,14 +69,12 @@ export default async function VenuePage({ params }: Props) {
                 {venue.genreTags.map(tag => <span key={tag} className="tag-pill-accent">{tag}</span>)}
               </div>
               <p className="text-lg text-muted leading-relaxed mb-8 border-l-2 border-accent pl-4">{venue.shortDescription}</p>
-              <div className="bg-white border border-border rounded-lg p-6 mb-6">
-                <h2 className="font-display text-xl font-semibold text-ink mb-3">What to Expect</h2>
-                {venue.whatToExpect ? (
+              {venue.whatToExpect && (
+                <div className="bg-white border border-border rounded-lg p-6 mb-6">
+                  <h2 className="font-display text-xl font-semibold text-ink mb-3">What to Expect</h2>
                   <p className="text-muted leading-relaxed">{venue.whatToExpect}</p>
-                ) : (
-                  <p className="text-stone-400 text-sm italic">More details on this venue coming soon.</p>
-                )}
-              </div>
+                </div>
+              )}
               <div className="mb-8">
                 <h2 className="font-display text-xl font-semibold text-ink mb-3">Best For</h2>
                 <div className="flex flex-wrap gap-2">
