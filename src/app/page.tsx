@@ -130,7 +130,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="bg-ink text-white py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="section-label text-stone-500 mb-4">Nashville Live Music Guide</div>
+          <div className="section-label text-stone-400 mb-4">Nashville Live Music Guide</div>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-3xl">
             Find Live Music in Nashville{' '}
             <span className="text-accent">Beyond Broadway</span>
