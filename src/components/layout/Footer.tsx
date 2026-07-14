@@ -25,7 +25,7 @@ export default function Footer() {
               <div className="text-[10px] tracking-[0.2em] uppercase text-stone-400 mt-0.5">Nashville</div>
             </div>
             <p className="text-stone-400 text-sm leading-relaxed">
-              Nashville live music beyond the Broadway strip. A local's take on the venues worth exploring.
+              Nashville live music beyond the Broadway strip. A local's take on where to go instead.
             </p>
           </div>
           <div>
