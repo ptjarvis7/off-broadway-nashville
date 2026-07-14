@@ -16,7 +16,7 @@ module.exports = {
         ink: '#1A1612',
         muted: '#6B6560',
         border: '#E8E4DE',
-        accent: '#C8521A',
+        accent: 'var(--accent)',
         'accent-light': '#F5EDE6',
       },
     },
