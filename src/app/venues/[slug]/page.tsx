@@ -30,7 +30,20 @@ export default async function VenuePage({ params }: Props) {
 
   const similar = getSimilarVenues(venue, 3)
 
-  const schemaData = {
+  const venueTypeToSchemaUri: Record<string, string> = {
+    'Concert Venue': 'https://schema.org/MusicVenue',
+    'Live Music Venue': 'https://schema.org/MusicVenue',
+    'Restaurant w/ Live Music': 'https://schema.org/Restaurant',
+    'Jazz Club': 'https://schema.org/NightClub',
+    'Karaoke Bar': 'https://schema.org/BarOrPub',
+    'Historic Venue': 'https://schema.org/LandmarksOrHistoricalBuildings',
+  }
+
+  const additionalTypes = venue.venueTypeTags.map(
+    (tag: string) => venueTypeToSchemaUri[tag] ?? tag
+  )
+
+  const schemaData: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'MusicVenue',
     name: venue.name,
@@ -41,6 +54,9 @@ export default async function VenuePage({ params }: Props) {
       addressRegion: 'TN',
       addressCountry: 'US',
     },
+    areaServed: venue.neighborhood,
+    additionalType: additionalTypes,
+    ...(venue.officialWebsite ? { url: venue.officialWebsite } : {}),
   }
 
   return (
