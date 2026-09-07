@@ -70,7 +70,8 @@
       ],
       "shortDescription": "Local bar and restaurant featuring live music from emerging and established Nashville artists. A laid-back spot for catching songwriter rounds and casual country performances throughout the week.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Live Oak sits on Music Row's stretch of Demonbreun and is known for its two distinct identities. On Saturdays and Sundays during football season, it plays as a sports bar first. Doors open at 10am for college football kickoff, with screens covering the walls. Live Oak is an official game-day home for Penn State, Indiana, and the Patriots on Sundays. They also run a custom game-day menu around whichever team is on the big screen. Midweek, the room turns into a working songwriter stage. Grindhouse Nashville runs a weekly in-the-round showcase on Thursdays, pairing established Nashville songwriters with rising new artists. Raisin Grace Rounds, hosted by local podcaster Josh Terry, holds its own round most Wednesdays, with several rotating slots of songwriters trading songs through the evening. Solo acts fill in the rest of the week. High-top tables and a long bar fill the main room, with a second floor available for private events. The kitchen serves classic bar food: burgers, wings, loaded fries, and a Big Ass Pretzel with queso or spicy mustard. Parking on Demonbreun itself is tight most nights, so the nearby garage is the safer bet, especially on weekends."
     },
     {
       "id": 4,
@@ -425,7 +426,8 @@
       ],
       "shortDescription": "Casual restaurant and bar known for hosting live country music and songwriter rounds. A laid-back spot where you can grab a meal and catch local artists throughout the week.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "The Commodore Grille sits inside the Holiday Inn Vanderbilt on West End, a few blocks from campus. According to the venue, its live music roots trace back to the early 1980s, when it first drew comparisons to the Bluebird Cafe as a room for original songwriters. The space cycled through a few identities before settling into its current one, a piano lounge, then a Vanderbilt alumni hangout, then a sports bar from 2001 to 2008, when Songwriter's Night began and has run nightly ever since. Two long-running rounds split the nightly calendar, Debi Champion's Songwriter Nights and the Nashville Songwriter's Showcase. Each puts three to four original Nashville songwriters on stage together, trading songs and the stories behind them. A 10pm open mic follows most nights for anyone who wants to sign up and play, and admission is free throughout. Jerry Foster, a 1994 inductee into the Nashville Songwriters Hall of Fame, still turns up on the lineup and has his own reserved parking spot out front. The kitchen runs a full dinner menu beyond the usual bar food: Nashville hot chicken, shrimp and grits, bourbon glazed salmon. Live music starts at 6pm Sunday through Thursday and 7pm on weekends, with free parking through the hotel."
     },
     {
       "id": 20,
@@ -445,7 +447,8 @@
       ],
       "shortDescription": "Large indoor venue known for hosting concerts, events, and touring acts across a variety of genres. A flexible space that regularly brings bigger performances to downtown Nashville.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Nashville Municipal Auditorium opened on October 7, 1962, on the site of the old Bijou Theatre. Its debut event was a week-long Church of Christ revival that drew more than 90,000 people. The building itself is a 306-foot dome with two tiers of stands and reserved seating for up to 9,654 at concerts. Ticket stubs from decades of shows, dating back to 1962, still cover the concourse walls. It served as Nashville's main arena until Bridgestone Arena opened downtown in 1996, and it's hosted a genuinely wide mix since: the first-ever CMA Awards in 1967, Charlie Daniels' annual Volunteer Jam from 1976 to 1985, and touring rock shows from David Bowie and the Grateful Dead that both later saw releases as live albums. The underground exhibition hall has housed the Musicians Hall of Fame and Museum since 2013, the only museum built around the session musicians who played on the hits. Bookings today range from touring concerts and conferences to professional wrestling. Athletes Unlimited Pro Basketball, the city's only professional women's sports team, also plays its season here every February. A 2017 renovation modernized the seating and dressing rooms. For parking, the venue points visitors to ParkIt Downtown to check real-time options before a show."
     },
     {
       "id": 21,
@@ -511,7 +514,8 @@
       ],
       "shortDescription": "Local brewery and restaurant known for hosting live acoustic sets and songwriter-style performances. A laid-back spot to grab a beer, enjoy the food, and catch live music throughout the week.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Tennessee Brew Works sits just south of Music City Center. The brew tanks are visible from the tables, and a beer hall upstairs doubles as a sports bar on game days. Live music runs downstairs in a dedicated room built with sound in mind. It holds roughly 200 people, with acts running most nights of the week. Tuesdays bring a Writer's Round from 6 to 8pm, and Wednesdays hand the stage to Tennessee Dead, a Grateful Dead cover band. Mondays split the difference between an early open mic and a karaoke night that runs into the evening. The brewery opened in 2013 and has stayed independently Tennessee owned since. It's built around a mission to make beer that honors Tennessee's land and traditions, and in 2018 it became the first brewery in the state to brew with all-Tennessee grain. That focus continues in its State Park Blonde Ale: the official beer of Tennessee State Parks, which benefits the conservancy behind the state's 57 parks. The kitchen leans on the beer itself with dishes like State Park Blonde beer-battered fish tacos and a Five Beer Burger built around five different house brews in its sauces and toppings. The patio is dog-friendly, with hours running 11am to 10pm Monday through Saturday and 11am to 8pm on Sunday. A dedicated guest lot and street parking are both nearby."
     },
     {
       "id": 24,
@@ -617,7 +621,8 @@
       ],
       "shortDescription": "Intimate live music venue known for hosting a mix of genres including songwriter rounds, jazz, and touring acts. A seated setting focused on the music in a more refined, lounge-style environment.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Analog sits on the second floor of the Hutton Hotel. The room feels like a boutique theater, with a small raised stage framed by red velvet curtains. Deep jewel-tone furniture fills the space: burgundy tufted sofas and teal velvet ottomans. A gold-and-teal medallion pattern covers the wall behind the stage. A sculptural metal light fixture hangs overhead, keeping the lighting low and moody. The sound system is a custom Bose setup built for the room's acoustics, and the bar runs a full craft cocktail program with its own mixologist. It's home to Recorded Live at Analog, a concert series taped in the room and aired nationally through Nashville PBS. Past tapings have included Slash, Sierra Ferrell, Old Crow Medicine Show, and Eric Church, who surprised the crowd one night with a cover of Springsteen's \"Dancing in the Dark.\" Recurring nights include Southern Rounds, a songwriter series. The room also regularly hosts TEDx Nashville events, which range from live storytelling built around music to author conversations. Most shows run 21 and up. A ticket gets you $10 flat self-parking in the hotel's garage, or $15 for valet, plus 15 percent off dinner beforehand at Evelyn's, the hotel restaurant downstairs."
     },
     {
       "id": 29,
@@ -1004,11 +1009,12 @@
         "Songwriter rounds",
         "Open mics",
         "Local artists",
-        "Laid-back nights"
+        "Game day"
       ],
-      "shortDescription": "8th Avenue bar known for songwriter rounds, open mics, and live music from local Nashville artists. A low-key spot for hearing original songs in a chill, neighborhood setting.",
+      "shortDescription": "8th Avenue sports bar known for neon lights, big screens, and a steady lineup of songwriter rounds and karaoke. A lively pick for catching a game, singing along, or hearing original Nashville songwriters throughout the week.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "The Green Light Bar sits on 8th Avenue South, right along the outskirts of the Gulch. Green neon lights wash over the bar top and walls, with roughly 20 TVs mounted around the room for a clear sight of whatever game is on. There's also a mechanical bull with free rides, darts, an arcade duck game, and a photo booth. Monday nights turn the bar into a taping studio for Playlisted, a live podcast built as Nashville's answer to Kill Tony. Artists perform one original song for a live audience and get unfiltered feedback from a rotating guest judge. Past guests have included Jimmie Allen and Cole Swindell. The rest of the week keeps the songwriter theme going with Off The Record on Tuesdays, Hippies & Cowboys on Wednesdays, and Lyrics & Longnecks on Thursdays, each built around a rotating lineup of Nashville writers. Saturdays switch to karaoke at 8pm. Football takes over on game days, with Ohio State Saturdays reservable by table and Green Light serving as the official Cleveland Browns Backers bar. Out back, a food truck called Southern Sides runs the kitchen with hot chicken sandwiches, mac and cheese, and banana pudding. Parking is free on site, and happy hour runs weekdays from 4 to 7pm."
     },
     {
       "id": 47,
@@ -1072,7 +1078,8 @@
       ],
       "shortDescription": "Demonbreun live music joint known for bands, DJs, food, and late-night crowds near Midtown and Music Row. A casual spot for catching live music, watching the game, and staying out late.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Tin Roof opened on Demonbreun Hill in 2002 as a place for musicians to play and hang out when they weren't on stage. The building holds three rooms: a main room with a live band, plus the Green Room and Two Bits next door, where DJs spin under a disco ball on weekends. The space runs 7,500 square feet, holds more than 550 people across four bars, and charges no cover on weekend nights. Most Wednesdays feature Wednesday Sessions, a single rotating artist starting at 7pm. The last Wednesday of every month instead belongs to YNOT Wednesdays, one of Nashville's best-known songwriter showcases, with nine songwriters split into three rounds of three. Thursdays bring Cup Night, with 2-for-1 domestic beers and seltzers or a $5 reusable cup for $3 refills all night, backed by a live band and a late DJ set. Happy hour runs all day Monday and 2 to 7pm Tuesday through Friday, with $3 drafts and $4 well drinks. The kitchen serves hand-breaded chicken tenders, wings, and double patty smash burgers, its self-declared Better Than Bar Food. TVs are mounted throughout for game days, and free shows from rising country acts run under the Nashville Hits the Roof series."
     },
     {
       "id": 50,
@@ -1093,7 +1100,8 @@
       ],
       "shortDescription": "Midtown neighborhood bar and entertainment venue known for live music, DJs, sports, and the feel-good spirit of Old Dominion. A casual spot for drinks, games, and catching Nashville artists in a lively setting.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Odie's opened in April 2025, built by Old Dominion. The location means something to the band specifically: they used to play weekly across the street at a bar called the Blue Bar back when they were coming up. Old Dominion surprised the crowd with a pop-up show just two days after opening, and other major artists have followed since. Thomas Rhett played a surprise \"Secret Set\" here in April 2026, with Jordan Davis joining him onstage. Walk in and you pass the front porch bar facing Division Street first, then the lookout bar inside, a long bar lined with TVs. Past that, the main room holds the stage, with an actual 12-seat pontoon boat built into an elevated dock for watching the band from above the crowd. Out back, a separate patio runs a full outdoor kitchen and a massive LED screen for game days. Live music and DJs run Tuesday through Sunday, and Tuesdays specifically bring the Heavy Hitters songwriter round, with four writers rotating through each hour from 7 to 11pm. Nashville Scene named it Best Neighborhood Bar in its 2026 Best of Nashville issue. The kitchen leans into Southern bar food, the Nashville hot chicken sandwich gets called out most often, alongside nachos and sweet potato tots. The outdoor bar also pours margaritas by the bucket."
     },
     {
       "id": 51,
@@ -1136,7 +1144,8 @@
       ],
       "shortDescription": "Animatronic karaoke bar inside Graduate Nashville known for sing-alongs with a robotic backup band and a bit of Dolly-inspired flair. A quirky West End spot for karaoke, drinks, and a one-of-a-kind Nashville night out.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Cross-Eyed Critters sits just off the lobby of the Graduate Nashville hotel, with its own separate entrance on West End Avenue. It opened in January 2020, billed as the first animatronic karaoke bar on earth. The trio, a bear, fox, and pig, is dressed to represent three eras of country music: the bear's musical-note suit nods to Hank Williams, the fox's pink sequin dress to Dolly Parton, and the pig's hat and necklace to Eric Church. They can play seven songs entirely on their own, including \"Sweet Child O' Mine\" and \"Islands in the Stream,\" and back up whatever a karaoke singer picks the rest of the night. Karaoke runs Thursday through Saturday, 8pm to 2am. Black velvet paintings of country-western stars line the walls above aged wooden floors, and an acronym etched over the bar reads I.I.T.Y.W.I.M.W.Y.B.M.A.D. (\"If I tell you what it means will you buy me a drink\"). The drink menu carries the same personality. A Fridge Door Martini mixes vodka with olive brine and celery bitters for a play on a dirty martini, and Whiskey Glasses pairs bourbon with banana and black walnut. The kitchen runs Tex-Mex: quesabirria, street tacos, a Sonoran-style corn dog, and a caramel apple chimichanga for dessert."
     },
     {
       "id": 53,
@@ -1263,7 +1272,8 @@
       ],
       "shortDescription": "Music Valley country bar known for live music, late nights, and a mix of locals and visitors near Opryland. A casual spot for real country music without the Broadway crowds.",
       "officialWebsite": null,
-      "status": "active"
+      "status": "active",
+      "whatToExpect": "Music City Bar & Grill opened in 2006, started by Blake Kovrig, a former Opryland Hotel bartender who wanted to build a bar around a stage rather than a stage crammed into a bar. He picked the spot across from the Grand Ole Opry to draw both the local country crowd and the tourists already flowing through Music Valley, well away from the Broadway strip downtown. Vinyl records and music memorabilia cover nearly every wall inside, and a dance floor stays busy with two-steppers. Little Jimmy Dickens, Daryle Singletary, Eddie Montgomery, Leona Williams, and Georgette Jones have all spent time here over the years. Live music runs every day of the week, usually in three shifts: afternoon, evening, and a late set that runs past midnight. The Music City Playboys anchor the evening slot most Wednesdays and Thursdays. The bar calls itself the best little honky tonk in America, and the kitchen stays open until 2:30am to match the late crowd. The bar runs 16 rotating taps and a full well while the kitchen runs southern bar food and pizzas. It's 21 and up, has free parking, and doesn't charge a cover most nights of the week."
     },
     {
       "id": 59,
