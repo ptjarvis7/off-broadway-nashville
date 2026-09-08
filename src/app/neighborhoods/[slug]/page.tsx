@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getAllNeighborhoods, getVenuesByNeighborhood, slugToNeighborhood, neighborhoodToSlug } from '@/lib/venues'
 import VenueCard from '@/components/venue/VenueCard'
+import FAQ, { type FAQItem } from '@/components/FAQ'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const neighborhoodIntros: Record<string, string> = {
-  'East Nashville': "East Nashville is where the local music scene lives. You'll find indie rock, singer-songwriters, themed dance nights, and neighborhood bars that have nothing to prove. It's the part of the city that feels most like itself.",
+  'East Nashville': "East Nashville built its own music scene without much help from downtown. The 5 Spot has booked local bands in Five Points for years, and The Basement East hosts national touring acts in a room locals still call the Beast. The Cobra leans punk and metal on Gallatin Avenue, while Riverside Revival turned a 1951 church into a concert hall with the stained glass still intact. Eastside Bowl adds sixteen lanes of bowling to the mix, and Love & Exile keeps its patio busy with wine, cocktails, and live music of its own.",
   'The Gulch': "The Gulch is more of a music neighborhood than most visitors realize, with venues tucked between upscale restaurants and hotel bars. The Station Inn is one of the best bluegrass rooms in the country, Rudy's Jazz Room is a dedicated jazz club, small and seated, with live music every night, and Cannery Hall brings in everything from songwriter nights to bigger touring acts.",
   'Midtown': "Midtown sits right next to Music Row, which means the bars here attract real industry folks. Bobby's Idle Hour has been a songwriter hangout for decades. Losers is divey and real. This is where the business of music bleeds into the bar scene.",
   'SoBro': "South of Broadway but not part of it. The Listening Room Cafe is one of the best songwriter venues in the country, Ascend Amphitheater has the best skyline views of any outdoor venue in the city, and Third Man Records' Blue Room is unlike anything else in Nashville.",
@@ -45,6 +46,23 @@ const neighborhoodIntros: Record<string, string> = {
   '8th Ave S': "The Basement is one of Nashville's best small venues for discovering new artists. The Green Light Bar does songwriter rounds. The Eighth Room is more upscale.",
 }
 
+const neighborhoodFaqs: Record<string, FAQItem[]> = {
+  'East Nashville': [
+    {
+      question: 'Is there a cover charge?',
+      answer: "It varies by show and venue. The Basement East runs both free, first-come-first-served shows and ticketed events depending on the artist. Check each venue's page and calendar for specifics.",
+    },
+    {
+      question: 'Is there an age requirement?',
+      answer: 'It varies by show, not just venue. The Basement East allows minors in with a parent or guardian for some shows, but 18+ and 21+ shows require valid ID with no exceptions.',
+    },
+    {
+      question: 'Is parking available?',
+      answer: 'It varies. Eastside Bowl sits inside a former Kmart with plenty of free parking on site, while The Basement East relies on street parking and a lot across the street after 6pm.',
+    },
+  ],
+}
+
 export default async function NeighborhoodPage({ params }: Props) {
   const { slug } = await params
   const neighborhood = slugToNeighborhood(slug)
@@ -52,6 +70,7 @@ export default async function NeighborhoodPage({ params }: Props) {
 
   const venues = getVenuesByNeighborhood(neighborhood)
   const intro = neighborhoodIntros[neighborhood] || `Live music venues in ${neighborhood}, Nashville.`
+  const faqs = neighborhoodFaqs[neighborhood]
 
   return (
     <div className="min-h-screen bg-cream">
@@ -87,6 +106,8 @@ export default async function NeighborhoodPage({ params }: Props) {
         <div className="mt-10 pt-8 border-t border-border">
           <Link href="/neighborhoods" className="btn-outline">← All neighborhoods</Link>
         </div>
+
+        {faqs && <FAQ items={faqs} />}
       </div>
     </div>
   )

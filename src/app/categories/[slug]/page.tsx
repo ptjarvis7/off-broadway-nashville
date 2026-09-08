@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getAllVenues } from '@/lib/venues'
 import VenueCard from '@/components/venue/VenueCard'
+import FAQ from '@/components/FAQ'
 import { categories } from '../page'
 
 interface Props {
@@ -34,6 +35,7 @@ export default async function CategoryPage({ params }: Props) {
     if (category.filterType === 'venueType') return v.venueTypeTags.includes(category.filterValue)
     if (category.filterType === 'genre') return v.genreTags.includes(category.filterValue)
     if (category.filterType === 'bestFor') return v.bestForTags.includes(category.filterValue)
+    if (category.filterType === 'neighborhood') return v.neighborhood === category.filterValue
     return false
   })
 
@@ -87,6 +89,8 @@ export default async function CategoryPage({ params }: Props) {
           </div>
           <Link href="/venues" className="btn-outline">← Browse all venues</Link>
         </div>
+
+        {category.faqs && <FAQ items={category.faqs} />}
       </div>
     </div>
   )
