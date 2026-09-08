@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = categories.find(c => c.slug === slug)
   if (!category) return {}
   return {
-    title: `${category.title} | Off Broadway Nashville`,
+    title: category.title,
     description: category.description,
   }
 }

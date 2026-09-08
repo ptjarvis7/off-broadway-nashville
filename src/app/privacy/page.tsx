@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Off Broadway Nashville',
+  title: 'Privacy Policy',
   description: 'Privacy policy for Off Broadway Nashville, including information on cookies, advertising, and your rights.',
 }
 

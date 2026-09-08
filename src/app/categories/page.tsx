@@ -3,7 +3,7 @@ import Link from 'next/link'
 import type { FAQItem } from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Nashville Live Music Categories | Off Broadway Nashville',
+  title: 'Nashville Live Music Categories',
   description: 'Browse Nashville live music venues by category. Listening rooms, songwriter rounds, honky tonks, jazz clubs, karaoke bars, and more.',
 }
 

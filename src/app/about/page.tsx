@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About | Off Broadway Nashville',
+  title: 'About',
   description: 'The story behind Off Broadway Nashville — a local\'s guide to live music venues beyond the Broadway strip.',
 }
 

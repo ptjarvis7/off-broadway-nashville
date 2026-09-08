@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { getAllNeighborhoods, getVenuesByNeighborhood, neighborhoodToSlug } from '@/lib/venues'
 
 export const metadata: Metadata = {
-  title: 'Nashville Live Music by Neighborhood | Off Broadway Nashville',
+  title: 'Nashville Live Music by Neighborhood',
   description: 'Explore Nashville live music venues by neighborhood. East Nashville, The Gulch, Midtown, SoBro, Music Valley, and more.',
 }
 

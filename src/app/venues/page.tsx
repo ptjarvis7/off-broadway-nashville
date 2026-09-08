@@ -3,7 +3,7 @@ import { getAllVenues, getAllNeighborhoods, getAllVenueTypes, getAllGenres, getA
 import VenuesDirectory from '@/components/venue/VenuesDirectory'
 
 export const metadata: Metadata = {
-  title: 'All Nashville Live Music Venues | Off Broadway Nashville',
+  title: 'All Nashville Live Music Venues',
   description: 'Browse all live music venues in Nashville beyond Broadway. Filter by neighborhood, venue type, genre, and experience.',
 }
 

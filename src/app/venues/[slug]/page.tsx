@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const venue = getVenueBySlug(slug)
   if (!venue) return {}
   return {
-    title: `${venue.name} | Off Broadway Nashville`,
+    title: venue.name,
     description: venue.shortDescription,
   }
 }
