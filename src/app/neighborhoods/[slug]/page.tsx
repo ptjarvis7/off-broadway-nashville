@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const venues = getVenuesByNeighborhood(neighborhood)
   return {
     title: `Live Music in ${neighborhood}`,
-    description: `Find the best live music venues in ${neighborhood}, Nashville. ${venues.length} venues including ${venues.slice(0, 3).map(v => v.name).join(', ')}, and more.`,
+    description: `Find the best live music venues in ${neighborhood}${neighborhood.includes('Nashville') ? '' : ', Nashville'}. ${venues.length} ${venues.length === 1 ? 'venue' : 'venues'} including ${venues.slice(0, 3).map(v => v.name).join(', ')}, and more.`,
   }
 }
 
@@ -69,7 +69,7 @@ export default async function NeighborhoodPage({ params }: Props) {
   if (!neighborhood) notFound()
 
   const venues = getVenuesByNeighborhood(neighborhood)
-  const intro = neighborhoodIntros[neighborhood] || `Live music venues in ${neighborhood}, Nashville.`
+  const intro = neighborhoodIntros[neighborhood] || `Live music venues in ${neighborhood}${neighborhood.includes('Nashville') ? '' : ', Nashville'}.`
   const faqs = neighborhoodFaqs[neighborhood]
 
   return (
