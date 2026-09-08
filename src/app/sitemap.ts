@@ -18,19 +18,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${BASE_URL}/venues`,
+      url: `${BASE_URL}/venues/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/neighborhoods`,
+      url: `${BASE_URL}/neighborhoods/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/categories`,
+      url: `${BASE_URL}/categories/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -38,21 +38,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   const venueRoutes: MetadataRoute.Sitemap = venues.map(venue => ({
-    url: `${BASE_URL}/venues/${venue.slug}`,
+    url: `${BASE_URL}/venues/${venue.slug}/`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
     priority: 0.7,
   }))
 
   const neighborhoodRoutes: MetadataRoute.Sitemap = neighborhoods.map(n => ({
-    url: `${BASE_URL}/neighborhoods/${neighborhoodToSlug(n)}`,
+    url: `${BASE_URL}/neighborhoods/${neighborhoodToSlug(n)}/`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
     priority: 0.6,
   }))
 
   const categoryRoutes: MetadataRoute.Sitemap = categories.map(cat => ({
-    url: `${BASE_URL}/categories/${cat.slug}`,
+    url: `${BASE_URL}/categories/${cat.slug}/`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
     priority: 0.6,
