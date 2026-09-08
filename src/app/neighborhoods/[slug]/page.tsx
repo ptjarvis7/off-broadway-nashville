@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!neighborhood) return {}
   const venues = getVenuesByNeighborhood(neighborhood)
   return {
-    title: `Live Music in ${neighborhood} Nashville | Off Broadway Nashville`,
+    title: `Live Music in ${neighborhood} | Off Broadway Nashville`,
     description: `Find the best live music venues in ${neighborhood}, Nashville. ${venues.length} venues including ${venues.slice(0, 3).map(v => v.name).join(', ')}, and more.`,
   }
 }
