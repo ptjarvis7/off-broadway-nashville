@@ -1,4 +1,12 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+// A 404 gets no canonical (it has no canonical URL to point at) and must not be
+// indexed; without this it would inherit the root layout's `index, follow`.
+export const metadata: Metadata = {
+  title: 'Page Not Found',
+  robots: { index: false, follow: true },
+}
 
 export default function NotFound() {
   return (
@@ -12,10 +20,10 @@ export default function NotFound() {
           We couldn't find what you were looking for. It might have moved, or the link might be off. Try heading back to the directory or browsing by neighborhood instead.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Link href="/venues" className="btn-primary px-6 py-3 text-base">
+          <Link href="/venues/" className="btn-primary px-6 py-3 text-base">
             Browse All Venues
           </Link>
-          <Link href="/neighborhoods" className="btn-outline px-6 py-3 text-base">
+          <Link href="/neighborhoods/" className="btn-outline px-6 py-3 text-base">
             Browse by Neighborhood
           </Link>
         </div>

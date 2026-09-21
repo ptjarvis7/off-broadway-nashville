@@ -1,12 +1,15 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getAllVenues, getAllNeighborhoods, neighborhoodToSlug } from '@/lib/venues'
+import { pageMetadata, SITE_NAME } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 
-export const metadata: Metadata = {
-  title: 'Off Broadway Nashville | Find Live Music Beyond Broadway',
+export const metadata: Metadata = pageMetadata({
+  title: `${SITE_NAME} | Find Live Music Beyond Broadway`,
   description: 'Find live music in Nashville beyond Broadway. Listening rooms, honky tonks, songwriter rounds, jazz clubs, and more, organized by neighborhood.',
-}
+  path: '/',
+  titleIsComplete: true,
+})
 
 const featuredNeighborhoods = [
   { name: 'East Nashville', description: 'Indie, rock, and the local scene' },
@@ -139,10 +142,10 @@ export default function HomePage() {
             Nashville's music scene goes way beyond the honky-tonk strip. This is your guide to the listening rooms, songwriter rounds, jazz clubs, and neighborhood venues locals go to regularly.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Link href="/venues" className="btn-primary px-6 py-3 text-base">
+            <Link href="/venues/" className="btn-primary px-6 py-3 text-base">
               Browse All Venues
             </Link>
-            <Link href="/neighborhoods" className="btn-outline px-6 py-3 text-base border-stone-700 text-stone-300 hover:bg-stone-800 hover:text-white">
+            <Link href="/neighborhoods/" className="btn-outline px-6 py-3 text-base border-stone-700 text-stone-300 hover:bg-stone-800 hover:text-white">
               Browse by Neighborhood
             </Link>
           </div>
@@ -182,7 +185,7 @@ export default function HomePage() {
               <VenueCard key={venue.id} venue={venue} />
             ))}
           </div>
-          <Link href="/venues" className="btn-outline">
+          <Link href="/venues/" className="btn-outline">
             See all {venues.length} venues →
           </Link>
         </div>
@@ -197,7 +200,7 @@ export default function HomePage() {
             {featuredNeighborhoods.map(n => (
               <Link
                 key={n.name}
-                href={`/neighborhoods/${neighborhoodToSlug(n.name)}`}
+                href={`/neighborhoods/${neighborhoodToSlug(n.name)}/`}
                 className="bg-white border border-border rounded-lg p-5 hover:border-accent hover:shadow-sm transition-all group"
               >
                 <div className="font-display font-semibold text-ink group-hover:text-accent transition-colors mb-1">
@@ -208,7 +211,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-6">
-            <Link href="/neighborhoods" className="btn-outline">
+            <Link href="/neighborhoods/" className="btn-outline">
               All neighborhoods →
             </Link>
           </div>
@@ -228,7 +231,7 @@ export default function HomePage() {
           <p className="text-muted leading-relaxed mb-6">
             Off Broadway Nashville exists to help you find the other side of this city: the listening rooms where songwriters play the hits they wrote for other people, the East Nashville dives where local bands pack the room, the jazz club in the Gulch that most visitors walk right past.
           </p>
-          <Link href="/venues" className="btn-primary px-6 py-3">
+          <Link href="/venues/" className="btn-primary px-6 py-3">
             Start Exploring
           </Link>
         </div>

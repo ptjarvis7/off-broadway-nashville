@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
+import { pageMetadata, venueCount } from '@/lib/seo'
 import Link from 'next/link'
 import { getAllNeighborhoods, getVenuesByNeighborhood, neighborhoodToSlug } from '@/lib/venues'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'Nashville Live Music by Neighborhood',
   description: 'Explore Nashville live music venues by neighborhood. East Nashville, The Gulch, Midtown, SoBro, Music Valley, and more.',
-}
+  path: '/neighborhoods',
+})
 
 const neighborhoodDescriptions: Record<string, string> = {
   'East Nashville': 'The indie heart of the city. Local bands, divey rooms, and a scene that feels like Nashville before the boom.',
@@ -48,12 +50,12 @@ export default function NeighborhoodsPage() {
           {neighborhoods.map(neighborhood => {
             const venues = getVenuesByNeighborhood(neighborhood)
             const slug = neighborhoodToSlug(neighborhood)
-            const description = neighborhoodDescriptions[neighborhood] || `${venues.length} live music venues in ${neighborhood}.`
+            const description = neighborhoodDescriptions[neighborhood] || `${venueCount(venues.length)} for live music in ${neighborhood}.`
 
             return (
               <Link
                 key={neighborhood}
-                href={`/neighborhoods/${slug}`}
+                href={`/neighborhoods/${slug}/`}
                 className="bg-white border border-border rounded-lg p-6 hover:border-accent hover:shadow-sm transition-all group"
               >
                 <div className="flex items-start justify-between mb-2">
@@ -61,7 +63,7 @@ export default function NeighborhoodsPage() {
                     {neighborhood}
                   </h2>
                   <span className="text-xs text-muted bg-stone-50 border border-stone-100 rounded-full px-2 py-0.5 ml-2 shrink-0">
-                    {venues.length} venues
+                    {venueCount(venues.length)}
                   </span>
                 </div>
                 <p className="text-sm text-muted leading-relaxed">{description}</p>

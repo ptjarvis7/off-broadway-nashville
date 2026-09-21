@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getAllVenues } from '@/lib/venues'
+import { pageMetadata, venueCount } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 import FAQ from '@/components/FAQ'
 import { categories } from '../page'
@@ -18,10 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const category = categories.find(c => c.slug === slug)
   if (!category) return {}
-  return {
+  return pageMetadata({
     title: category.title,
     description: category.description,
-  }
+    path: `/categories/${category.slug}`,
+  })
 }
 
 export default async function CategoryPage({ params }: Props) {
@@ -47,7 +49,7 @@ export default async function CategoryPage({ params }: Props) {
         <div className="max-w-6xl mx-auto text-xs text-muted flex items-center gap-2">
           <Link href="/" className="hover:text-accent transition-colors">Home</Link>
           <span>›</span>
-          <Link href="/categories" className="hover:text-accent transition-colors">Categories</Link>
+          <Link href="/categories/" className="hover:text-accent transition-colors">Categories</Link>
           <span>›</span>
           <span className="text-ink">{category.shortTitle}</span>
         </div>
@@ -57,7 +59,7 @@ export default async function CategoryPage({ params }: Props) {
         <div className="max-w-6xl mx-auto">
           <h1 className="font-display text-4xl font-bold text-ink mb-4">{category.title}</h1>
           <p className="text-muted max-w-2xl leading-relaxed mb-3">{category.description}</p>
-          <div className="text-sm text-muted">{venues.length} venues</div>
+          <div className="text-sm text-muted">{venueCount(venues.length)}</div>
         </div>
       </div>
 
@@ -78,7 +80,7 @@ export default async function CategoryPage({ params }: Props) {
             {relatedCategories.map(cat => (
               <Link
                 key={cat.slug}
-                href={`/categories/${cat.slug}`}
+                href={`/categories/${cat.slug}/`}
                 className="bg-white border border-border rounded-lg p-4 hover:border-accent transition-all group text-center"
               >
                 <div className="text-xs font-medium text-ink group-hover:text-accent transition-colors">
@@ -87,7 +89,7 @@ export default async function CategoryPage({ params }: Props) {
               </Link>
             ))}
           </div>
-          <Link href="/venues" className="btn-outline">← Browse all venues</Link>
+          <Link href="/venues/" className="btn-outline">← Browse all venues</Link>
         </div>
 
         {category.faqs && <FAQ items={category.faqs} />}

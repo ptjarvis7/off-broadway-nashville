@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
 import Link from 'next/link'
 import type { FAQItem } from '@/components/FAQ'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'Nashville Live Music Categories',
   description: 'Browse Nashville live music venues by category. Listening rooms, songwriter rounds, honky tonks, jazz clubs, karaoke bars, and more.',
-}
+  path: '/categories',
+})
 
 export interface Category {
   slug: string
@@ -190,7 +192,7 @@ export default function CategoriesPage() {
           {categories.map(cat => (
             <Link
               key={cat.slug}
-              href={`/categories/${cat.slug}`}
+              href={`/categories/${cat.slug}/`}
               className="bg-white border border-border rounded-lg p-6 hover:border-accent hover:shadow-sm transition-all group"
             >
               <h2 className="font-display font-semibold text-lg text-ink group-hover:text-accent transition-colors mb-2">

@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { SITE_URL } from '@/lib/seo'
 
 export const revalidate = false
 
@@ -8,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.offbroadwaynashville.co/sitemap.xml',
+    sitemap: `${SITE_URL}/sitemap.xml`,
   }
 }

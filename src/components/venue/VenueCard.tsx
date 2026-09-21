@@ -11,7 +11,7 @@ export default function VenueCard({ venue, compact = false }: VenueCardProps) {
     <div className="venue-card flex flex-col h-full">
       <div className="flex items-start justify-between gap-2 mb-2">
         <div>
-          <Link href={`/venues/${venue.slug}`}>
+          <Link href={`/venues/${venue.slug}/`}>
             <h3 className="font-display font-semibold text-lg text-ink hover:text-accent transition-colors leading-tight">
               {venue.name}
             </h3>
@@ -46,7 +46,7 @@ export default function VenueCard({ venue, compact = false }: VenueCardProps) {
       </div>
 
       <div className="mt-auto">
-        <Link href={`/venues/${venue.slug}`} className="btn-outline text-xs w-full justify-center">
+        <Link href={`/venues/${venue.slug}/`} className="btn-outline text-xs w-full justify-center">
           View venue →
         </Link>
       </div>

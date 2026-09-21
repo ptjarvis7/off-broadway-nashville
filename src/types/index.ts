@@ -9,6 +9,7 @@ export interface Venue {
   shortDescription: string
   officialWebsite: string | null
   status: 'active' | 'inactive'
+  lastUpdated: string
   whatToExpect?: string
 }
 

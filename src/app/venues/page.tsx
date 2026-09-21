@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
 import { getAllVenues, getAllNeighborhoods, getAllVenueTypes, getAllGenres, getAllBestForTags } from '@/lib/venues'
 import VenuesDirectory from '@/components/venue/VenuesDirectory'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'All Nashville Live Music Venues',
   description: 'Browse all live music venues in Nashville beyond Broadway. Filter by neighborhood, venue type, genre, and experience.',
-}
+  path: '/venues',
+})
 
 export default function VenuesPage() {
   const venues = getAllVenues()

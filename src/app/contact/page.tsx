@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'Contact',
   description: 'Get in touch with Off Broadway Nashville to report a venue update, suggest a new listing, or just say hi.',
-}
+  path: '/contact',
+})
 
 export default function ContactPage() {
   return (

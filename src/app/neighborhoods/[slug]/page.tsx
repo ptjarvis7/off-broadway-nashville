@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getAllNeighborhoods, getVenuesByNeighborhood, slugToNeighborhood, neighborhoodToSlug } from '@/lib/venues'
+import { pageMetadata, venueCount, venueNameList } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 import FAQ, { type FAQItem } from '@/components/FAQ'
 
@@ -19,14 +20,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const neighborhood = slugToNeighborhood(slug)
   if (!neighborhood) return {}
   const venues = getVenuesByNeighborhood(neighborhood)
-  return {
+  const where = `${neighborhood}${neighborhood.includes('Nashville') ? '' : ', Nashville'}`
+  return pageMetadata({
     title: `Live Music in ${neighborhood}`,
-    description: `Find the best live music venues in ${neighborhood}${neighborhood.includes('Nashville') ? '' : ', Nashville'}. ${venues.length} ${venues.length === 1 ? 'venue' : 'venues'} including ${venues.slice(0, 3).map(v => v.name).join(', ')}, and more.`,
-  }
+    description: `Find the best live music venues in ${where}. ${venueCount(venues.length)} including ${venueNameList(venues.map(v => v.name))}.`,
+    path: `/neighborhoods/${neighborhoodToSlug(neighborhood)}`,
+  })
 }
 
 const neighborhoodIntros: Record<string, string> = {
-  'East Nashville': "East Nashville built its own music scene without much help from downtown. The 5 Spot has booked local bands in Five Points for years, and The Basement East hosts national touring acts in a room locals still call the Beast. The Cobra leans punk and metal on Gallatin Avenue, while Riverside Revival turned a 1951 church into a concert hall with the stained glass still intact. Eastside Bowl adds sixteen lanes of bowling to the mix, and Love & Exile keeps its patio busy with wine, cocktails, and live music of its own.",
+  'East Nashville': "East Nashville built its own music scene without much help from downtown. The 5 Spot has booked local bands in Five Points for years, and The Basement East hosts national touring acts in a room locals still call the Beast. The Cobra leans punk and metal on Gallatin Avenue, while Riverside Revival turned a 1951 church into a concert hall with the stained glass still intact. Skinny Dennis holds regular two-step nights, and Love & Exile keeps its patio busy with wine, cocktails, and live music of its own.",
   'The Gulch': "The Gulch is more of a music neighborhood than most visitors realize, with venues tucked between upscale restaurants and hotel bars. The Station Inn is one of the best bluegrass rooms in the country, Rudy's Jazz Room is a dedicated jazz club, small and seated, with live music every night, and Cannery Hall brings in everything from songwriter nights to bigger touring acts.",
   'Midtown': "Midtown sits right next to Music Row, which means the bars here attract real industry folks. Bobby's Idle Hour has been a songwriter hangout for decades. Losers is divey and real. This is where the business of music bleeds into the bar scene.",
   'SoBro': "South of Broadway but not part of it. The Listening Room Cafe is one of the best songwriter venues in the country, Ascend Amphitheater has the best skyline views of any outdoor venue in the city, and Third Man Records' Blue Room is unlike anything else in Nashville.",
@@ -58,7 +61,7 @@ const neighborhoodFaqs: Record<string, FAQItem[]> = {
     },
     {
       question: 'Is parking available?',
-      answer: 'It varies. Eastside Bowl sits inside a former Kmart with plenty of free parking on site, while The Basement East relies on street parking and a lot across the street after 6pm.',
+      answer: 'It varies by venue. The Basement East relies on street parking and a lot across the street after 6pm.',
     },
   ],
 }
@@ -78,7 +81,7 @@ export default async function NeighborhoodPage({ params }: Props) {
         <div className="max-w-6xl mx-auto text-xs text-muted flex items-center gap-2">
           <Link href="/" className="hover:text-accent transition-colors">Home</Link>
           <span>›</span>
-          <Link href="/neighborhoods" className="hover:text-accent transition-colors">Neighborhoods</Link>
+          <Link href="/neighborhoods/" className="hover:text-accent transition-colors">Neighborhoods</Link>
           <span>›</span>
           <span className="text-ink">{neighborhood}</span>
         </div>
@@ -89,7 +92,7 @@ export default async function NeighborhoodPage({ params }: Props) {
           <div className="section-label mb-2">Nashville neighborhood</div>
           <h1 className="font-display text-4xl font-bold text-ink mb-4">Live Music in {neighborhood}</h1>
           <p className="text-muted max-w-2xl leading-relaxed mb-3">{intro}</p>
-          <div className="text-sm text-muted">{venues.length} venues in this neighborhood</div>
+          <div className="text-sm text-muted">{venueCount(venues.length)} in this neighborhood</div>
         </div>
       </div>
 
@@ -104,7 +107,7 @@ export default async function NeighborhoodPage({ params }: Props) {
           <div className="text-center py-16 text-muted">No venues found in this neighborhood.</div>
         )}
         <div className="mt-10 pt-8 border-t border-border">
-          <Link href="/neighborhoods" className="btn-outline">← All neighborhoods</Link>
+          <Link href="/neighborhoods/" className="btn-outline">← All neighborhoods</Link>
         </div>
 
         {faqs && <FAQ items={faqs} />}

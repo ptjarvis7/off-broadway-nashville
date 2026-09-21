@@ -34,7 +34,7 @@ export default function Footer() {
               {neighborhoods.map(n => (
                 <li key={n}>
                   <Link
-                    href={`/neighborhoods/${n.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
+                    href={`/neighborhoods/${n.toLowerCase().replace(/[^a-z0-9]+/g, '-')}/`}
                     className="text-sm text-stone-400 hover:text-white transition-colors"
                   >
                     {n}
@@ -59,9 +59,9 @@ export default function Footer() {
         <div className="border-t border-stone-800 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-stone-400 text-xs">
           <span>© {new Date().getFullYear()} Off Broadway Nashville. Built for live music lovers.</span>
           <div className="flex gap-4">
-            <Link href="/about" className="hover:text-stone-400 transition-colors">About</Link>
-            <Link href="/contact" className="hover:text-stone-400 transition-colors">Contact</Link>
-            <Link href="/privacy" className="hover:text-stone-400 transition-colors">Privacy</Link>
+            <Link href="/about/" className="hover:text-stone-400 transition-colors">About</Link>
+            <Link href="/contact/" className="hover:text-stone-400 transition-colors">Contact</Link>
+            <Link href="/privacy/" className="hover:text-stone-400 transition-colors">Privacy</Link>
           </div>
         </div>
       </div>

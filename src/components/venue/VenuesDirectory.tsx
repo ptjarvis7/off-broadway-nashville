@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import type { Venue } from '@/types'
+import { venueCount } from '@/lib/seo'
 import VenueCard from './VenueCard'
 
 interface Props {
@@ -109,7 +110,7 @@ export default function VenuesDirectory({ venues, neighborhoods, venueTypes, gen
       )}
 
       <div className="text-sm text-muted mb-6">
-        {filtered.length === venues.length ? `Showing all ${venues.length} venues` : `${filtered.length} of ${venues.length} venues`}
+        {filtered.length === venues.length ? `Showing all ${venueCount(venues.length)}` : `${filtered.length} of ${venueCount(venues.length)}`}
       </div>
 
       {filtered.length > 0 ? (

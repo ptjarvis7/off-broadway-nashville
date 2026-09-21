@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getAllVenues, getVenueBySlug, getSimilarVenues, neighborhoodToSlug } from '@/lib/venues'
+import { pageMetadata, formatUpdated } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 
 interface Props {
@@ -17,10 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const venue = getVenueBySlug(slug)
   if (!venue) return {}
-  return {
+  return pageMetadata({
     title: venue.name,
     description: venue.shortDescription,
-  }
+    path: `/venues/${venue.slug}`,
+  })
 }
 
 export default async function VenuePage({ params }: Props) {
@@ -67,9 +69,9 @@ export default async function VenuePage({ params }: Props) {
           <div className="max-w-4xl mx-auto text-xs text-muted flex items-center gap-2">
             <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span>›</span>
-            <Link href="/venues" className="hover:text-accent transition-colors">Venues</Link>
+            <Link href="/venues/" className="hover:text-accent transition-colors">Venues</Link>
             <span>›</span>
-            <Link href={`/neighborhoods/${neighborhoodToSlug(venue.neighborhood)}`} className="hover:text-accent transition-colors">{venue.neighborhood}</Link>
+            <Link href={`/neighborhoods/${neighborhoodToSlug(venue.neighborhood)}/`} className="hover:text-accent transition-colors">{venue.neighborhood}</Link>
             <span>›</span>
             <span className="text-ink">{venue.name}</span>
           </div>
@@ -105,7 +107,7 @@ export default async function VenuePage({ params }: Props) {
                 <div className="space-y-3 text-sm">
                   <div>
                     <div className="section-label mb-1">Neighborhood</div>
-                    <Link href={`/neighborhoods/${neighborhoodToSlug(venue.neighborhood)}`} className="text-accent hover:underline">{venue.neighborhood}</Link>
+                    <Link href={`/neighborhoods/${neighborhoodToSlug(venue.neighborhood)}/`} className="text-accent hover:underline">{venue.neighborhood}</Link>
                   </div>
                   <div>
                     <div className="section-label mb-1">Type</div>
@@ -123,7 +125,10 @@ export default async function VenuePage({ params }: Props) {
                   )}
                 </div>
                 <div className="border-t border-border mt-5 pt-5">
-                  <Link href="/venues" className="btn-outline w-full justify-center text-xs">← Back to all venues</Link>
+                  <p className="text-xs text-muted mb-3">
+                    Updated <time dateTime={venue.lastUpdated}>{formatUpdated(venue.lastUpdated)}</time>
+                  </p>
+                  <Link href="/venues/" className="btn-outline w-full justify-center text-xs">← Back to all venues</Link>
                 </div>
               </div>
             </div>

@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npm run check-links",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check-links": "node scripts/check-links.mjs"
   },
   "dependencies": {
     "next": "^16.2.7",

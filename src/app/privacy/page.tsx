@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'Privacy Policy',
   description: 'Privacy policy for Off Broadway Nashville, including information on cookies, advertising, and your rights.',
-}
+  path: '/privacy',
+})
 
 export default function PrivacyPage() {
   return (
