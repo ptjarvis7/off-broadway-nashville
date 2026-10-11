@@ -34,6 +34,24 @@ keep advertising a stale date, which is worse for search than no date at all.
 Neighborhood, category, and list-page `<lastmod>` values are derived from the
 newest `lastUpdated` of the venues they contain, so they follow automatically.
 
+## Neighborhood and category pages
+
+Not every neighborhood or category gets a standalone page. Each entry in
+`src/data/neighborhoods.ts` and `src/data/categories.ts` has a `hasPage` flag,
+and that one flag drives static params, the sitemap, the index pages, and every
+internal link. Values without a page stay in the venue data and the `/venues/`
+filters; neighborhoods without a page are listed under "Smaller scenes" on
+`/neighborhoods/` with direct links to their venues.
+
+Turning a page off also needs a permanent redirect in `vercel.json` (with and
+without the trailing slash) to its index. `output: 'export'` ignores
+`redirects()` in `next.config.js`, so Vercel handles them. The build fails if
+`vercel.json` and the `hasPage` flags disagree in either direction.
+
+Categories with a page need a `teaser`, shown on `/categories/`. The full
+`description` renders only on the category's own page, so the index never
+duplicates it.
+
 ## SEO
 
 `src/lib/seo.ts` owns the shared metadata surface. Every route builds its

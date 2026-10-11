@@ -11,6 +11,8 @@ export interface Venue {
   status: 'active' | 'inactive'
   lastUpdated: string
   whatToExpect?: string
+  /** Optional one-liner shown on cards in category and neighborhood listings. */
+  cardHook?: string
 }
 
 export interface VenuesData {

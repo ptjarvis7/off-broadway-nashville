@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { getAllVenues, getAllNeighborhoods, neighborhoodToSlug } from '@/lib/venues'
+import { getAllVenues, neighborhoodToSlug } from '@/lib/venues'
 import { pageMetadata, SITE_NAME } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 
@@ -19,13 +19,13 @@ const featuredNeighborhoods = [
   { name: "Printer's Alley", description: 'Blues, jazz, and late nights' },
   { name: 'Music Valley', description: 'Near the Opry, real country music' },
   { name: 'West End', description: 'Rock venues and neighborhood bars' },
-  { name: 'Germantown', description: 'Touring acts, acclaimed dining, and craft beer' },
+  { name: 'Downtown', description: 'The Ryman and honky tonks off the strip' },
 ]
 
 const experiences = [
   {
     label: 'Songwriter Rounds',
-    href: '/categories/songwriter-rounds',
+    href: '/categories/songwriter-rounds/',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
         <circle cx="7" cy="18" r="3"/>
@@ -36,7 +36,7 @@ const experiences = [
   },
   {
     label: 'Listening Rooms',
-    href: '/categories/listening-rooms',
+    href: '/categories/listening-rooms/',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 14a9 9 0 0 1 18 0"/>
@@ -47,7 +47,7 @@ const experiences = [
   },
   {
     label: 'Honky Tonks',
-    href: '/categories/honky-tonks',
+    href: '/categories/honky-tonks/',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M10.5 1.5h3v5l2.5 2.5v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-11l2.5-2.5v-5Z"/>
@@ -58,7 +58,7 @@ const experiences = [
   },
   {
     label: 'Jazz Clubs',
-    href: '/categories/jazz-clubs',
+    href: '/categories/jazz-clubs/',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="6" cy="18" r="2"/>
@@ -71,7 +71,7 @@ const experiences = [
   },
   {
     label: 'Karaoke Bars',
-    href: '/categories/karaoke-bars',
+    href: '/categories/karaoke-bars/',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="9" y="2" width="6" height="11" rx="3"/>
@@ -83,7 +83,7 @@ const experiences = [
   },
   {
     label: 'Concert Venues',
-    href: '/categories/concert-venues',
+    href: '/categories/concert-venues/',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4V8Z"/>
@@ -92,28 +92,12 @@ const experiences = [
     ),
   },
   {
-    label: 'Dinner & A Show',
-    href: '/categories/dinner-and-a-show',
+    label: 'Near the Opry',
+    href: '/categories/near-the-opry/',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 2v6a3 3 0 0 0 3 3v11"/>
-        <path d="M5 2v5M7 2v5"/>
-        <line x1="17" y1="2" x2="17" y2="22"/>
-        <path d="M14 2v7a2 2 0 0 0 2 2h2"/>
-      </svg>
-    ),
-  },
-  {
-    label: 'Bluegrass',
-    href: '/categories/bluegrass',
-    icon: (
-      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="11" cy="15" r="5.5"/>
-        <line x1="11" y1="9.5" x2="11" y2="2"/>
-        <rect x="9.5" y="1.5" width="3" height="2" rx="0.5"/>
-        <line x1="8" y1="12" x2="14" y2="18"/>
-        <line x1="8" y1="18" x2="14" y2="12"/>
-        <line x1="11" y1="9.5" x2="11" y2="20.5"/>
+        <path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11Z"/>
+        <circle cx="12" cy="10" r="2.5"/>
       </svg>
     ),
   },
@@ -156,12 +140,15 @@ export default function HomePage() {
       <section className="py-16 px-4 bg-cream">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-display text-3xl font-semibold text-ink mb-8">Browse by Experience</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {/* Seven tiles: flex-wrap with centered rows keeps the partial row
+              balanced (2 per row on phones, 4 then 3 on tablets, 7 in one row
+              on desktop). */}
+          <div className="flex flex-wrap justify-center gap-3">
             {experiences.map(exp => (
               <Link
                 key={exp.href}
                 href={exp.href}
-                className="bg-white border border-border rounded-lg p-4 hover:border-accent hover:shadow-sm transition-all group"
+                className="w-[calc((100%_-_0.75rem)/2)] sm:w-[calc((100%_-_2.25rem)/4)] lg:w-[calc((100%_-_4.5rem)/7)] bg-white border border-border rounded-lg p-4 hover:border-accent hover:shadow-sm transition-all group"
               >
                 <div className="mb-2.5 w-10 h-10 rounded-full bg-accent-light flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
                   {exp.icon}

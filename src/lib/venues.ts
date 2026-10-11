@@ -1,7 +1,16 @@
 import venuesData from '@/data/venues.json'
+import { neighborhoods, type NeighborhoodInfo } from '@/data/neighborhoods'
 import type { Venue, VenuesData } from '@/types'
 
 const data = venuesData as VenuesData
+
+// Every venue's neighborhood needs an entry in src/data/neighborhoods.ts, so a
+// new neighborhood cannot ship without a blurb and an explicit hasPage choice.
+for (const venue of data.venues) {
+  if (!neighborhoods.some(n => n.name === venue.neighborhood)) {
+    throw new Error(`Venue "${venue.slug}" is in neighborhood "${venue.neighborhood}", which has no entry in src/data/neighborhoods.ts`)
+  }
+}
 
 export function getAllVenues(): Venue[] {
   return data.venues.filter(v => v.status === 'active')
@@ -63,16 +72,29 @@ export function getSimilarVenues(venue: Venue, limit = 3): Venue[] {
     .map(r => r.venue)
 }
 
-export function getNeighborhoodSlugs(): string[] {
-  return getAllNeighborhoods().map(n =>
-    n.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
-  )
-}
-
 export function neighborhoodToSlug(neighborhood: string): string {
   return neighborhood.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
 }
 
+export function getNeighborhoodInfo(name: string): NeighborhoodInfo | undefined {
+  return neighborhoods.find(n => n.name === name)
+}
+
+export function neighborhoodHasPage(name: string): boolean {
+  return getNeighborhoodInfo(name)?.hasPage === true
+}
+
+/** Neighborhoods with a standalone page, alphabetical, limited to ones with active venues. */
+export function getNeighborhoodsWithPages(): string[] {
+  return getAllNeighborhoods().filter(neighborhoodHasPage)
+}
+
+/** Neighborhoods that appear only in "Smaller scenes" and the /venues/ filters. */
+export function getNeighborhoodsWithoutPages(): string[] {
+  return getAllNeighborhoods().filter(n => !neighborhoodHasPage(n))
+}
+
+/** Resolves a slug only for neighborhoods that have a page. */
 export function slugToNeighborhood(slug: string): string | undefined {
-  return getAllNeighborhoods().find(n => neighborhoodToSlug(n) === slug)
+  return getNeighborhoodsWithPages().find(n => neighborhoodToSlug(n) === slug)
 }

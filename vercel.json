@@ -1,0 +1,154 @@
+{
+  "redirects": [
+    {
+      "source": "/neighborhoods/8th-ave-s",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/8th-ave-s/",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/berry-hill",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/berry-hill/",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/germantown",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/germantown/",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/green-hills",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/green-hills/",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/hillsboro-village",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/hillsboro-village/",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/madison",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/madison/",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/marathon-village",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/marathon-village/",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/the-nations",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/the-nations/",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/wedgewood-houston",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/wedgewood-houston/",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/west-nashville",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/neighborhoods/west-nashville/",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/dinner-and-a-show",
+      "destination": "/categories/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/dinner-and-a-show/",
+      "destination": "/categories/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/bluegrass",
+      "destination": "/categories/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/bluegrass/",
+      "destination": "/categories/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/country-music",
+      "destination": "/categories/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/country-music/",
+      "destination": "/categories/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/date-night",
+      "destination": "/categories/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/date-night/",
+      "destination": "/categories/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/late-night",
+      "destination": "/categories/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/late-night/",
+      "destination": "/categories/",
+      "permanent": true
+    }
+  ]
+}

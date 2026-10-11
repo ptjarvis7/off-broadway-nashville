@@ -1,23 +1,22 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { getAllVenues } from '@/lib/venues'
+import { getCategoriesWithPages, getCategoryBySlug, getVenuesInCategory } from '@/lib/categories'
 import { pageMetadata, venueCount } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 import FAQ from '@/components/FAQ'
-import { categories } from '../page'
 
 interface Props {
   params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
-  return categories.map(c => ({ slug: c.slug }))
+  return getCategoriesWithPages().map(c => ({ slug: c.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const category = categories.find(c => c.slug === slug)
+  const category = getCategoryBySlug(slug)
   if (!category) return {}
   return pageMetadata({
     title: category.title,
@@ -28,20 +27,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function CategoryPage({ params }: Props) {
   const { slug } = await params
-  const category = categories.find(c => c.slug === slug)
+  const category = getCategoryBySlug(slug)
   if (!category) notFound()
 
-  const allVenues = getAllVenues()
-
-  const venues = allVenues.filter(v => {
-    if (category.filterType === 'venueType') return v.venueTypeTags.includes(category.filterValue)
-    if (category.filterType === 'genre') return v.genreTags.includes(category.filterValue)
-    if (category.filterType === 'bestFor') return v.bestForTags.includes(category.filterValue)
-    if (category.filterType === 'neighborhood') return v.neighborhood === category.filterValue
-    return false
-  })
-
-  const relatedCategories = categories.filter(c => c.slug !== slug).slice(0, 4)
+  const venues = getVenuesInCategory(category)
+  const relatedCategories = getCategoriesWithPages().filter(c => c.slug !== slug).slice(0, 4)
 
   return (
     <div className="min-h-screen bg-cream">
@@ -67,7 +57,7 @@ export default async function CategoryPage({ params }: Props) {
         {venues.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {venues.map(venue => (
-              <VenueCard key={venue.id} venue={venue} />
+              <VenueCard key={venue.id} venue={venue} showDescription={false} />
             ))}
           </div>
         ) : (

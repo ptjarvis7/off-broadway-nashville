@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
-import { getAllVenues, getAllNeighborhoods, neighborhoodToSlug } from '@/lib/venues'
-import { categories } from '@/app/categories/page'
+import { getAllVenues, getNeighborhoodsWithPages, neighborhoodToSlug } from '@/lib/venues'
+import { getCategoriesWithPages, venueInCategory } from '@/lib/categories'
+import { assertRedirectsMatchRemovedPages } from '@/lib/redirects'
 import { canonicalUrl } from '@/lib/seo'
 import type { Venue } from '@/types'
 
@@ -16,17 +17,13 @@ function newestUpdate(venues: Venue[]): Date {
   return new Date(`${newest}T00:00:00Z`)
 }
 
-function matchesCategory(venue: Venue, filterType: string, filterValue: string): boolean {
-  if (filterType === 'venueType') return venue.venueTypeTags.includes(filterValue)
-  if (filterType === 'genre') return venue.genreTags.includes(filterValue)
-  if (filterType === 'bestFor') return venue.bestForTags.includes(filterValue)
-  if (filterType === 'neighborhood') return venue.neighborhood === filterValue
-  return false
-}
-
 export default function sitemap(): MetadataRoute.Sitemap {
+  // The sitemap is the build's URL inventory, so it is also where the build
+  // fails if vercel.json redirects drift from the hasPage flags.
+  assertRedirectsMatchRemovedPages()
+
   const venues = getAllVenues()
-  const neighborhoods = getAllNeighborhoods()
+  const neighborhoods = getNeighborhoodsWithPages()
   const siteUpdated = newestUpdate(venues)
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -50,9 +47,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  const categoryRoutes: MetadataRoute.Sitemap = categories.map(cat => ({
+  const categoryRoutes: MetadataRoute.Sitemap = getCategoriesWithPages().map(cat => ({
     url: canonicalUrl(`/categories/${cat.slug}`),
-    lastModified: newestUpdate(venues.filter(v => matchesCategory(v, cat.filterType, cat.filterValue))),
+    lastModified: newestUpdate(venues.filter(v => venueInCategory(v, cat))),
     changeFrequency: 'monthly',
     priority: 0.6,
   }))

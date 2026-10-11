@@ -1,17 +1,18 @@
 import Link from 'next/link'
+import { neighborhoodToSlug } from '@/lib/venues'
 
 const neighborhoods = [
   'East Nashville', 'Midtown', 'The Gulch', 'SoBro',
-  'Music Valley', "Printer's Alley", 'West End', 'Germantown'
+  'Music Valley', "Printer's Alley", 'West End', 'Downtown'
 ]
 
 const categories = [
-  { label: 'Listening Rooms', href: '/categories/listening-rooms' },
-  { label: 'Songwriter Rounds', href: '/categories/songwriter-rounds' },
-  { label: 'Honky Tonks', href: '/categories/honky-tonks' },
-  { label: 'Jazz Clubs', href: '/categories/jazz-clubs' },
-  { label: 'Karaoke Bars', href: '/categories/karaoke-bars' },
-  { label: 'Concert Venues', href: '/categories/concert-venues' },
+  { label: 'Listening Rooms', href: '/categories/listening-rooms/' },
+  { label: 'Songwriter Rounds', href: '/categories/songwriter-rounds/' },
+  { label: 'Honky Tonks', href: '/categories/honky-tonks/' },
+  { label: 'Jazz Clubs', href: '/categories/jazz-clubs/' },
+  { label: 'Karaoke Bars', href: '/categories/karaoke-bars/' },
+  { label: 'Concert Venues', href: '/categories/concert-venues/' },
 ]
 
 export default function Footer() {
@@ -34,7 +35,7 @@ export default function Footer() {
               {neighborhoods.map(n => (
                 <li key={n}>
                   <Link
-                    href={`/neighborhoods/${n.toLowerCase().replace(/[^a-z0-9]+/g, '-')}/`}
+                    href={`/neighborhoods/${neighborhoodToSlug(n)}/`}
                     className="text-sm text-stone-400 hover:text-white transition-colors"
                   >
                     {n}

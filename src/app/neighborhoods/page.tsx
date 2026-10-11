@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { pageMetadata, venueCount } from '@/lib/seo'
 import Link from 'next/link'
-import { getAllNeighborhoods, getVenuesByNeighborhood, neighborhoodToSlug } from '@/lib/venues'
+import { getNeighborhoodsWithPages, getNeighborhoodsWithoutPages, getNeighborhoodInfo, getVenuesByNeighborhood, neighborhoodToSlug } from '@/lib/venues'
 
 export const metadata: Metadata = pageMetadata({
   title: 'Nashville Live Music by Neighborhood',
@@ -9,29 +9,9 @@ export const metadata: Metadata = pageMetadata({
   path: '/neighborhoods',
 })
 
-const neighborhoodDescriptions: Record<string, string> = {
-  'East Nashville': 'The indie heart of the city. Local bands, divey rooms, and a scene that feels like Nashville before the boom.',
-  'The Gulch': 'Bluegrass legends, jazz clubs, and one of the city\'s best independent venue complexes. More depth than the neighborhood gets credit for.',
-  'Midtown': 'Music Row is right here. Songwriter bars, honky tonks, and spots where industry people drink.',
-  'SoBro': 'Downtown-adjacent without being Broadway. Listening rooms, outdoor stages, and river views.',
-  'Music Valley': 'Near the Opry. Classic country, line dancing, and venues that feel like Nashville used to.',
-  "Printer's Alley": 'The old late-night strip. Blues, jazz, karaoke, and a few spots that have been here for decades.',
-  'West End': 'Historic rock venues, neighborhood bars, and a couple of Nashville institutions worth knowing.',
-  'Germantown': 'Newer but not generic. Brooklyn Bowl anchors it, with a few other spots worth the trip north.',
-  'Green Hills': 'The Bluebird Cafe is here. That alone makes it worth the drive.',
-  'Wedgewood-Houston': "Santa's Pub is here. Enough said.",
-  'Berry Hill': 'Just south of downtown. A distillery tavern and a laid-back vibe away from the tourist core.',
-  'Madison': "Dee's Country Cocktail Lounge. A real local honky tonk north of the city.",
-  'The Nations': 'West Nashville neighborhood bar territory. Casual, local, and worth knowing about.',
-  'West Nashville': 'Ray Stevens built a showroom out here. Old-school Nashville entertainment.',
-  'Hillsboro Village': 'Quiet neighborhood venue energy. Good for a songwriter round without the crowds.',
-  'Marathon Village': 'Marathon Music Works is the anchor. Mid-size shows in an industrial converted space.',
-  '8th Ave S': 'The Basement is here, along with a couple of smaller spots on the corridor south of downtown.',
-  'Downtown': 'The Ryman, Municipal Auditorium, and a few honky tonks that exist outside the Broadway bubble.',
-}
-
 export default function NeighborhoodsPage() {
-  const neighborhoods = getAllNeighborhoods()
+  const neighborhoods = getNeighborhoodsWithPages()
+  const smallerScenes = getNeighborhoodsWithoutPages()
 
   return (
     <div className="min-h-screen bg-cream">
@@ -50,7 +30,7 @@ export default function NeighborhoodsPage() {
           {neighborhoods.map(neighborhood => {
             const venues = getVenuesByNeighborhood(neighborhood)
             const slug = neighborhoodToSlug(neighborhood)
-            const description = neighborhoodDescriptions[neighborhood] || `${venueCount(venues.length)} for live music in ${neighborhood}.`
+            const description = getNeighborhoodInfo(neighborhood)?.blurb
 
             return (
               <Link
@@ -71,6 +51,30 @@ export default function NeighborhoodsPage() {
             )
           })}
         </div>
+
+        <section aria-labelledby="smaller-scenes" className="mt-14">
+          <h2 id="smaller-scenes" className="font-display text-2xl font-semibold text-ink mb-6">Smaller scenes</h2>
+          <ul className="bg-white border border-border rounded-lg divide-y divide-border">
+            {smallerScenes.map(neighborhood => {
+              const venues = getVenuesByNeighborhood(neighborhood)
+              return (
+                <li key={neighborhood} className="p-5 sm:grid sm:grid-cols-3 sm:gap-6">
+                  <h3 className="font-display font-semibold text-lg text-ink mb-1 sm:mb-0">{neighborhood}</h3>
+                  <p className="text-sm text-muted leading-relaxed mb-3 sm:mb-0">{getNeighborhoodInfo(neighborhood)?.blurb}</p>
+                  <ul className="text-sm space-y-1" aria-label={`Venues in ${neighborhood}`}>
+                    {venues.map(venue => (
+                      <li key={venue.slug}>
+                        <Link href={`/venues/${venue.slug}/`} className="text-accent hover:underline">
+                          {venue.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              )
+            })}
+          </ul>
+        </section>
       </div>
     </div>
   )

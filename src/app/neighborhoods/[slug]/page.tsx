@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { getAllNeighborhoods, getVenuesByNeighborhood, slugToNeighborhood, neighborhoodToSlug } from '@/lib/venues'
+import { getNeighborhoodsWithPages, getVenuesByNeighborhood, slugToNeighborhood, neighborhoodToSlug } from '@/lib/venues'
 import { pageMetadata, venueCount, venueNameList } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 import FAQ, { type FAQItem } from '@/components/FAQ'
@@ -11,8 +11,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const neighborhoods = getAllNeighborhoods()
-  return neighborhoods.map(n => ({ slug: neighborhoodToSlug(n) }))
+  return getNeighborhoodsWithPages().map(n => ({ slug: neighborhoodToSlug(n) }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -36,17 +35,7 @@ const neighborhoodIntros: Record<string, string> = {
   'Music Valley': "This is Grand Ole Opry territory. The venues out here cater to a more traditional country crowd, and that's not a criticism. It's exactly what some visitors are looking for. Real country music, near the Opry.",
   "Printer's Alley": "The old entertainment strip that predates Broadway's current incarnation. Blues, jazz, karaoke, and late nights. Skull's Rainbow Room has been here in various forms since the 1940s.",
   'West End': "Home to Exit/In, one of Nashville's most important rock venues, and Springwater, one of its oldest bars. The End is as divey as it gets. West End has the best concentration of rock venues in the city.",
-  'Germantown': "Just north of downtown, Germantown is known as much for its restaurants and breweries as its music. Brooklyn Bowl is the anchor, a full concert venue with bowling and food alongside the shows. Star Rover Sound is worth mentioning for a more intimate night.",
-  'Green Hills': "One reason to come to Green Hills: The Bluebird Cafe. The most famous listening room in the world. Book tickets in advance.",
   'Downtown': "The Ryman Auditorium alone justifies knowing this neighborhood. Municipal Auditorium handles bigger touring shows. A few honky tonks exist outside the Broadway corridor if you know where to look.",
-  'Wedgewood-Houston': "Santa's Pub is here and that's what matters. A Christmas-themed double-wide trailer with karaoke, cash only, and one of the most genuinely local experiences left in Nashville.",
-  'Berry Hill': "Just south of the city core. Big Machine Distillery & Tavern does weekend live music with a brunch crowd and a patio. Low-key and worth the short drive.",
-  'Madison': "Dee's Country Cocktail Lounge is the reason to come to Madison. A real neighborhood honky tonk with a local following and zero tourist energy.",
-  'The Nations': "The Nations Bar & Grill is a neighborhood staple in West Nashville. Country, Americana, and bluegrass-leaning music in a casual bar setting.",
-  'West Nashville': "Ray Stevens built the CabaRay Showroom out here, a proper dinner theater with old-school Nashville entertainment. Worth it if that's your thing.",
-  'Hillsboro Village': "Anzie Blue is a small, seated venue for songwriter rounds and intimate shows. Quiet neighborhood energy, walkable from Vanderbilt.",
-  'Marathon Village': "Marathon Music Works is a converted warehouse space that handles mid-size touring acts well. Not much else music-wise in the immediate area, but it's a great venue.",
-  '8th Ave S': "The Basement is one of Nashville's best small venues for discovering new artists. The Green Light Bar does songwriter rounds. The Eighth Room is more upscale.",
 }
 
 const neighborhoodFaqs: Record<string, FAQItem[]> = {
@@ -100,7 +89,7 @@ export default async function NeighborhoodPage({ params }: Props) {
         {venues.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {venues.map(venue => (
-              <VenueCard key={venue.id} venue={venue} />
+              <VenueCard key={venue.id} venue={venue} showDescription={false} />
             ))}
           </div>
         ) : (

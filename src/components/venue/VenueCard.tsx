@@ -4,9 +4,17 @@ import type { Venue } from '@/types'
 interface VenueCardProps {
   venue: Venue
   compact?: boolean
+  /**
+   * Category and neighborhood listings pass false so the short description,
+   * which is the opening line of each venue page, is not repeated across
+   * listing pages. Those cards show the venue's cardHook instead, if it has one.
+   */
+  showDescription?: boolean
 }
 
-export default function VenueCard({ venue, compact = false }: VenueCardProps) {
+export default function VenueCard({ venue, compact = false, showDescription = true }: VenueCardProps) {
+  const blurb = showDescription ? venue.shortDescription : venue.cardHook
+
   return (
     <div className="venue-card flex flex-col h-full">
       <div className="flex items-start justify-between gap-2 mb-2">
@@ -30,9 +38,9 @@ export default function VenueCard({ venue, compact = false }: VenueCardProps) {
         ))}
       </div>
 
-      {!compact && (
+      {!compact && blurb && (
         <p className="text-sm text-muted leading-relaxed mb-4 flex-1">
-          {venue.shortDescription}
+          {blurb}
         </p>
       )}
 
