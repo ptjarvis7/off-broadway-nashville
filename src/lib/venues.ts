@@ -12,6 +12,15 @@ for (const venue of data.venues) {
   }
 }
 
+// A venue image needs real alt text and dimensions before it can ship.
+for (const venue of data.venues) {
+  const img = venue.image
+  if (!img) continue
+  if (!img.src.startsWith('/') || !img.alt?.trim() || !(img.width > 0) || !(img.height > 0)) {
+    throw new Error(`Venue "${venue.slug}" has an image without a root-relative src, alt text, width, and height`)
+  }
+}
+
 export function getAllVenues(): Venue[] {
   return data.venues.filter(v => v.status === 'active')
 }

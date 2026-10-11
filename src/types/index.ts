@@ -13,6 +13,27 @@ export interface Venue {
   whatToExpect?: string
   /** Optional one-liner shown on cards in category and neighborhood listings. */
   cardHook?: string
+  /** Practical details, each rendered only when filled. */
+  knowBeforeYouGo?: KnowBeforeYouGo
+  image?: VenueImage
+}
+
+export interface KnowBeforeYouGo {
+  cover?: string
+  payment?: string
+  seating?: string
+  ages?: string
+  parking?: string
+  bestNights?: string
+}
+
+export interface VenueImage {
+  /** Root-relative path, e.g. /images/venues/the-station-inn-1600.webp (output of npm run images). */
+  src: string
+  alt: string
+  width: number
+  height: number
+  credit?: string
 }
 
 export interface VenuesData {

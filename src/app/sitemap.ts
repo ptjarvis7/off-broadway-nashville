@@ -2,7 +2,8 @@ import type { MetadataRoute } from 'next'
 import { getAllVenues, getNeighborhoodsWithPages, neighborhoodToSlug } from '@/lib/venues'
 import { getCategoriesWithPages, venueInCategory } from '@/lib/categories'
 import { assertRedirectsMatchRemovedPages } from '@/lib/redirects'
-import { canonicalUrl } from '@/lib/seo'
+import { canonicalUrl, SITE_URL } from '@/lib/seo'
+import { getPublishedGuides, getSiteUpdates } from '@/lib/content'
 import type { Venue } from '@/types'
 
 export const revalidate = false
@@ -38,6 +39,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(`${venue.lastUpdated}T00:00:00Z`),
     changeFrequency: 'monthly',
     priority: 0.7,
+    // Emitted as <image:image> entries, which makes this an image sitemap too.
+    ...(venue.image ? { images: [`${SITE_URL}${venue.image.src}`] } : {}),
   }))
 
   const neighborhoodRoutes: MetadataRoute.Sitemap = neighborhoods.map(n => ({
@@ -54,5 +57,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  return [...staticRoutes, ...venueRoutes, ...neighborhoodRoutes, ...categoryRoutes]
+  // /guides/ and /updates/ only exist once they have content (see next.config.js).
+  const guides = getPublishedGuides()
+  const guideRoutes: MetadataRoute.Sitemap = guides.length
+    ? [
+        {
+          url: canonicalUrl('/guides'),
+          lastModified: new Date(`${guides.reduce((max, g) => (g.dateModified > max ? g.dateModified : max), '1970-01-01')}T00:00:00Z`),
+          changeFrequency: 'monthly',
+          priority: 0.7,
+        },
+        ...guides.map(g => ({
+          url: canonicalUrl(`/guides/${g.slug}`),
+          lastModified: new Date(`${g.dateModified}T00:00:00Z`),
+          changeFrequency: 'monthly' as const,
+          priority: 0.7,
+        })),
+      ]
+    : []
+
+  const updates = getSiteUpdates()
+  const updateRoutes: MetadataRoute.Sitemap = updates.length
+    ? [{ url: canonicalUrl('/updates'), lastModified: new Date(`${updates[0].date}T00:00:00Z`), changeFrequency: 'monthly', priority: 0.3 }]
+    : []
+
+  return [...staticRoutes, ...venueRoutes, ...neighborhoodRoutes, ...categoryRoutes, ...guideRoutes, ...updateRoutes]
 }

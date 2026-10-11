@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { getAllVenues, neighborhoodToSlug } from '@/lib/venues'
 import { pageMetadata, SITE_NAME } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
+import JsonLd from '@/components/JsonLd'
+import { homepageSchema } from '@/lib/structured-data'
 
 export const metadata: Metadata = pageMetadata({
   title: `${SITE_NAME} | Find Live Music Beyond Broadway`,
@@ -114,6 +116,7 @@ export default function HomePage() {
 
   return (
     <>
+      <JsonLd data={homepageSchema()} />
       {/* Hero */}
       <section className="bg-ink text-white py-20 px-4">
         <div className="max-w-6xl mx-auto">

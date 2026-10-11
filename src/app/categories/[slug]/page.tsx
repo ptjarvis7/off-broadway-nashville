@@ -5,6 +5,9 @@ import { getCategoriesWithPages, getCategoryBySlug, getVenuesInCategory } from '
 import { pageMetadata, venueCount } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 import FAQ from '@/components/FAQ'
+import Byline from '@/components/Byline'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, collectionPageSchema, faqSchema } from '@/lib/structured-data'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -33,8 +36,17 @@ export default async function CategoryPage({ params }: Props) {
   const venues = getVenuesInCategory(category)
   const relatedCategories = getCategoriesWithPages().filter(c => c.slug !== slug).slice(0, 4)
 
+  const path = `/categories/${category.slug}/`
+
   return (
     <div className="min-h-screen bg-cream">
+      <JsonLd data={collectionPageSchema({ name: category.title, description: category.description, path, venues })} />
+      <JsonLd data={breadcrumbSchema([
+        { name: 'Home', path: '/' },
+        { name: 'Categories', path: '/categories/' },
+        { name: category.shortTitle },
+      ])} />
+      {category.faqs && category.faqs.length > 0 && <JsonLd data={faqSchema(category.faqs)} />}
       <div className="bg-white border-b border-border px-4 py-3">
         <div className="max-w-6xl mx-auto text-xs text-muted flex items-center gap-2">
           <Link href="/" className="hover:text-accent transition-colors">Home</Link>
@@ -50,6 +62,7 @@ export default async function CategoryPage({ params }: Props) {
           <h1 className="font-display text-4xl font-bold text-ink mb-4">{category.title}</h1>
           <p className="text-muted max-w-2xl leading-relaxed mb-3">{category.description}</p>
           <div className="text-sm text-muted">{venueCount(venues.length)}</div>
+          <Byline className="mt-2" />
         </div>
       </div>
 

@@ -10,6 +10,9 @@ out/
 .env.local
 .env.*.local
 
+# original venue photos, processed by npm run images into public/images/venues/
+photos-in/
+
 # misc
 .DS_Store
 *.pem

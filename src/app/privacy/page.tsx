@@ -3,7 +3,7 @@ import { pageMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = pageMetadata({
   title: 'Privacy Policy',
-  description: 'Privacy policy for Off Broadway Nashville, including information on cookies, advertising, and your rights.',
+  description: 'Privacy policy for Off Broadway Nashville, including information on cookies, advertising, analytics, and your rights.',
   path: '/privacy',
 })
 
@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <div className="bg-white border-b border-border py-10 px-4">
         <div className="max-w-3xl mx-auto">
           <h1 className="font-display text-4xl font-bold text-ink mb-2">Privacy Policy</h1>
-          <p className="text-muted text-sm">Last updated: July 12, 2026</p>
+          <p className="text-muted text-sm">Last updated: October 11, 2026</p>
         </div>
       </div>
 
@@ -25,10 +25,10 @@ export default function PrivacyPage() {
         <div>
           <h2 className="font-display text-xl font-semibold text-ink mb-3">Information we collect</h2>
           <p className="text-muted leading-relaxed mb-3">
-            Browsing this site does not require an account, and we do not collect personal information just from you looking at the directory. If you email us through the contact page, we keep whatever you send us in that email, and use it only to reply to you.
+            Browsing this site does not require an account, and we do not ask you for personal information to use the directory. If you email us through the contact page, we keep whatever you send us in that email, and use it only to reply to you.
           </p>
           <p className="text-muted leading-relaxed">
-            Like most websites, our hosting provider logs standard technical data such as IP address, browser type, and pages visited. This is used for security and performance, not to identify individual visitors.
+            Like most websites, our hosting provider logs standard technical data such as IP address, browser type, and pages visited. This is used for security and performance, not to identify individual visitors. We also use Google Analytics, described below.
           </p>
         </div>
 
@@ -55,7 +55,9 @@ export default function PrivacyPage() {
         <div>
           <h2 className="font-display text-xl font-semibold text-ink mb-3">Analytics</h2>
           <p className="text-muted leading-relaxed">
-            This site does not currently use Google Analytics or any other analytics tracking tool. If that changes, this policy will be updated to reflect it.
+            This site uses Google Analytics to understand how visitors use it, such as which pages are visited and how people arrive here. Google Analytics sets cookies and collects data like your approximate location, device, and browser; it does not give us your name or contact details. You can learn how Google uses this data at{' '}
+            <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">policies.google.com/technologies/partner-sites</a>, and opt out with the{' '}
+            <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Google Analytics opt-out browser add-on</a>.
           </p>
         </div>
 
@@ -69,7 +71,7 @@ export default function PrivacyPage() {
         <div>
           <h2 className="font-display text-xl font-semibold text-ink mb-3">Your rights</h2>
           <p className="text-muted leading-relaxed">
-            Depending on where you live, you may have the right to access, correct, or delete information we hold about you, and to object to certain uses of cookies. Most of what this site collects comes from advertising cookies, which you can manage through the opt-out links above. For anything else, contact us using the information below.
+            Depending on where you live, you may have the right to access, correct, or delete information we hold about you, and to object to certain uses of cookies. Most of what this site collects comes from advertising and analytics cookies, which you can manage through the opt-out links above. For anything else, contact us using the information below.
           </p>
         </div>
 

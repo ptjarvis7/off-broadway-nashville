@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { neighborhoodToSlug } from '@/lib/venues'
+import { getSiteUpdates, hasGuides, UPDATES_FOOTER_THRESHOLD } from '@/lib/content'
 
 const neighborhoods = [
   'East Nashville', 'Midtown', 'The Gulch', 'SoBro',
@@ -16,6 +17,8 @@ const categories = [
 ]
 
 export default function Footer() {
+  const showUpdates = getSiteUpdates().length >= UPDATES_FOOTER_THRESHOLD
+
   return (
     <footer className="bg-ink text-white mt-20">
       <div className="max-w-6xl mx-auto px-4 py-12">
@@ -59,9 +62,11 @@ export default function Footer() {
         </div>
         <div className="border-t border-stone-800 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-stone-400 text-xs">
           <span>© {new Date().getFullYear()} Off Broadway Nashville. Built for live music lovers.</span>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-x-4 gap-y-2">
+            {hasGuides() && <Link href="/guides/" className="hover:text-stone-400 transition-colors">Guides</Link>}
             <Link href="/about/" className="hover:text-stone-400 transition-colors">About</Link>
             <Link href="/contact/" className="hover:text-stone-400 transition-colors">Contact</Link>
+            {showUpdates && <Link href="/updates/" className="hover:text-stone-400 transition-colors">Updates</Link>}
             <Link href="/privacy/" className="hover:text-stone-400 transition-colors">Privacy</Link>
           </div>
         </div>

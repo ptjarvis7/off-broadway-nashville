@@ -55,4 +55,39 @@ h1, h2, h3, h4 {
   .section-label {
     @apply text-xs font-medium tracking-widest uppercase text-muted;
   }
+
+  /* Rendered Markdown in guides (src/lib/markdown.ts). */
+  .guide-body {
+    @apply text-muted leading-relaxed space-y-5;
+  }
+  .guide-body h2 {
+    @apply text-2xl font-semibold text-ink pt-4;
+  }
+  .guide-body h3 {
+    @apply text-xl font-semibold text-ink pt-2;
+  }
+  .guide-body h4 {
+    @apply text-lg font-semibold text-ink;
+  }
+  .guide-body a {
+    @apply text-accent underline underline-offset-2;
+  }
+  .guide-body strong {
+    @apply font-medium text-ink;
+  }
+  .guide-body ul {
+    @apply list-disc pl-6 space-y-1.5;
+  }
+  .guide-body ol {
+    @apply list-decimal pl-6 space-y-1.5;
+  }
+  .guide-body blockquote {
+    @apply border-l-2 border-accent pl-4 italic;
+  }
+  .guide-body hr {
+    @apply border-border;
+  }
+  .guide-body code {
+    @apply text-sm bg-stone-100 px-1 rounded;
+  }
 }

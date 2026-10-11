@@ -4,6 +4,10 @@ import type { Metadata } from 'next'
 import { getAllVenues, getVenueBySlug, getSimilarVenues, neighborhoodToSlug, neighborhoodHasPage } from '@/lib/venues'
 import { pageMetadata, formatUpdated } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
+import KnowBeforeYouGo from '@/components/venue/KnowBeforeYouGo'
+import Byline from '@/components/Byline'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, venueSchema, type Crumb } from '@/lib/structured-data'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -22,6 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: venue.name,
     description: venue.shortDescription,
     path: `/venues/${venue.slug}`,
+    image: venue.image,
   })
 }
 
@@ -35,38 +40,21 @@ export default async function VenuePage({ params }: Props) {
     ? `/neighborhoods/${neighborhoodToSlug(venue.neighborhood)}/`
     : null
 
-  const venueTypeToSchemaUri: Record<string, string> = {
-    'Concert Venue': 'https://schema.org/MusicVenue',
-    'Live Music Venue': 'https://schema.org/MusicVenue',
-    'Restaurant w/ Live Music': 'https://schema.org/Restaurant',
-    'Jazz Club': 'https://schema.org/NightClub',
-    'Karaoke Bar': 'https://schema.org/BarOrPub',
-    'Historic Venue': 'https://schema.org/LandmarksOrHistoricalBuildings',
-  }
-
-  const additionalTypes = venue.venueTypeTags.map(
-    (tag: string) => venueTypeToSchemaUri[tag] ?? tag
-  )
-
-  const schemaData: Record<string, unknown> = {
-    '@context': 'https://schema.org',
-    '@type': 'MusicVenue',
-    name: venue.name,
-    description: venue.shortDescription,
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Nashville',
-      addressRegion: 'TN',
-      addressCountry: 'US',
-    },
-    areaServed: venue.neighborhood,
-    additionalType: additionalTypes,
-    ...(venue.officialWebsite ? { url: venue.officialWebsite } : {}),
-  }
+  const crumbs: Crumb[] = [
+    { name: 'Home', path: '/' },
+    { name: 'Venues', path: '/venues/' },
+    // Neighborhoods without a page are left out rather than linked to a redirect.
+    ...(neighborhoodHref ? [{ name: venue.neighborhood, path: neighborhoodHref }] : []),
+    { name: venue.name },
+  ]
+  const image = venue.image
+  // npm run images writes <slug>-1600.webp and <slug>-800.webp side by side.
+  const smallSrc = image?.src.endsWith('-1600.webp') ? image.src.replace(/-1600\.webp$/, '-800.webp') : null
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <JsonLd data={venueSchema(venue)} />
+      <JsonLd data={breadcrumbSchema(crumbs)} />
       <div className="min-h-screen bg-cream">
         <div className="bg-white border-b border-border px-4 py-3">
           <div className="max-w-4xl mx-auto text-xs text-muted flex items-center gap-2">
@@ -86,11 +74,26 @@ export default async function VenuePage({ params }: Props) {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="lg:col-span-2">
               <div className="section-label mb-2">{venue.neighborhood}</div>
-              <h1 className="font-display text-4xl font-bold text-ink mb-4 leading-tight">{venue.name}</h1>
+              <h1 className="font-display text-4xl font-bold text-ink mb-2 leading-tight">{venue.name}</h1>
+              <Byline className="mb-4" />
               <div className="flex flex-wrap gap-2 mb-6">
                 {venue.venueTypeTags.map(tag => <span key={tag} className="tag-pill">{tag}</span>)}
                 {venue.genreTags.map(tag => <span key={tag} className="tag-pill-accent">{tag}</span>)}
               </div>
+              {image && (
+                <figure className="mb-8">
+                  <img
+                    src={image.src}
+                    srcSet={smallSrc ? `${smallSrc} 800w, ${image.src} 1600w` : undefined}
+                    sizes={smallSrc ? '(min-width: 1024px) 560px, 100vw' : undefined}
+                    alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    className="w-full h-auto rounded-lg border border-border"
+                  />
+                  {image.credit && <figcaption className="text-xs text-muted mt-2">Photo: {image.credit}</figcaption>}
+                </figure>
+              )}
               <p className="text-lg text-muted leading-relaxed mb-8 border-l-2 border-accent pl-4">{venue.shortDescription}</p>
               {venue.whatToExpect && (
                 <div className="bg-white border border-border rounded-lg p-6 mb-6">
@@ -98,6 +101,7 @@ export default async function VenuePage({ params }: Props) {
                   <p className="text-muted leading-relaxed">{venue.whatToExpect}</p>
                 </div>
               )}
+              <KnowBeforeYouGo details={venue.knowBeforeYouGo} />
               <div className="mb-8">
                 <h2 className="font-display text-xl font-semibold text-ink mb-3">Best For</h2>
                 <div className="flex flex-wrap gap-2">
