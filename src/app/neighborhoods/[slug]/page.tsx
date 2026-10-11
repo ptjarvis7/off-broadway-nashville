@@ -6,7 +6,6 @@ import { neighborhoodIntros, neighborhoodFaqs } from '@/data/neighborhoods'
 import { pageMetadata, venueCount, venueNameList } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 import FAQ from '@/components/FAQ'
-import Byline from '@/components/Byline'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, collectionPageSchema, faqSchema } from '@/lib/structured-data'
 
@@ -66,7 +65,6 @@ export default async function NeighborhoodPage({ params }: Props) {
           <h1 className="font-display text-4xl font-bold text-ink mb-4">Live Music in {neighborhood}</h1>
           <p className="text-muted max-w-2xl leading-relaxed mb-3">{intro}</p>
           <div className="text-sm text-muted">{venueCount(venues.length)} in this neighborhood</div>
-          <Byline className="mt-2" />
         </div>
       </div>
 

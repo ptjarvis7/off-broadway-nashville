@@ -5,7 +5,6 @@ import { getAllVenues, getVenueBySlug, getSimilarVenues, neighborhoodToSlug, nei
 import { pageMetadata, formatUpdated } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 import KnowBeforeYouGo from '@/components/venue/KnowBeforeYouGo'
-import Byline from '@/components/Byline'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, venueSchema, type Crumb } from '@/lib/structured-data'
 
@@ -74,8 +73,7 @@ export default async function VenuePage({ params }: Props) {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="lg:col-span-2">
               <div className="section-label mb-2">{venue.neighborhood}</div>
-              <h1 className="font-display text-4xl font-bold text-ink mb-2 leading-tight">{venue.name}</h1>
-              <Byline className="mb-4" />
+              <h1 className="font-display text-4xl font-bold text-ink mb-4 leading-tight">{venue.name}</h1>
               <div className="flex flex-wrap gap-2 mb-6">
                 {venue.venueTypeTags.map(tag => <span key={tag} className="tag-pill">{tag}</span>)}
                 {venue.genreTags.map(tag => <span key={tag} className="tag-pill-accent">{tag}</span>)}
