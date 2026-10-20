@@ -6,6 +6,8 @@ export interface Category {
   title: string
   /** Full intro, rendered only on the category's own page. */
   description: string
+  /** Longer intro text rendered below the venue cards on the category's own page. Paragraphs separated by blank lines. */
+  descriptionMore?: string
   /** One line for the /categories/ index. Required when hasPage is true. */
   teaser?: string
   /** The single switch for whether /categories/<slug>/ exists. */
@@ -21,10 +23,25 @@ export const categories: Category[] = [
     hasPage: true,
     title: 'Best Nashville Listening Rooms',
     shortTitle: 'Listening Rooms',
-    description: 'Seated venues built for hearing the music, the words, and the stories behind both.',
+    description: "Nashville has hundreds of stages, but only a handful of rooms built for sitting down and hearing every word. These three cover different ground. The Bluebird Cafe and The Listening Room Cafe run songwriter rounds, where the writers behind the hits play their songs. The Station Inn shifts the focus to bluegrass, roots, and classic country along with the occasional round.",
+    descriptionMore: "Most live music in Nashville caters to the party crowd. On Broadway, bands play covers over bar noise for tips. A listening room flips the arrangement, allowing audiences to catch every line and every note. Between songs, artists share where a lyric came from or who they wrote it with.\n\nIt's a great fit if you care more about the music than the party, or if you've already had a night out on Broadway and want to see a different side of the city. It's also perfect for a date or night out with family.\n\nTickets, seating, and parking work differently at each room, so check the venue page before you head out.",
     teaser: 'Seated venues built for hearing the music, the words, and the stories behind both.',
     filterType: 'venueType',
     filterValue: 'Listening Room',
+    faqs: [
+      {
+        question: "What is a listening room?",
+        answer: "A seated venue where the audience comes to listen to the music instead of talking over the band. In Nashville, that usually means songwriter rounds and smaller acoustic shows.",
+      },
+      {
+        question: "Which listening room should I pick for my first time?",
+        answer: "If you can plan ahead, try for the Bluebird. It's the most famous of the three, but tickets go fast. If you're deciding the same day, The Listening Room Cafe is the easier ticket and has two shows a night. If you're a bluegrass fan, The Station Inn is your spot, and they take walk-ups.",
+      },
+      {
+        question: "Can I talk during the show?",
+        answer: "Save it for between songs. The Bluebird has a quiet policy, and the crowd enforces it. Plan on the same courtesy at the other two, and order food and drinks between songs when you can.",
+      },
+    ],
   },
   {
     slug: 'songwriter-rounds',

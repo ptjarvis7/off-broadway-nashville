@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getNeighborhoodsWithPages, getVenuesByNeighborhood, slugToNeighborhood, neighborhoodToSlug } from '@/lib/venues'
-import { neighborhoodIntros, neighborhoodFaqs } from '@/data/neighborhoods'
+import { neighborhoodIntros, neighborhoodIntroMore, neighborhoodFaqs } from '@/data/neighborhoods'
 import { pageMetadata, venueCount, venueNameList } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 import FAQ from '@/components/FAQ'
@@ -37,6 +37,7 @@ export default async function NeighborhoodPage({ params }: Props) {
 
   const venues = getVenuesByNeighborhood(neighborhood)
   const intro = neighborhoodIntros[neighborhood] || `Live music venues in ${neighborhood}${neighborhood.includes('Nashville') ? '' : ', Nashville'}.`
+  const introMore = neighborhoodIntroMore[neighborhood]
   const faqs = neighborhoodFaqs[neighborhood]
   const path = `/neighborhoods/${slug}/`
 
@@ -77,6 +78,13 @@ export default async function NeighborhoodPage({ params }: Props) {
           </div>
         ) : (
           <div className="text-center py-16 text-muted">No venues found in this neighborhood.</div>
+        )}
+        {introMore && (
+          <div className="mt-12 max-w-2xl space-y-4">
+            {introMore.split(/\n\s*\n/).map((para, i) => (
+              <p key={i} className="text-muted leading-relaxed">{para.trim()}</p>
+            ))}
+          </div>
         )}
         <div className="mt-10 pt-8 border-t border-border">
           <Link href="/neighborhoods/" className="btn-outline">← All neighborhoods</Link>

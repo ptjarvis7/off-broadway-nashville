@@ -75,6 +75,14 @@ export default async function CategoryPage({ params }: Props) {
           <div className="text-center py-16 text-muted">No venues found in this category.</div>
         )}
 
+        {category.descriptionMore && (
+          <div className="mt-12 max-w-2xl space-y-4">
+            {category.descriptionMore.split(/\n\s*\n/).map((para, i) => (
+              <p key={i} className="text-muted leading-relaxed">{para.trim()}</p>
+            ))}
+          </div>
+        )}
+
         <div className="mt-14 pt-8 border-t border-border">
           <div className="section-label mb-4">Keep exploring</div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">

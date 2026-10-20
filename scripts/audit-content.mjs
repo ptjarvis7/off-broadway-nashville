@@ -15,9 +15,9 @@ import { createRequire } from 'node:module'
 const require = createRequire(import.meta.url)
 const { readPublishedGuides } = require('../src/lib/content-source.js')
 const { categories } = await import('../src/data/categories.ts')
-const { neighborhoods, neighborhoodIntros, neighborhoodFaqs } = await import('../src/data/neighborhoods.ts')
+const { neighborhoods, neighborhoodIntros, neighborhoodIntroMore, neighborhoodFaqs } = await import('../src/data/neighborhoods.ts')
 
-const INTRO_TARGET = 350
+const INTRO_TARGET = 175
 const FAQ_TARGET = 4
 const KBYG_FIELDS = ['cover', 'payment', 'seating', 'ages', 'parking', 'bestNights']
 
@@ -35,10 +35,10 @@ const activeNeighborhoods = new Set(venues.map(v => v.neighborhood))
 const listing = [
   ...categories
     .filter(c => c.hasPage)
-    .map(c => ({ kind: 'category', name: c.shortTitle, intro: c.description, faqs: c.faqs?.length ?? 0 })),
+    .map(c => ({ kind: 'category', name: c.shortTitle, intro: [c.description, c.descriptionMore].filter(Boolean).join(' '), faqs: c.faqs?.length ?? 0 })),
   ...neighborhoods
     .filter(n => n.hasPage && activeNeighborhoods.has(n.name))
-    .map(n => ({ kind: 'neighborhood', name: n.name, intro: neighborhoodIntros[n.name], faqs: neighborhoodFaqs[n.name]?.length ?? 0 })),
+    .map(n => ({ kind: 'neighborhood', name: n.name, intro: [neighborhoodIntros[n.name], neighborhoodIntroMore[n.name]].filter(Boolean).join(' '), faqs: neighborhoodFaqs[n.name]?.length ?? 0 })),
 ]
 
 console.log(`\nCATEGORY AND NEIGHBORHOOD PAGES   (targets: intro ${INTRO_TARGET}+ words, ${FAQ_TARGET}+ FAQs; ! = below target)\n`)

@@ -50,6 +50,9 @@ export const neighborhoodIntros: Record<string, string> = {
   'Downtown': "The Ryman Auditorium alone justifies knowing this neighborhood. Municipal Auditorium handles bigger touring shows. A few honky tonks exist outside the Broadway corridor if you know where to look.",
 }
 
+/** Longer intro text rendered below the venue cards on each neighborhood page, keyed by neighborhood name. Paragraphs separated by blank lines. */
+export const neighborhoodIntroMore: Record<string, string> = {}
+
 /** FAQs for neighborhood pages, keyed by neighborhood name. */
 export const neighborhoodFaqs: Record<string, FAQItem[]> = {
   'East Nashville': [
