@@ -203,8 +203,8 @@ export const categories: Category[] = [
     description: "The Grand Ole Opry is the reason most people make the trip out to Music Valley, and some of Nashville's longest-running country bars sit close by. The Nashville Palace has been here since 1977, and Scoreboard Bar & Grill and Music City Bar & Grill have been pouring beer nearby for decades.",
     descriptionMore: "Since the Opry is a bit of a drive from downtown, it's worth staying in the area after a show. The bars nearby run live country well past the time the Opry lets out, so you can keep the night going without a long rideshare across town.\n\nThe Opry puts country legends and today's biggest stars on the same stage, while the bars around it add a dance floor, cold beer, and live bands. Most lean toward classic country, which suits an Opry crowd.\n\nParking is free at a few of these spots, which is rare in Nashville, but hours and dance lesson nights vary, so check the venue page before you go.",
     teaser: "Where to keep the night going after a show at the Grand Ole Opry.",
-    filterType: 'neighborhood',
-    filterValue: 'Music Valley',
+    filterType: 'bestFor',
+    filterValue: 'Near the Opry',
     faqs: [
       {
         question: "Do I need a ticket for the Grand Ole Opry?",
