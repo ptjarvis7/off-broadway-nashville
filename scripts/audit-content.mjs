@@ -17,8 +17,8 @@ const { readPublishedGuides } = require('../src/lib/content-source.js')
 const { categories } = await import('../src/data/categories.ts')
 const { neighborhoods, neighborhoodIntros, neighborhoodIntroMore, neighborhoodFaqs } = await import('../src/data/neighborhoods.ts')
 
-const INTRO_TARGET = 175
-const FAQ_TARGET = 4
+const INTRO_TARGET = 150
+const FAQ_TARGET = 3
 const KBYG_FIELDS = ['cover', 'payment', 'seating', 'ages', 'parking', 'bestNights']
 
 const words = text => (text ?? '').trim().split(/\s+/).filter(Boolean).length
