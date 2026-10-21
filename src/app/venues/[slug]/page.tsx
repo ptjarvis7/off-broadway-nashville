@@ -47,6 +47,9 @@ export default async function VenuePage({ params }: Props) {
     { name: venue.name },
   ]
   const image = venue.image
+  const directionsUrl = venue.address
+    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${venue.name}, ${venue.address.street}, ${venue.address.city}, ${venue.address.state} ${venue.address.zip}`)}`
+    : null
   // npm run images writes <slug>-1600.webp and <slug>-800.webp side by side.
   const smallSrc = image?.src.endsWith('-1600.webp') ? image.src.replace(/-1600\.webp$/, '-800.webp') : null
 
@@ -78,6 +81,16 @@ export default async function VenuePage({ params }: Props) {
                 {venue.venueTypeTags.map(tag => <span key={tag} className="tag-pill">{tag}</span>)}
                 {venue.genreTags.map(tag => <span key={tag} className="tag-pill-accent">{tag}</span>)}
               </div>
+              {venue.address && directionsUrl && (
+                <div className="lg:hidden flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm mb-6">
+                  <address className="not-italic text-ink">
+                    {venue.address.street}, {venue.address.city}, {venue.address.state} {venue.address.zip}
+                  </address>
+                  <a href={directionsUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                    Get directions →
+                  </a>
+                </div>
+              )}
               {image && (
                 <figure className="mb-8">
                   <img
@@ -126,15 +139,15 @@ export default async function VenuePage({ params }: Props) {
                     <div className="section-label mb-1">Genre</div>
                     <div className="text-ink">{venue.genreTags.join(', ')}</div>
                   </div>
-                  {venue.address && (
-                    <div>
+                  {venue.address && directionsUrl && (
+                    <div className="hidden lg:block">
                       <div className="section-label mb-1">Address</div>
                       <address className="not-italic text-ink">
                         {venue.address.street}<br />
                         {venue.address.city}, {venue.address.state} {venue.address.zip}
                       </address>
                       <a
-                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${venue.name}, ${venue.address.street}, ${venue.address.city}, ${venue.address.state} ${venue.address.zip}`)}`}
+                        href={directionsUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-accent hover:underline"
