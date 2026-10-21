@@ -8,6 +8,8 @@ export interface Venue {
   bestForTags: string[]
   shortDescription: string
   officialWebsite: string | null
+  /** Street address, shown on the venue page with a directions link and used in JSON-LD. */
+  address?: VenueAddress
   status: 'active' | 'inactive'
   lastUpdated: string
   whatToExpect?: string
@@ -16,6 +18,13 @@ export interface Venue {
   /** Practical details, each rendered only when filled. */
   knowBeforeYouGo?: KnowBeforeYouGo
   image?: VenueImage
+}
+
+export interface VenueAddress {
+  street: string
+  city: string
+  state: string
+  zip: string
 }
 
 export interface KnowBeforeYouGo {

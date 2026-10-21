@@ -87,11 +87,11 @@ export function venueSchema(venue: Venue): Thing {
     name: venue.name,
     description: venue.shortDescription,
     url: canonicalUrl(`/venues/${venue.slug}`),
-    // City level only: no street addresses are on file yet.
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Nashville',
-      addressRegion: 'TN',
+      ...(venue.address ? { streetAddress: venue.address.street, postalCode: venue.address.zip } : {}),
+      addressLocality: venue.address?.city ?? 'Nashville',
+      addressRegion: venue.address?.state ?? 'TN',
       addressCountry: 'US',
     },
     ...(venue.officialWebsite ? { sameAs: venue.officialWebsite } : {}),

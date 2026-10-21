@@ -126,6 +126,23 @@ export default async function VenuePage({ params }: Props) {
                     <div className="section-label mb-1">Genre</div>
                     <div className="text-ink">{venue.genreTags.join(', ')}</div>
                   </div>
+                  {venue.address && (
+                    <div>
+                      <div className="section-label mb-1">Address</div>
+                      <address className="not-italic text-ink">
+                        {venue.address.street}<br />
+                        {venue.address.city}, {venue.address.state} {venue.address.zip}
+                      </address>
+                      <a
+                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${venue.name}, ${venue.address.street}, ${venue.address.city}, ${venue.address.state} ${venue.address.zip}`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-accent hover:underline"
+                      >
+                        Get directions →
+                      </a>
+                    </div>
+                  )}
                   {venue.officialWebsite && (
                     <div>
                       <div className="section-label mb-1">Website</div>
