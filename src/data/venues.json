@@ -3,7 +3,7 @@
     "city": "Nashville",
     "version": "1.0",
     "venueCount": 60,
-    "lastUpdated": "2026-10-20"
+    "lastUpdated": "2026-10-30"
   },
   "venues": [
     {
@@ -151,8 +151,8 @@
         "zip": "37215"
       },
       "status": "active",
-      "lastUpdated": "2026-10-20",
-      "whatToExpect": "The Bluebird Cafe sits in a small Green Hills strip mall about 20 minutes from downtown, with almost no signage from the street. The room holds around 90 people at small candlelit tables. It doesn't look like much from the outside, and that's part of what makes it one of the most storied rooms in country music. The signature format is \"in the round,\" four songwriters seated in the center of the room, taking turns playing their own songs and telling the stories behind them. You might not recognize the names on any given night, but the writers in that room are behind some of the biggest songs in country music. Garth Brooks played an open mic here in 1987 and walked out with a Capitol Records deal. Scott Borchetta saw a 15-year-old Taylor Swift perform here in 2004 and signed her to what became Big Machine. The quiet policy is real; conversation during performances is discouraged and the crowd self-polices. Tickets go on sale Monday mornings and sell out in minutes, sometimes seconds, so have the website open before they drop. There's a $15 food and drink minimum per person at most shows. Parking is limited: the small lot out front fills fast, and parking in the wrong strip mall spot will get you towed. The gravel lot behind the building, accessed via the alley on Hillsboro Pike, is the better option."
+      "lastUpdated": "2026-10-30",
+      "whatToExpect": "The Bluebird Cafe sits in a small Green Hills strip mall about 20 minutes from downtown, with almost no signage from the street. The room holds around 90 people at small candlelit tables. It doesn't look like much from the outside, and that's part of what makes it one of the most storied rooms in country music. The signature format is \"in the round,\" four songwriters seated in the center of the room, taking turns playing their own songs and telling the stories behind them. You might not recognize the names on any given night, but the writers in that room are behind some of the biggest songs in country music. Garth Brooks played an open mic here in 1987 and walked out with a Capitol Records deal. Scott Borchetta saw a 15-year-old Taylor Swift perform here in 2004 and signed her to what became Big Machine. The quiet policy is real; conversation during performances is discouraged and the crowd self-polices. Weekend shows go on sale the Monday before at 8am, and Tuesday through Thursday shows open a week ahead. Popular dates sell out in minutes, so have the website open before they drop. There's a $15 food and drink minimum per person at most shows. Parking is limited: the small lot out front fills fast, and parking in the wrong strip mall spot will get you towed. The gravel lot behind the building, accessed via the alley on Hillsboro Pike, is the better option."
     },
     {
       "id": 6,
@@ -559,8 +559,8 @@
         "zip": "37203"
       },
       "status": "active",
-      "lastUpdated": "2026-10-20",
-      "whatToExpect": "The Commodore Grille sits inside the Holiday Inn Vanderbilt on West End, a few blocks from campus. According to the venue, its live music roots trace back to the early 1980s, when it first drew comparisons to the Bluebird Cafe as a room for original songwriters. The space cycled through a few identities before settling into its current one, a piano lounge, then a Vanderbilt alumni hangout, then a sports bar from 2001 to 2008, when Songwriter's Night began and has run nightly ever since. Two long-running rounds split the nightly calendar, Debi Champion's Songwriter Nights and the Nashville Songwriter's Showcase. Each puts three to four original Nashville songwriters on stage together, trading songs and the stories behind them. A 10pm open mic follows most nights for anyone who wants to sign up and play, and admission is free throughout. Jerry Foster, a 1994 inductee into the Nashville Songwriters Hall of Fame, still turns up on the lineup and has his own reserved parking spot out front. The kitchen runs a full dinner menu beyond the usual bar food: Nashville hot chicken, shrimp and grits, bourbon glazed salmon. Live music starts at 6pm Sunday through Thursday and 7pm on weekends, with free parking through the hotel."
+      "lastUpdated": "2026-10-30",
+      "whatToExpect": "The Commodore Grille sits inside the Holiday Inn Vanderbilt on West End, a few blocks from campus. According to the venue, its live music roots trace back to the early 1980s, when it first drew comparisons to the Bluebird Cafe as a room for original songwriters. The space cycled through a few identities before settling into its current one, a piano lounge, then a Vanderbilt alumni hangout, then a sports bar from 2001 to 2008, the years when Songwriter's Night began. It has since grown into a nightly songwriter round and open mic. Two long-running rounds split the nightly calendar, Debi Champion's Songwriter Nights and the Nashville Songwriter's Showcase. Each puts three to four original Nashville songwriters on stage together, trading songs and the stories behind them. Jerry Foster, a 1994 inductee into the Nashville Songwriters Hall of Fame, still turns up on the lineup and has his own reserved parking spot out front. The kitchen runs a full dinner menu beyond the usual bar food: Nashville hot chicken, shrimp and grits, bourbon glazed salmon. Live music starts at 6pm Sunday through Thursday and 7pm on weekends, with free parking through the hotel."
     },
     {
       "id": 20,
