@@ -1,5 +1,5 @@
 ---
-title: "Nashville Live Music: 4 Routes You Can Easily Walk"
+title: "4 Easy Walking Routes for a Night of Live Music in Nashville"
 description: Real walking times between venues in The Gulch, Music Row, downtown, and East Nashville, plus the set times to plan your night around.
 published: true
 datePublished: 2026-11-01

@@ -9,7 +9,7 @@ import { breadcrumbSchema } from '@/lib/structured-data'
 
 export const metadata: Metadata = pageMetadata({
   title: 'Nashville Live Music Guides',
-  description: 'Guides to live music in Nashville beyond Broadway, written by a local.',
+  description: 'Tips for planning a night of live music in Nashville away from the Broadway crowds, from booking a songwriter round to walking between venues.',
   path: '/guides',
 })
 
@@ -22,7 +22,7 @@ export default function GuidesPage() {
       <div className="bg-white border-b border-border py-10 px-4">
         <div className="max-w-3xl mx-auto">
           <h1 className="font-display text-4xl font-bold text-ink mb-4">Guides</h1>
-          <p className="text-muted leading-relaxed">Longer reads on live music in Nashville beyond Broadway.</p>
+          <p className="text-muted leading-relaxed">Tips for planning a night of live music in Nashville, from getting tickets to choosing your next stop.</p>
         </div>
       </div>
 
