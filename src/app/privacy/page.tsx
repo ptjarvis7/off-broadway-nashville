@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <div className="bg-white border-b border-border py-10 px-4">
         <div className="max-w-3xl mx-auto">
           <h1 className="font-display text-4xl font-bold text-ink mb-2">Privacy Policy</h1>
-          <p className="text-muted text-sm">Last updated: October 11, 2026</p>
+          <p className="text-muted text-sm">Last updated: November 1, 2026</p>
         </div>
       </div>
 
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
         <div>
           <h2 className="font-display text-xl font-semibold text-ink mb-3">Cookies and advertising</h2>
           <p className="text-muted leading-relaxed mb-3">
-            This site uses Google AdSense to display ads. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this site or other websites. This is known as personalized advertising.
+            This site uses Google AdSense to display ads. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this site or other websites. Google's advertising cookies let Google and its partners show you ads based on your visits to this site or other sites on the internet. This is known as personalized advertising.
           </p>
           <p className="text-muted leading-relaxed mb-3">
             You can opt out of personalized advertising through Google's Ads Settings at{' '}
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
             <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">policies.google.com/technologies/partner-sites</a>.
           </p>
           <p className="text-muted leading-relaxed">
-            Visitors in the EU, UK, and Switzerland are asked for consent before any personalized advertising cookies are set, through Google's certified consent tools.
+            Visitors in the EU, UK, and Switzerland will be asked for consent through Google's certified consent tools before any personalized advertising cookies are set.
           </p>
         </div>
 
