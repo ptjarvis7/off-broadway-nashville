@@ -5,6 +5,8 @@ import { getCategoriesWithPages, getCategoryBySlug, getVenuesInCategory } from '
 import { pageMetadata, venueCount } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 import FAQ from '@/components/FAQ'
+import RelatedGuides from '@/components/RelatedGuides'
+import { getGuidesForHub } from '@/lib/content'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, collectionPageSchema, faqSchema } from '@/lib/structured-data'
 
@@ -36,6 +38,7 @@ export default async function CategoryPage({ params }: Props) {
   const relatedCategories = getCategoriesWithPages().filter(c => c.slug !== slug).slice(0, 4)
 
   const path = `/categories/${category.slug}/`
+  const guides = getGuidesForHub(path)
 
   return (
     <div className="min-h-screen bg-cream">
@@ -82,6 +85,8 @@ export default async function CategoryPage({ params }: Props) {
             ))}
           </div>
         )}
+
+        <RelatedGuides guides={guides} variant="hub" />
 
         <div className="mt-14 pt-8 border-t border-border">
           <div className="section-label mb-4">Keep exploring</div>

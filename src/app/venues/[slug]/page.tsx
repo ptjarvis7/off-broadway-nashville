@@ -5,6 +5,8 @@ import { getAllVenues, getVenueBySlug, getSimilarVenues, neighborhoodToSlug, nei
 import { pageMetadata, formatUpdated } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 import KnowBeforeYouGo from '@/components/venue/KnowBeforeYouGo'
+import RelatedGuides from '@/components/RelatedGuides'
+import { getGuidesForVenue } from '@/lib/content'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, venueSchema, type Crumb } from '@/lib/structured-data'
 
@@ -35,6 +37,7 @@ export default async function VenuePage({ params }: Props) {
   if (!venue) notFound()
 
   const similar = getSimilarVenues(venue, 3)
+  const guides = getGuidesForVenue(venue.slug)
   const neighborhoodHref = neighborhoodHasPage(venue.neighborhood)
     ? `/neighborhoods/${neighborhoodToSlug(venue.neighborhood)}/`
     : null
@@ -119,6 +122,7 @@ export default async function VenuePage({ params }: Props) {
                   {venue.bestForTags.map(tag => <span key={tag} className="bg-accent-light text-accent px-3 py-1.5 rounded-full text-sm font-medium">{tag}</span>)}
                 </div>
               </div>
+              <RelatedGuides guides={guides} variant="venue" />
             </div>
 
             <div className="lg:col-span-1">

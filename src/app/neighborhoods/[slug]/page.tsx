@@ -6,6 +6,8 @@ import { neighborhoodIntros, neighborhoodIntroMore, neighborhoodFaqs } from '@/d
 import { pageMetadata, venueCount, venueNameList } from '@/lib/seo'
 import VenueCard from '@/components/venue/VenueCard'
 import FAQ from '@/components/FAQ'
+import RelatedGuides from '@/components/RelatedGuides'
+import { getGuidesForHub } from '@/lib/content'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, collectionPageSchema, faqSchema } from '@/lib/structured-data'
 
@@ -40,6 +42,7 @@ export default async function NeighborhoodPage({ params }: Props) {
   const introMore = neighborhoodIntroMore[neighborhood]
   const faqs = neighborhoodFaqs[neighborhood]
   const path = `/neighborhoods/${slug}/`
+  const guides = getGuidesForHub(path)
 
   return (
     <div className="min-h-screen bg-cream">
@@ -86,6 +89,7 @@ export default async function NeighborhoodPage({ params }: Props) {
             ))}
           </div>
         )}
+        <RelatedGuides guides={guides} variant="hub" />
         <div className="mt-10 pt-8 border-t border-border">
           <Link href="/neighborhoods/" className="btn-outline">← All neighborhoods</Link>
         </div>

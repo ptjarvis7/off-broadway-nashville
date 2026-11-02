@@ -1,4 +1,5 @@
-import { readPublishedGuides, readUpdates } from '@/lib/content-source'
+import { readAllGuides, readPublishedGuides, readUpdates } from '@/lib/content-source'
+import { guideHubs } from '@/data/guide-hubs'
 
 export interface Guide {
   slug: string
@@ -16,6 +17,23 @@ export function getPublishedGuides(): Guide[] {
 
 export function getGuideBySlug(slug: string): Guide | undefined {
   return getPublishedGuides().find(g => g.slug === slug)
+}
+
+/** Published guides whose text links to /venues/<slug>/, newest first. */
+export function getGuidesForVenue(slug: string): Guide[] {
+  const href = `](/venues/${slug}/)`
+  return getPublishedGuides().filter(g => g.body.includes(href))
+}
+
+/** Published guides listed for a category or neighborhood page in src/data/guide-hubs.ts, in listed order. */
+export function getGuidesForHub(path: string): Guide[] {
+  const known = new Set(readAllGuides().map(g => g.slug))
+  const listed = guideHubs[path] ?? []
+  for (const slug of listed) {
+    if (!known.has(slug)) throw new Error(`src/data/guide-hubs.ts: no guide named "${slug}" in content/guides/ (listed for ${path})`)
+  }
+  const published = getPublishedGuides()
+  return listed.flatMap(slug => published.filter(g => g.slug === slug))
 }
 
 /** Whether /guides/ is built at all, and so whether anything may link to it. */
