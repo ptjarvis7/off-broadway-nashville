@@ -1,11 +1,32 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import localFont from 'next/font/local'
 import './globals.css'
 import { SITE_NAME, SITE_URL } from '@/lib/seo'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
 const GA_MEASUREMENT_ID = 'G-LTE4T13MJF'
+
+// Self-hosted variable fonts (latin subset) from @fontsource-variable.
+// next/font serves them from our domain, preloads them, and size-adjusts the fallback.
+const displayFont = localFont({
+  src: '../../node_modules/@fontsource-variable/playfair-display/files/playfair-display-latin-wght-normal.woff2',
+  weight: '400 900',
+  style: 'normal',
+  display: 'swap',
+  variable: '--font-playfair',
+  adjustFontFallback: 'Times New Roman',
+})
+
+const bodyFont = localFont({
+  src: '../../node_modules/@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2',
+  weight: '100 1000',
+  style: 'normal',
+  display: 'swap',
+  variable: '--font-dm-sans',
+  adjustFontFallback: 'Arial',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -32,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}>
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8609591932306793" crossOrigin="anonymous"></script>
       </head>
