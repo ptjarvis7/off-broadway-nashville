@@ -10,7 +10,7 @@ Plenty of Nashville's best music venues are a short walk apart, even when they s
 
 ## Plan around the show with a start time
 
-The room with a ticket or a set time decides your schedule. [Rudy's Jazz Room](/venues/rudys-jazz-room/) and the Ryman start on the clock. Bars like Losers keep a band running most of the night, which makes them easy to add before or after your main show.
+The room with a ticket or a set time decides your schedule. [Rudy's Jazz Room](/venues/rudys-jazz-room/) and the Ryman start on the clock. Bars like [Losers](/venues/losers-bar-and-grill/) keep a band running most of the night, which makes them easy to add before or after your main show.
 
 A few of these rooms skip certain nights. Rudy's is dark on Tuesdays. [Night We Met](/venues/night-we-met/) only opens its main room on Fridays and Saturdays. Thursday through Saturday gives you the most to choose from. Most of the late stops here are 21 and up. If anyone in your group is younger, check the venue page before you go.
 
@@ -22,9 +22,9 @@ At the Station Inn, doors open at 7pm. Most shows don't sell advance tickets, an
 
 The walk to Demonbreun is about as simple as it gets. Turn right out of the Station Inn and follow 12th Avenue until it meets Demonbreun, then turn left. You'll end up in front of [Tin Roof](/venues/tin-roof-demonbreun/), 10 minutes from the door. Up to the highway overpass, it feels like the rest of the Gulch, with apartment towers, hotels, office buildings, and high-end restaurants. Once you cross the highway, the crowd gets younger and the night leans more toward a party.
 
-Tin Roof stays open until 3am from Thursday to Saturday, and DJs take over its side rooms on weekends. Odie's on Division Street is another 11 minutes on foot, with Riley Green's Duck Blind and Losers right next to it. Demonbreun and Division work as two separate pockets, a short walk apart. Both draw a younger crowd that gets rowdier as the night goes on.
+Tin Roof stays open until 3am from Thursday to Saturday, and DJs take over its side rooms on weekends. [Odie's](/venues/odies/) on Division Street is another 11 minutes on foot, with [Riley Green's Duck Blind](/venues/riley-greens-duck-blind/) and Losers right next to it. Demonbreun and Division work as two separate pockets, a short walk apart. Both draw a younger crowd that gets rowdier as the night goes on.
 
-From Division, West End is closer than it looks. Analog at the Hutton Hotel is a 6-minute walk from Losers, and an early show there leaves the rest of the night for Division. Cross-Eyed Critters, the animatronic karaoke bar at the Graduate hotel, is also 6 minutes away. It's open from 8pm to 2am Thursday through Saturday, good for a few songs before you head back to Division.
+From Division, West End is closer than it looks. [Analog](/venues/analog/) at the Hutton Hotel is a 6-minute walk from Losers, and an early show there leaves the rest of the night for Division. [Cross-Eyed Critters](/venues/cross-eyed-critters-watering-hole/), the animatronic karaoke bar at the Graduate hotel, is also 6 minutes away. It's open from 8pm to 2am Thursday through Saturday, good for a few songs before you head back to Division.
 
 ## The Ryman to Printer's Alley
 
@@ -32,19 +32,19 @@ After a Ryman show, you're a block from Broadway, and a honky-tonk on the strip 
 
 [Bourbon Street Blues and Boogie Bar](/venues/bourbon-street-blues-and-boogie-bar/) keeps live blues and jazz going in a low-ceilinged room with a Cajun kitchen. [Ms. Kelli's Karaoke Bar](/venues/ms-kellis-karaoke-bar/) sits across the alley, where it's $5 to get up and sing. Coming straight out of a show, either one works as a quick stop. Do both if you're feeling frisky.
 
-Skull's Rainbow Room is in the same alley, but I'd save it for a night of its own. It works best with dinner and the 11pm burlesque show, which runs Friday through Sunday with a $25 cover from 9pm. Reservations open two weeks ahead.
+[Skull's Rainbow Room](/venues/skulls-rainbow-room/) is in the same alley, but I'd save it for a night of its own. It works best with dinner and the 11pm burlesque show, which runs Friday through Sunday with a $25 cover from 9pm. Reservations open two weeks ahead.
 
 ## Five Points in East Nashville
 
-Five Points is a short ride across the river from downtown. Once you're there, this route covers an early set, a touring show, and a late patio with about 16 minutes of total walking. Start at The 5 Spot, which runs an early show around 6pm most nights before a second bill at 9pm. On Fridays, Tim Carroll's Rock'n Roll Happy Hour at 6pm is free.
+Five Points is a short ride across the river from downtown. Once you're there, this route covers an early set, a touring show, and a late patio with about 16 minutes of total walking. Start at [The 5 Spot](/venues/the-5-spot/), which runs an early show around 6pm most nights before a second bill at 9pm. On Fridays, Tim Carroll's Rock'n Roll Happy Hour at 6pm is free.
 
 [The Basement East](/venues/the-basement-east/) is 9 minutes away on Woodland Street. Its touring shows usually open doors at 7pm and start at 8pm, which leaves room for most of The 5 Spot's early set.
 
-After the show, Love & Exile is 7 minutes back toward the river. It's a winery and cocktail bar built around a big patio with its own stage for live entertainment. It stays open until 1am on Friday and Saturday nights.
+After the show, [Love & Exile](/venues/love-and-exile/) is 7 minutes back toward the river. It's a winery and cocktail bar built around a big patio with its own stage for live entertainment. It stays open until 1am on Friday and Saturday nights.
 
 ## The Pinnacle to Night We Met
 
-The Pinnacle at Nashville Yards is a 10-minute walk from Night We Met, a Gulch club built for house and electronic music. Its Moon Room runs from 10pm to 3am on Fridays and Saturdays. The rest of the week, the Vera Lounge is open from 5pm to 1am. A Pinnacle show that lets out around 10:30pm still gets you there well before midnight. The club is 21 and up with a smart-casual dress code, which is easier to plan for before you leave for the show.
+[The Pinnacle](/venues/the-pinnacle/) at Nashville Yards is a 10-minute walk from Night We Met, a Gulch club built for house and electronic music. Its Moon Room runs from 10pm to 3am on Fridays and Saturdays. The rest of the week, the Vera Lounge is open from 5pm to 1am. A Pinnacle show that lets out around 10:30pm still gets you there well before midnight. The club is 21 and up with a smart-casual dress code, which is easier to plan for before you leave for the show.
 
 ## When a ride beats the walk
 

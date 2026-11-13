@@ -22,7 +22,7 @@ City Winery says most of its shows are all ages. It also points out that not eve
 
 ## Big stages are all ages unless the ticket says otherwise
 
-At the biggest venues, an age limit is the exception, and it shows up on that show's ticket page. Ascend Amphitheater says every event is all ages unless stated. Kids 2 and under get in free on a parent's lap. Strollers aren't allowed, since there's nowhere to store them and the lawn slopes.
+At the biggest venues, an age limit is the exception, and it shows up on that show's ticket page. [Ascend Amphitheater](/venues/ascend-amphitheater/) says every event is all ages unless stated. Kids 2 and under get in free on a parent's lap. Strollers aren't allowed, since there's nowhere to store them and the lawn slopes.
 
 [The Pinnacle](/venues/the-pinnacle/) sorts its shows into four groups: all ages, 16+, 18+, and 21+. Teens under 16 can still go to a 16+ show with a ticketed adult.
 
@@ -32,25 +32,25 @@ At the Opry, kids under 4 get in free as long as they sit with their guardian. G
 
 ## Where 18- to 20-year-olds can get in
 
-An 18+ show opens the club circuit to a group of 18- to 20-year-olds, and a few rooms make it their default. [Exit/In](/venues/exit-in/) and The End sit on the same block of Elliston Place. Both are 18 and up unless a listing says otherwise. Across the river, The East Room in East Nashville is also 18 and up.
+An 18+ show opens the club circuit to a group of 18- to 20-year-olds, and a few rooms make it their default. [Exit/In](/venues/exit-in/) and [The End](/venues/the-end/) sit on the same block of Elliston Place. Both are 18 and up unless a listing says otherwise. Across the river, [The East Room](/venues/the-east-room/) in East Nashville is also 18 and up.
 
-At Cannery Hall and The Basement East, the age limit changes from one show to the next. For an 18+ or 21+ show at Cannery Hall, bring a government-issued photo ID.
+At [Cannery Hall](/venues/cannery-hall/) and [The Basement East](/venues/the-basement-east/), the age limit changes from one show to the next. For an 18+ or 21+ show at Cannery Hall, bring a government-issued photo ID.
 
 At a weekend country show I caught at The Basement East, plenty of people had a drink or a shot between songs, but the crowd was there for the music. When a show there is billed 18+, I'd trust the room to keep it fun and safe. I'd say the same for Exit/In, The End, The East Room, and Cannery Hall, which have all been around for years.
 
 ## When the jazz rooms let younger guests in
 
-[Skull's Rainbow Room](/venues/skulls-rainbow-room/) and Rudy's Jazz Room are 21 and up most of the time, but each one opens a window for younger guests. Skull's, in Printer's Alley, lets guests under 21 in with a parent or legal guardian until 9pm. That window covers the 5:15pm piano set and the 7:30pm band. Skull's doesn't have a kids' menu.
+[Skull's Rainbow Room](/venues/skulls-rainbow-room/) and [Rudy's Jazz Room](/venues/rudys-jazz-room/) are 21 and up most of the time, but each one opens a window for younger guests. Skull's, in Printer's Alley, lets guests under 21 in with a parent or legal guardian until 9pm. That window covers the 5:15pm piano set and the 7:30pm band. Skull's doesn't have a kids' menu.
 
 Rudy's, in The Gulch, holds to 21 and up every night except Sunday. On Sundays the rule lifts, and the music starts with a 6pm set.
 
 ## Music that fits a family schedule
 
-Saturday has the most daytime music. On many Saturdays, the Listening Room Cafe runs rounds at 10:30am and 1pm. 3rd & Lindsley is all ages unless a show says otherwise, which covers its 12:30pm Backstage Nashville round. Either option leaves the evening free.
+Saturday has the most daytime music. On many Saturdays, the Listening Room Cafe runs rounds at 10:30am and 1pm. [3rd & Lindsley](/venues/3rd-and-lindsley/) is all ages unless a show says otherwise, which covers its 12:30pm Backstage Nashville round. Either option leaves the evening free.
 
-The Ryman fits in here too. Its self-guided tour runs daily from 9am to 4pm, and kids 12 and under go free with a paid adult. That deal covers the tour only. For concerts, the Ryman doesn't publish an age policy. Its security rules do say everyone who walks in needs a valid ticket. Ryman customer service at (615) 889-3060 can answer anything else before you buy.
+[The Ryman](/venues/the-ryman-auditorium/) fits in here too. Its self-guided tour runs daily from 9am to 4pm, and kids 12 and under go free with a paid adult. That deal covers the tour only. For concerts, the Ryman doesn't publish an age policy. Its security rules do say everyone who walks in needs a valid ticket. Ryman customer service at (615) 889-3060 can answer anything else before you buy.
 
-For an evening with younger kids, the CabaRay Showroom in West Nashville pairs dinner with a country tribute show Thursday through Saturday at 7:30pm. There's no minimum age. Kids 12 and under get in free.
+For an evening with younger kids, [the CabaRay Showroom](/venues/ray-stevens-cabaray-showroom/) in West Nashville pairs dinner with a country tribute show Thursday through Saturday at 7:30pm. There's no minimum age. Kids 12 and under get in free.
 
 For a family with younger kids, a Saturday round at the Listening Room Cafe or a night at the Opry is the simplest first pick. For a group of 18- to 20-year-olds, start on Elliston Place, where two 18+ clubs share a block. Special events can carry their own age limits, which the ticket page lists before you buy. The [listening rooms page](/categories/listening-rooms/) and the [concert venues page](/categories/concert-venues/) list more rooms of each kind.
 
